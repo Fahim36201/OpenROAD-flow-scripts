@@ -1,4 +1,13 @@
 proc report_metrics { when {include_erc true} {include_clock_skew true} } {
+
+  if {[info exists ::env(USE_GROUP_PATH)] && $::env(USE_GROUP_PATH)} {
+        set inputs [lsearch -inline -all -not -exact [all_inputs] [all_clocks]]
+        group_path -name in2reg -from $inputs -to [all_registers]
+        group_path -name reg2out -from [all_registers] -to [all_outputs]
+        group_path -name in2out -from $inputs -to  [all_outputs]
+        group_path -name reg2reg -from [all_registers] -to [all_registers]
+  }    
+
   puts "\n=========================================================================="
   puts "$when check_setup"
   puts "--------------------------------------------------------------------------"

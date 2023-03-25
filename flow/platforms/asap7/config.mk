@@ -99,7 +99,7 @@ export TAPCELL_TCL             = $(PLATFORM_DIR)/openRoad/tapcell.tcl
 # TritonCTS options
 export CTS_BUF_CELL            ?= BUFx4_ASAP7_75t_SL
 
-export CTS_BUF_DISTANCE        ?= 60
+#export CTS_BUF_DISTANCE        ?= 60
 
 # Fill cells used in fill cell insertion
 export FILL_CELLS              = FILLERxp5_ASAP7_75t_SL \
@@ -117,7 +117,7 @@ export SET_RC_TCL              = $(PLATFORM_DIR)/setRC.tcl
 # Route options MAX default was M7
 export MIN_ROUTING_LAYER       = M2
 #export MIN_CLOCK_ROUTING_LAYER = M4
-export MAX_ROUTING_LAYER       = M7
+export MAX_ROUTING_LAYER       = M8
 
 # KLayout technology file
 export KLAYOUT_TECH_FILE       = $(PLATFORM_DIR)/KLayout/asap7.lyt

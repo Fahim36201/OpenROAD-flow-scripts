@@ -59,6 +59,7 @@
 # DESIGN_CONFIG=./designs/sky130hd/chameleon/config.mk
 # DESIGN_CONFIG=./designs/sky130hd/riscv32i/config.mk
 # DESIGN_CONFIG=./designs/sky130hd/chameleon_hier/config.mk
+#  DESIGN_CONFIG=./designs/sky130hd/microwatt/config.mk
 
 # DESIGN_CONFIG=./designs/sky130hs/gcd/config.mk
 # DESIGN_CONFIG=./designs/sky130hs/ibex/config.mk
@@ -73,7 +74,7 @@
 # DESIGN_CONFIG=./designs/asap7/ethmac/config.mk
 # DESIGN_CONFIG=./designs/asap7/uart/config.mk
 # DESIGN_CONFIG=./designs/asap7/sha3/config.mk
-# DESIGN_CONFIG=./designs/asap7/riscv32i/config.mk
+ DESIGN_CONFIG=./designs/asap7/riscv32i/config.mk
 # DESIGN_CONFIG=./designs/asap7/swerv_wrapper/config.mk
 
 # DESIGN_CONFIG=./designs/intel22/gcd/config.mk
@@ -83,7 +84,6 @@
 #
 # Default design
 DESIGN_CONFIG ?= ./designs/nangate45/gcd/config.mk
-
 # If we are running headless use offscreen rendering for save_image
 ifndef DISPLAY
 export QT_QPA_PLATFORM ?= offscreen
@@ -166,6 +166,20 @@ export SYNTH_ARGS ?= -flatten
 # Global setting for Floorplan
 export PLACE_PINS_ARGS
 
+#export FLOW_VARIANT = repairtns
+#export FLOW_VARIANT = repairtns_ckinv
+#export FLOW_VARIANT = repairtns_ckinvx8
+#export FLOW_VARIANT = repairtns_real_ckinvx8
+#export FLOW_VARIANT = repairtns_real_ckinvx8_slvt
+#export FLOW_VARIANT = repairtns_real_ckinvx8_slvt_nomargin
+#export FLOW_VARIANT = repairtns_real_ckinvx8_slvt_M2_M8
+#export FLOW_VARIANT = repairtns_real_ckinvx8_slvt_invtest
+#export FLOW_VARIANT = repairtns_real_ckinvx8_slvt_invtest2
+#export FLOW_VARIANT = repairtns_real_ckinvx8_slvt_1200
+#export FLOW_VARIANT = slvt_syn_timing
+#export FLOW_VARIANT = macro_place
+#export FLOW_VARIANT = macro_place_no_blockage
+export FLOW_VARIANT = macro_place_no_blockage_1300_slvt
 export FLOW_VARIANT ?= base
 
 export GPL_TIMING_DRIVEN ?= 1
@@ -400,6 +414,11 @@ $(RESULTS_DIR)/1_synth.v: $(RESULTS_DIR)/1_1_yosys.v
 $(RESULTS_DIR)/1_synth.sdc: $(SDC_FILE)
 	mkdir -p $(RESULTS_DIR) $(LOG_DIR) $(REPORTS_DIR)
 	cp $< $@
+	sta $(SCRIPTS_DIR)/synthesis_timing.tcl -exit | tee $(LOG_DIR)/1_1_synth_timing.log
+
+
+#	sta synthesis_timing.tcl -exit | tee $(LOG_DIR)/1_2_yosys.log
+
 
 clean_synth:
 	rm -f  $(RESULTS_DIR)/1_*.v $(RESULTS_DIR)/1_synth.sdc
@@ -551,6 +570,7 @@ cts: $(RESULTS_DIR)/4_cts.odb \
 # ------------------------------------------------------------------------------
 $(RESULTS_DIR)/4_1_cts.odb: $(RESULTS_DIR)/3_place.odb $(RESULTS_DIR)/3_place.sdc
 	($(TIME_CMD) $(OPENROAD_CMD) $(SCRIPTS_DIR)/cts.tcl -metrics $(LOG_DIR)/4_1_cts.json) 2>&1 | tee $(LOG_DIR)/4_1_cts.log
+
 
 # Filler cell insertion
 # ------------------------------------------------------------------------------
