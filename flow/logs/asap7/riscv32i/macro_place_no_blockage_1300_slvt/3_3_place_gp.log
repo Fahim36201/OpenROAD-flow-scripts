@@ -1,0 +1,1301 @@
+OpenROAD v2.0-6895-g5c85b36f8 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[WARNING STA-0164] ./platforms/asap7/lib/asap7sc7p5t_SIMPLE_SLVT_FF_nldm_211120.lib.gz line 13156, timing group from output port.
+[WARNING STA-0164] ./platforms/asap7/lib/asap7sc7p5t_SIMPLE_SLVT_FF_nldm_211120.lib.gz line 13189, timing group from output port.
+[WARNING STA-0164] ./platforms/asap7/lib/asap7sc7p5t_SIMPLE_SLVT_FF_nldm_211120.lib.gz line 13222, timing group from output port.
+[WARNING STA-0164] ./platforms/asap7/lib/asap7sc7p5t_SIMPLE_SLVT_FF_nldm_211120.lib.gz line 13255, timing group from output port.
+[WARNING STA-0164] ./platforms/asap7/lib/asap7sc7p5t_SIMPLE_SLVT_FF_nldm_211120.lib.gz line 13288, timing group from output port.
+[WARNING STA-0164] ./platforms/asap7/lib/asap7sc7p5t_SIMPLE_SLVT_FF_nldm_211120.lib.gz line 13321, timing group from output port.
+[WARNING STA-0164] ./platforms/asap7/lib/asap7sc7p5t_SIMPLE_SLVT_FF_nldm_211120.lib.gz line 13354, timing group from output port.
+[WARNING STA-0164] ./platforms/asap7/lib/asap7sc7p5t_SIMPLE_SLVT_FF_nldm_211120.lib.gz line 14748, timing group from output port.
+[WARNING STA-0164] ./platforms/asap7/lib/asap7sc7p5t_SIMPLE_SLVT_FF_nldm_211120.lib.gz line 14781, timing group from output port.
+[WARNING STA-0164] ./platforms/asap7/lib/asap7sc7p5t_SIMPLE_SLVT_FF_nldm_211120.lib.gz line 14814, timing group from output port.
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: 54 270
+[INFO GPL-0004] CoreAreaLxLy: 5022 5130
+[INFO GPL-0005] CoreAreaUxUy: 109998 109890
+[INFO GPL-0006] NumInstances: 16659
+[INFO GPL-0007] NumPlaceInstances: 9156
+[INFO GPL-0008] NumFixedInstances: 3286
+[INFO GPL-0009] NumDummyInstances: 4217
+[INFO GPL-0010] NumNets: 9490
+[INFO GPL-0011] NumPins: 33146
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 120000 120000
+[INFO GPL-0014] CoreAreaLxLy: 5022 5130
+[INFO GPL-0015] CoreAreaUxUy: 109998 109890
+[INFO GPL-0016] CoreArea: 10997285760
+[INFO GPL-0017] NonPlaceInstsArea: 3035701800
+[INFO GPL-0018] PlaceInstsArea: 1602210780
+[INFO GPL-0019] Util(%): 20.12
+[INFO GPL-0020] StdInstsArea: 1602210780
+[INFO GPL-0021] MacroInstsArea: 0
+[InitialPlace]  Iter: 1 CG residual: 0.00001287 HPWL: 34178506
+[InitialPlace]  Iter: 2 CG residual: 0.00025941 HPWL: 32940890
+[InitialPlace]  Iter: 3 CG residual: 0.00003976 HPWL: 31470275
+[InitialPlace]  Iter: 4 CG residual: 0.00000234 HPWL: 30506125
+[InitialPlace]  Iter: 5 CG residual: 0.00000027 HPWL: 30106079
+[INFO GPL-0031] FillerInit: NumGCells: 30328
+[INFO GPL-0032] FillerInit: NumGNets: 9490
+[INFO GPL-0033] FillerInit: NumGPins: 33146
+[INFO GPL-0023] TargetDensity: 0.65
+[INFO GPL-0024] AveragePlaceInstArea: 174990
+[INFO GPL-0025] IdealBinArea: 269215
+[INFO GPL-0026] IdealBinCnt: 40849
+[INFO GPL-0027] TotalBinArea: 10997285760
+[INFO GPL-0028] BinCnt: 128 128
+[INFO GPL-0029] BinSize: 821 819
+[INFO GPL-0030] NumBins: 16384
+[NesterovSolve] Iter: 1 overflow: 0.988357 HPWL: 14905279
+[NesterovSolve] Iter: 10 overflow: 0.961151 HPWL: 17158021
+[NesterovSolve] Iter: 20 overflow: 0.949498 HPWL: 17782361
+[NesterovSolve] Iter: 30 overflow: 0.946014 HPWL: 18060577
+[NesterovSolve] Iter: 40 overflow: 0.942562 HPWL: 18380787
+[NesterovSolve] Iter: 50 overflow: 0.940302 HPWL: 18544592
+[NesterovSolve] Iter: 60 overflow: 0.940441 HPWL: 18578260
+[NesterovSolve] Iter: 70 overflow: 0.939143 HPWL: 18489862
+[NesterovSolve] Iter: 80 overflow: 0.93889 HPWL: 18304774
+[NesterovSolve] Iter: 90 overflow: 0.939744 HPWL: 18125327
+[NesterovSolve] Iter: 100 overflow: 0.939272 HPWL: 18006776
+[NesterovSolve] Iter: 110 overflow: 0.938785 HPWL: 17902711
+[NesterovSolve] Iter: 120 overflow: 0.937685 HPWL: 17855841
+[NesterovSolve] Iter: 130 overflow: 0.937046 HPWL: 17873388
+[NesterovSolve] Iter: 140 overflow: 0.935969 HPWL: 17932022
+[NesterovSolve] Iter: 150 overflow: 0.934814 HPWL: 18062101
+[NesterovSolve] Iter: 160 overflow: 0.933297 HPWL: 18259926
+[NesterovSolve] Iter: 170 overflow: 0.93135 HPWL: 18559693
+[NesterovSolve] Iter: 180 overflow: 0.92832 HPWL: 19022942
+[NesterovSolve] Iter: 190 overflow: 0.921981 HPWL: 19592319
+[NesterovSolve] Iter: 200 overflow: 0.910489 HPWL: 20204132
+[NesterovSolve] Iter: 210 overflow: 0.896057 HPWL: 20915281
+[NesterovSolve] Iter: 220 overflow: 0.875512 HPWL: 21610629
+[NesterovSolve] Iter: 230 overflow: 0.846095 HPWL: 22157252
+[NesterovSolve] Iter: 240 overflow: 0.813387 HPWL: 22794016
+[NesterovSolve] Iter: 250 overflow: 0.777211 HPWL: 23840058
+[INFO GPL-0100] worst slack 2.52e-10
+[INFO GPL-0103] Weighted 1249 nets.
+[NesterovSolve] Iter: 260 overflow: 0.751953 HPWL: 24270848
+[NesterovSolve] Iter: 270 overflow: 0.732336 HPWL: 24961649
+[NesterovSolve] Iter: 280 overflow: 0.692553 HPWL: 26269440
+[NesterovSolve] Iter: 290 overflow: 0.628095 HPWL: 28005228
+[INFO GPL-0100] worst slack 1.97e-10
+[INFO GPL-0103] Weighted 1249 nets.
+[NesterovSolve] Snapshot saved at iter = 294
+[NesterovSolve] Iter: 300 overflow: 0.568622 HPWL: 28169555
+[NesterovSolve] Iter: 310 overflow: 0.536079 HPWL: 28518681
+[NesterovSolve] Iter: 320 overflow: 0.49611 HPWL: 29250633
+[INFO GPL-0100] worst slack 1.64e-10
+[INFO GPL-0103] Weighted 1249 nets.
+[NesterovSolve] Iter: 330 overflow: 0.449432 HPWL: 29601112
+[NesterovSolve] Iter: 340 overflow: 0.405728 HPWL: 29679777
+[NesterovSolve] Iter: 350 overflow: 0.35484 HPWL: 29924852
+[NesterovSolve] Iter: 360 overflow: 0.318986 HPWL: 30004730
+[NesterovSolve] Iter: 370 overflow: 0.284689 HPWL: 30030057
+[INFO GPL-0100] worst slack 1.98e-10
+[INFO GPL-0103] Weighted 1248 nets.
+[NesterovSolve] Iter: 380 overflow: 0.250289 HPWL: 29995065
+[NesterovSolve] Iter: 390 overflow: 0.223771 HPWL: 30002799
+[INFO GPL-0075] Routability numCall: 1 inflationIterCnt: 1 bloatIterCnt: 0
+[INFO GPL-0036] TileLxLy: 0 0
+[INFO GPL-0037] TileSize: 540 540
+[INFO GPL-0038] TileCnt: 222 222
+[INFO GPL-0039] numRoutingLayers: 10
+[INFO GPL-0040] NumTiles: 49284
+[INFO GPL-0063] TotalRouteOverflowH2: 0.0
+[INFO GPL-0064] TotalRouteOverflowV2: 0.0
+[INFO GPL-0065] OverflowTileCnt2: 0
+[INFO GPL-0066] 0.5%RC: 1.0
+[INFO GPL-0067] 1.0%RC: 0.9905025688234789
+[INFO GPL-0068] 2.0%RC: 0.954452790359144
+[INFO GPL-0069] 5.0%RC: 0.8676025745094569
+[INFO GPL-0070] 0.5rcK: 1.0
+[INFO GPL-0071] 1.0rcK: 1.0
+[INFO GPL-0072] 2.0rcK: 0.0
+[INFO GPL-0073] 5.0rcK: 0.0
+[INFO GPL-0074] FinalRC: 0.9952513
+[NesterovSolve] Iter: 400 overflow: 0.195443 HPWL: 30031701
+[INFO GPL-0100] worst slack 1.76e-10
+[INFO GPL-0103] Weighted 1249 nets.
+[NesterovSolve] Iter: 410 overflow: 0.167875 HPWL: 29979291
+[NesterovSolve] Iter: 420 overflow: 0.146104 HPWL: 29961211
+[INFO GPL-0100] worst slack 1.44e-10
+[INFO GPL-0103] Weighted 1249 nets.
+[NesterovSolve] Iter: 430 overflow: 0.126645 HPWL: 29962383
+[NesterovSolve] Iter: 440 overflow: 0.106207 HPWL: 29960755
+[NesterovSolve] Finished with Overflow: 0.099117
+
+==========================================================================
+global place check_setup
+--------------------------------------------------------------------------
+
+==========================================================================
+global place report_tns
+--------------------------------------------------------------------------
+tns -2444856.25
+
+==========================================================================
+global place report_wns
+--------------------------------------------------------------------------
+wns -2298.95
+
+==========================================================================
+global place report_worst_slack
+--------------------------------------------------------------------------
+worst slack -2298.95
+
+==========================================================================
+global place report_checks -path_delay min
+--------------------------------------------------------------------------
+Startpoint: valid (input port clocked by clk)
+Endpoint: ready (output port clocked by clk)
+Path Group: in2out
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                        162.50  162.50 v input external delay
+                  0.00    0.00  162.50 v valid (in)
+     1    1.38                           valid (net)
+                  0.31    0.10  162.60 v _2_/A (BUFx2_ASAP7_75t_SL)
+                  5.42    8.66  171.26 v _2_/Y (BUFx2_ASAP7_75t_SL)
+     1    1.17                           ready (net)
+                  5.43    0.13  171.39 v ready (out)
+                                171.39   data arrival time
+
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                       -162.50 -162.50   output external delay
+                               -162.50   data required time
+-----------------------------------------------------------------------------
+                               -162.50   data required time
+                               -171.39   data arrival time
+-----------------------------------------------------------------------------
+                                333.89   slack (MET)
+
+
+Startpoint: reset (input port clocked by clk)
+Endpoint: riscv/dp/pcreg/_95_ (removal check against rising-edge clock clk)
+Path Group: in2reg
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                        162.50  162.50 v input external delay
+                  0.00    0.00  162.50 v reset (in)
+     1    4.04                           reset (net)
+                  2.42    0.76  163.26 v riscv/dp/pcreg/_34_/A (INVx3_ASAP7_75t_SL)
+                 81.20   30.17  193.43 ^ riscv/dp/pcreg/_34_/Y (INVx3_ASAP7_75t_SL)
+    32   44.62                           riscv/dp/pcreg/_32_ (net)
+                 81.60    3.34  196.78 ^ riscv/dp/pcreg/_95_/SETN (DFFASRHQNx1_ASAP7_75t_SL)
+                                196.78   data arrival time
+
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                                  0.00 ^ riscv/dp/pcreg/_95_/CLK (DFFASRHQNx1_ASAP7_75t_SL)
+                         15.45   15.45   library removal time
+                                 15.45   data required time
+-----------------------------------------------------------------------------
+                                 15.45   data required time
+                               -196.78   data arrival time
+-----------------------------------------------------------------------------
+                                181.33   slack (MET)
+
+
+Startpoint: riscv/dp/pcreg/_96_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: pc[29] (output port clocked by clk)
+Path Group: reg2out
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ riscv/dp/pcreg/_96_/CLK (DFFASRHQNx1_ASAP7_75t_SL)
+                 18.46   28.61   28.61 v riscv/dp/pcreg/_96_/QN (DFFASRHQNx1_ASAP7_75t_SL)
+     1    2.15                           riscv/dp/pcreg/_02_ (net)
+                 18.46    0.01   28.61 v riscv/dp/pcreg/_37_/A (INVx3_ASAP7_75t_SL)
+                 12.83    7.93   36.54 ^ riscv/dp/pcreg/_37_/Y (INVx3_ASAP7_75t_SL)
+     4    4.66                           pc[29] (net)
+                 12.88    0.42   36.96 ^ pc[29] (out)
+                                 36.96   data arrival time
+
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                       -162.50 -162.50   output external delay
+                               -162.50   data required time
+-----------------------------------------------------------------------------
+                               -162.50   data required time
+                                -36.96   data arrival time
+-----------------------------------------------------------------------------
+                                199.46   slack (MET)
+
+
+Startpoint: riscv/dp/rf/_13373_
+            (falling edge-triggered flip-flop clocked by clk')
+Endpoint: riscv/dp/rf/_13373_ (falling edge-triggered flip-flop clocked by clk')
+Path Group: reg2reg
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk' (fall edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 v riscv/dp/rf/_13373_/CLK (DFFLQNx1_ASAP7_75t_SL)
+                 10.92   23.48   23.48 v riscv/dp/rf/_13373_/QN (DFFLQNx1_ASAP7_75t_SL)
+     1    0.76                           riscv/dp/rf/_00670_ (net)
+                 10.92    0.00   23.49 v riscv/dp/rf/_07199_/A (INVx1_ASAP7_75t_SL)
+                 12.80    7.95   31.43 ^ riscv/dp/rf/_07199_/Y (INVx1_ASAP7_75t_SL)
+     3    2.02                           riscv/dp/rf/_01378_ (net)
+                 12.80    0.01   31.45 ^ riscv/dp/rf/_13373_/D (DFFLQNx1_ASAP7_75t_SL)
+                                 31.45   data arrival time
+
+                  0.00    0.00    0.00   clock clk' (fall edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                                  0.00 v riscv/dp/rf/_13373_/CLK (DFFLQNx1_ASAP7_75t_SL)
+                          7.04    7.04   library hold time
+                                  7.04   data required time
+-----------------------------------------------------------------------------
+                                  7.04   data required time
+                                -31.45   data arrival time
+-----------------------------------------------------------------------------
+                                 24.40   slack (MET)
+
+
+
+==========================================================================
+global place report_checks -path_delay max
+--------------------------------------------------------------------------
+Startpoint: instr[0] (input port clocked by clk)
+Endpoint: dataadr[31] (output port clocked by clk)
+Path Group: in2out
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                        162.50  162.50 v input external delay
+                  0.00    0.00  162.50 v instr[0] (in)
+     1    1.44                           instr[0] (net)
+                  0.33    0.10  162.60 v pcmux/_041_/A1 (AO21x1_ASAP7_75t_SL)
+                 18.06   14.86  177.46 v pcmux/_041_/Y (AO21x1_ASAP7_75t_SL)
+     4    3.32                           instr_out[0] (net)
+                 18.06    0.10  177.56 v riscv/c/md/_37_/B (NAND2x1_ASAP7_75t_SL)
+                 15.94   10.21  187.77 ^ riscv/c/md/_37_/Y (NAND2x1_ASAP7_75t_SL)
+     2    1.92                           riscv/c/md/_10_ (net)
+                 15.94    0.01  187.78 ^ riscv/c/md/_38_/B (NOR2x1_ASAP7_75t_SL)
+                 25.00   13.42  201.21 v riscv/c/md/_38_/Y (NOR2x1_ASAP7_75t_SL)
+     6    4.31                           riscv/c/md/_11_ (net)
+                 25.00    0.08  201.29 v riscv/c/md/_39_/D (AND4x2_ASAP7_75t_SL)
+                 69.76   40.54  241.83 v riscv/c/md/_39_/Y (AND4x2_ASAP7_75t_SL)
+    44   30.07                           riscv/imm[2] (net)
+                 69.96    2.19  244.02 v riscv/dp/rs1mux/_06_/A (INVx2_ASAP7_75t_SL)
+                 25.50   14.63  258.65 ^ riscv/dp/rs1mux/_06_/Y (INVx2_ASAP7_75t_SL)
+     5    3.66                           riscv/dp/rs1mux/_00_ (net)
+                 25.50    0.05  258.70 ^ riscv/dp/rs1mux/_08_/A2 (AO21x2_ASAP7_75t_SL)
+               1783.10  302.63  561.33 ^ riscv/dp/rs1mux/_08_/Y (AO21x2_ASAP7_75t_SL)
+   678  640.89                           riscv/dp/rs1[0] (net)
+               2256.18  498.73 1060.06 ^ riscv/dp/rf/_07012_/A (INVx1_ASAP7_75t_SL)
+               2245.37 1311.31 2371.37 v riscv/dp/rf/_07012_/Y (INVx1_ASAP7_75t_SL)
+   201  179.62                           riscv/dp/rf/_02071_ (net)
+               2249.80   58.39 2429.76 v riscv/dp/rf/_08144_/C (OA211x2_ASAP7_75t_SL)
+                111.75  499.65 2929.41 v riscv/dp/rf/_08144_/Y (OA211x2_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/rf/_03172_ (net)
+                111.75    0.01 2929.42 v riscv/dp/rf/_08148_/B (OR3x1_ASAP7_75t_SL)
+                 11.23   31.56 2960.98 v riscv/dp/rf/_08148_/Y (OR3x1_ASAP7_75t_SL)
+     1    0.76                           riscv/dp/rf/_03176_ (net)
+                 11.23    0.03 2961.01 v riscv/dp/rf/_08164_/A2 (AO32x1_ASAP7_75t_SL)
+                 20.08   15.80 2976.81 v riscv/dp/rf/_08164_/Y (AO32x1_ASAP7_75t_SL)
+     1    0.93                           riscv/dp/rf/_03192_ (net)
+                 20.08    0.03 2976.85 v riscv/dp/rf/_08192_/A2 (OA21x2_ASAP7_75t_SL)
+                 41.39   23.94 3000.78 v riscv/dp/rf/_08192_/Y (OA21x2_ASAP7_75t_SL)
+     8   13.62                           riscv/dp/srca2[17] (net)
+                 47.02    7.96 3008.74 v riscv/dp/alu/_758_/A (INVx1_ASAP7_75t_SL)
+                 17.61   10.53 3019.27 ^ riscv/dp/alu/_758_/Y (INVx1_ASAP7_75t_SL)
+     1    1.22                           riscv/dp/alu/_410_ (net)
+                 17.61    0.00 3019.27 ^ riscv/dp/alu/_835_/A (HAxp5_ASAP7_75t_SL)
+                 58.69   43.76 3063.03 ^ riscv/dp/alu/_835_/SN (HAxp5_ASAP7_75t_SL)
+     6    5.48                           riscv/dp/alu/_098_ (net)
+                 58.69    0.08 3063.11 ^ riscv/dp/alu/_562_/A2 (OA21x2_ASAP7_75t_SL)
+                  8.00   15.55 3078.67 ^ riscv/dp/alu/_562_/Y (OA21x2_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/alu/_166_ (net)
+                  8.00    0.00 3078.67 ^ riscv/dp/alu/_564_/A2 (OA21x2_ASAP7_75t_SL)
+                 11.93   14.22 3092.89 ^ riscv/dp/alu/_564_/Y (OA21x2_ASAP7_75t_SL)
+     3    3.28                           riscv/dp/alu/_168_ (net)
+                 11.96    0.31 3093.20 ^ riscv/dp/alu/_568_/A2 (OA211x2_ASAP7_75t_SL)
+                 11.12   15.83 3109.03 ^ riscv/dp/alu/_568_/Y (OA211x2_ASAP7_75t_SL)
+     2    1.84                           riscv/dp/alu/_172_ (net)
+                 11.13    0.12 3109.15 ^ riscv/dp/alu/_572_/A2 (OA21x2_ASAP7_75t_SL)
+                  8.98   13.33 3122.48 ^ riscv/dp/alu/_572_/Y (OA21x2_ASAP7_75t_SL)
+     2    2.06                           riscv/dp/alu/_176_ (net)
+                  8.98    0.03 3122.51 ^ riscv/dp/alu/_573_/B (OAI21x1_ASAP7_75t_SL)
+                 18.64   10.11 3132.62 v riscv/dp/alu/_573_/Y (OAI21x1_ASAP7_75t_SL)
+     2    3.57                           riscv/dp/alu/_177_ (net)
+                 18.65    0.20 3132.82 v riscv/dp/alu/_726_/A (INVx3_ASAP7_75t_SL)
+                 10.88    6.95 3139.77 ^ riscv/dp/alu/_726_/Y (INVx3_ASAP7_75t_SL)
+     2    3.49                           riscv/dp/alu/_357_ (net)
+                 10.88    0.12 3139.89 ^ riscv/dp/alu/_734_/A1 (OA21x2_ASAP7_75t_SL)
+                 10.20   14.59 3154.47 ^ riscv/dp/alu/_734_/Y (OA21x2_ASAP7_75t_SL)
+     1    2.58                           riscv/dp/alu/_360_ (net)
+                 10.20    0.05 3154.52 ^ riscv/dp/alu/_800_/B (FAx1_ASAP7_75t_SL)
+                 25.44   12.04 3166.56 v riscv/dp/alu/_800_/CON (FAx1_ASAP7_75t_SL)
+     1    1.25                           riscv/dp/alu/_071_ (net)
+                 25.44    0.01 3166.57 v riscv/dp/alu/_739_/B (XOR2x2_ASAP7_75t_SL)
+                  8.80   21.84 3188.41 ^ riscv/dp/alu/_739_/Y (XOR2x2_ASAP7_75t_SL)
+     1    1.40                           riscv/dp/alu/_303_ (net)
+                  8.80    0.01 3188.42 ^ riscv/dp/alu/_740_/B2 (OAI22x1_ASAP7_75t_SL)
+                 71.32    5.21 3193.63 v riscv/dp/alu/_740_/Y (OAI22x1_ASAP7_75t_SL)
+     1    0.65                           riscv/dp/alu/_304_ (net)
+                 71.32    0.01 3193.64 v riscv/dp/alu/_741_/C (AO221x1_ASAP7_75t_SL)
+                 13.15   24.27 3217.91 v riscv/dp/alu/_741_/Y (AO221x1_ASAP7_75t_SL)
+     1    0.78                           riscv/dp/aluout2[31] (net)
+                 13.15    0.01 3217.92 v riscv/dp/srccmux/_109_/A2 (AO21x1_ASAP7_75t_SL)
+                183.42   55.95 3273.88 v riscv/dp/srccmux/_109_/Y (AO21x1_ASAP7_75t_SL)
+     9   38.22                           dataadr[31] (net)
+                183.43    0.75 3274.63 v dataadr[31] (out)
+                               3274.63   data arrival time
+
+                  0.00 1300.00 1300.00   clock clk (rise edge)
+                          0.00 1300.00   clock network delay (ideal)
+                          0.00 1300.00   clock reconvergence pessimism
+                       -162.50 1137.50   output external delay
+                               1137.50   data required time
+-----------------------------------------------------------------------------
+                               1137.50   data required time
+                               -3274.63   data arrival time
+-----------------------------------------------------------------------------
+                               -2137.13   slack (VIOLATED)
+
+
+Startpoint: instr[0] (input port clocked by clk)
+Endpoint: riscv/dp/rf/_13084_ (falling edge-triggered flip-flop clocked by clk')
+Path Group: in2reg
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                        162.50  162.50 v input external delay
+                  0.00    0.00  162.50 v instr[0] (in)
+     1    1.44                           instr[0] (net)
+                  0.33    0.10  162.60 v pcmux/_041_/A1 (AO21x1_ASAP7_75t_SL)
+                 18.06   14.86  177.46 v pcmux/_041_/Y (AO21x1_ASAP7_75t_SL)
+     4    3.32                           instr_out[0] (net)
+                 18.06    0.10  177.56 v riscv/c/md/_37_/B (NAND2x1_ASAP7_75t_SL)
+                 15.94   10.21  187.77 ^ riscv/c/md/_37_/Y (NAND2x1_ASAP7_75t_SL)
+     2    1.92                           riscv/c/md/_10_ (net)
+                 15.94    0.01  187.78 ^ riscv/c/md/_38_/B (NOR2x1_ASAP7_75t_SL)
+                 25.00   13.42  201.21 v riscv/c/md/_38_/Y (NOR2x1_ASAP7_75t_SL)
+     6    4.31                           riscv/c/md/_11_ (net)
+                 25.00    0.08  201.29 v riscv/c/md/_39_/D (AND4x2_ASAP7_75t_SL)
+                 69.76   40.54  241.83 v riscv/c/md/_39_/Y (AND4x2_ASAP7_75t_SL)
+    44   30.07                           riscv/imm[2] (net)
+                 69.96    2.19  244.02 v riscv/dp/rs1mux/_06_/A (INVx2_ASAP7_75t_SL)
+                 25.50   14.63  258.65 ^ riscv/dp/rs1mux/_06_/Y (INVx2_ASAP7_75t_SL)
+     5    3.66                           riscv/dp/rs1mux/_00_ (net)
+                 25.50    0.05  258.70 ^ riscv/dp/rs1mux/_08_/A2 (AO21x2_ASAP7_75t_SL)
+               1783.10  302.63  561.33 ^ riscv/dp/rs1mux/_08_/Y (AO21x2_ASAP7_75t_SL)
+   678  640.89                           riscv/dp/rs1[0] (net)
+               2256.18  498.73 1060.06 ^ riscv/dp/rf/_07012_/A (INVx1_ASAP7_75t_SL)
+               2245.37 1311.31 2371.37 v riscv/dp/rf/_07012_/Y (INVx1_ASAP7_75t_SL)
+   201  179.62                           riscv/dp/rf/_02071_ (net)
+               2249.80   58.39 2429.76 v riscv/dp/rf/_08144_/C (OA211x2_ASAP7_75t_SL)
+                111.75  499.65 2929.41 v riscv/dp/rf/_08144_/Y (OA211x2_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/rf/_03172_ (net)
+                111.75    0.01 2929.42 v riscv/dp/rf/_08148_/B (OR3x1_ASAP7_75t_SL)
+                 11.23   31.56 2960.98 v riscv/dp/rf/_08148_/Y (OR3x1_ASAP7_75t_SL)
+     1    0.76                           riscv/dp/rf/_03176_ (net)
+                 11.23    0.03 2961.01 v riscv/dp/rf/_08164_/A2 (AO32x1_ASAP7_75t_SL)
+                 20.08   15.80 2976.81 v riscv/dp/rf/_08164_/Y (AO32x1_ASAP7_75t_SL)
+     1    0.93                           riscv/dp/rf/_03192_ (net)
+                 20.08    0.03 2976.85 v riscv/dp/rf/_08192_/A2 (OA21x2_ASAP7_75t_SL)
+                 41.39   23.94 3000.78 v riscv/dp/rf/_08192_/Y (OA21x2_ASAP7_75t_SL)
+     8   13.62                           riscv/dp/srca2[17] (net)
+                 47.02    7.96 3008.74 v riscv/dp/alu/_758_/A (INVx1_ASAP7_75t_SL)
+                 17.61   10.53 3019.27 ^ riscv/dp/alu/_758_/Y (INVx1_ASAP7_75t_SL)
+     1    1.22                           riscv/dp/alu/_410_ (net)
+                 17.61    0.00 3019.27 ^ riscv/dp/alu/_835_/A (HAxp5_ASAP7_75t_SL)
+                 58.69   43.76 3063.03 ^ riscv/dp/alu/_835_/SN (HAxp5_ASAP7_75t_SL)
+     6    5.48                           riscv/dp/alu/_098_ (net)
+                 58.69    0.08 3063.11 ^ riscv/dp/alu/_562_/A2 (OA21x2_ASAP7_75t_SL)
+                  8.00   15.55 3078.67 ^ riscv/dp/alu/_562_/Y (OA21x2_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/alu/_166_ (net)
+                  8.00    0.00 3078.67 ^ riscv/dp/alu/_564_/A2 (OA21x2_ASAP7_75t_SL)
+                 11.93   14.22 3092.89 ^ riscv/dp/alu/_564_/Y (OA21x2_ASAP7_75t_SL)
+     3    3.28                           riscv/dp/alu/_168_ (net)
+                 11.96    0.31 3093.20 ^ riscv/dp/alu/_568_/A2 (OA211x2_ASAP7_75t_SL)
+                 11.12   15.83 3109.03 ^ riscv/dp/alu/_568_/Y (OA211x2_ASAP7_75t_SL)
+     2    1.84                           riscv/dp/alu/_172_ (net)
+                 11.13    0.12 3109.15 ^ riscv/dp/alu/_572_/A2 (OA21x2_ASAP7_75t_SL)
+                  8.98   13.33 3122.48 ^ riscv/dp/alu/_572_/Y (OA21x2_ASAP7_75t_SL)
+     2    2.06                           riscv/dp/alu/_176_ (net)
+                  8.98    0.03 3122.51 ^ riscv/dp/alu/_573_/B (OAI21x1_ASAP7_75t_SL)
+                 18.64   10.11 3132.62 v riscv/dp/alu/_573_/Y (OAI21x1_ASAP7_75t_SL)
+     2    3.57                           riscv/dp/alu/_177_ (net)
+                 18.65    0.20 3132.82 v riscv/dp/alu/_726_/A (INVx3_ASAP7_75t_SL)
+                 10.88    6.95 3139.77 ^ riscv/dp/alu/_726_/Y (INVx3_ASAP7_75t_SL)
+     2    3.49                           riscv/dp/alu/_357_ (net)
+                 10.88    0.12 3139.89 ^ riscv/dp/alu/_734_/A1 (OA21x2_ASAP7_75t_SL)
+                 10.20   14.59 3154.47 ^ riscv/dp/alu/_734_/Y (OA21x2_ASAP7_75t_SL)
+     1    2.58                           riscv/dp/alu/_360_ (net)
+                 10.20    0.05 3154.52 ^ riscv/dp/alu/_800_/B (FAx1_ASAP7_75t_SL)
+                 25.44   12.04 3166.56 v riscv/dp/alu/_800_/CON (FAx1_ASAP7_75t_SL)
+     1    1.25                           riscv/dp/alu/_071_ (net)
+                 25.44    0.01 3166.57 v riscv/dp/alu/_739_/B (XOR2x2_ASAP7_75t_SL)
+                 10.00   16.09 3182.67 v riscv/dp/alu/_739_/Y (XOR2x2_ASAP7_75t_SL)
+     1    1.40                           riscv/dp/alu/_303_ (net)
+                 10.00    0.01 3182.68 v riscv/dp/alu/_740_/B2 (OAI22x1_ASAP7_75t_SL)
+                 72.99    7.91 3190.59 ^ riscv/dp/alu/_740_/Y (OAI22x1_ASAP7_75t_SL)
+     1    0.65                           riscv/dp/alu/_304_ (net)
+                 72.99    0.01 3190.59 ^ riscv/dp/alu/_741_/C (AO221x1_ASAP7_75t_SL)
+                 13.94   16.06 3206.65 ^ riscv/dp/alu/_741_/Y (AO221x1_ASAP7_75t_SL)
+     1    0.78                           riscv/dp/aluout2[31] (net)
+                 13.94    0.01 3206.66 ^ riscv/dp/srccmux/_109_/A2 (AO21x1_ASAP7_75t_SL)
+                209.09   63.79 3270.45 ^ riscv/dp/srccmux/_109_/Y (AO21x1_ASAP7_75t_SL)
+     9   38.17                           dataadr[31] (net)
+                252.88   49.60 3320.05 ^ dmem/_133_/C (NOR3x2_ASAP7_75t_SL)
+                117.90   62.63 3382.68 v dmem/_133_/Y (NOR3x2_ASAP7_75t_SL)
+     3   20.17                           dmem/ce_mem[0] (net)
+                119.42    6.48 3389.16 v dmem/_145_/B2 (AO22x1_ASAP7_75t_SL)
+                 15.62   28.75 3417.91 v dmem/_145_/Y (AO22x1_ASAP7_75t_SL)
+     1    0.71                           dmem/_006_ (net)
+                 15.62    0.00 3417.91 v dmem/_146_/B (AO21x2_ASAP7_75t_SL)
+                 13.17   15.19 3433.10 v dmem/_146_/Y (AO21x2_ASAP7_75t_SL)
+     3    2.06                           readdata[0] (net)
+                 13.17    0.07 3433.17 v riscv/dp/halfbytemux1/_113_/A (AND2x2_ASAP7_75t_SL)
+                  6.72   12.04 3445.21 v riscv/dp/halfbytemux1/_113_/Y (AND2x2_ASAP7_75t_SL)
+     1    0.74                           riscv/dp/halfbytemux1/_003_ (net)
+                  6.72    0.01 3445.22 v riscv/dp/halfbytemux1/_114_/B (AO21x1_ASAP7_75t_SL)
+                  7.71   10.94 3456.16 v riscv/dp/halfbytemux1/_114_/Y (AO21x1_ASAP7_75t_SL)
+     1    0.76                           riscv/dp/halfbytemux1/_004_ (net)
+                  7.71    0.01 3456.17 v riscv/dp/halfbytemux1/_116_/A2 (AO21x1_ASAP7_75t_SL)
+                 10.77   10.34 3466.51 v riscv/dp/halfbytemux1/_116_/Y (AO21x1_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/readdata4[0] (net)
+                 10.77    0.02 3466.53 v riscv/dp/resmux/_040_/A (AND2x2_ASAP7_75t_SL)
+                 11.03   11.57 3478.10 v riscv/dp/resmux/_040_/Y (AND2x2_ASAP7_75t_SL)
+     1    0.79                           riscv/dp/resmux/_038_ (net)
+                 11.03    0.01 3478.11 v riscv/dp/resmux/_041_/B (AO21x1_ASAP7_75t_SL)
+                 12.24   11.59 3489.70 v riscv/dp/resmux/_041_/Y (AO21x1_ASAP7_75t_SL)
+     1    0.80                           riscv/dp/result[0] (net)
+                 12.24    0.02 3489.72 v riscv/dp/storepcmux/_041_/A1 (AO21x1_ASAP7_75t_SL)
+                132.55   53.89 3543.61 v riscv/dp/storepcmux/_041_/Y (AO21x1_ASAP7_75t_SL)
+    31   27.86                           riscv/dp/result2[0] (net)
+                139.87   16.74 3560.34 v riscv/dp/rf/_10863_/A1 (AO21x1_ASAP7_75t_SL)
+                 16.42   31.82 3592.16 v riscv/dp/rf/_10863_/Y (AO21x1_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/rf/_01089_ (net)
+                 16.42    0.00 3592.16 v riscv/dp/rf/_13084_/D (DFFLQNx1_ASAP7_75t_SL)
+                               3592.16   data arrival time
+
+                  0.00 1300.00 1300.00   clock clk' (fall edge)
+                          0.00 1300.00   clock network delay (ideal)
+                          0.00 1300.00   clock reconvergence pessimism
+                               1300.00 v riscv/dp/rf/_13084_/CLK (DFFLQNx1_ASAP7_75t_SL)
+                         -6.79 1293.21   library setup time
+                               1293.21   data required time
+-----------------------------------------------------------------------------
+                               1293.21   data required time
+                               -3592.16   data arrival time
+-----------------------------------------------------------------------------
+                               -2298.95   slack (VIOLATED)
+
+
+Startpoint: riscv/dp/pcreg/_73_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: dataadr[31] (output port clocked by clk)
+Path Group: reg2out
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ riscv/dp/pcreg/_73_/CLK (DFFASRHQNx1_ASAP7_75t_SL)
+                 18.73   30.49   30.49 ^ riscv/dp/pcreg/_73_/QN (DFFASRHQNx1_ASAP7_75t_SL)
+     1    2.16                           riscv/dp/pcreg/_25_ (net)
+                 18.73    0.01   30.51 ^ riscv/dp/pcreg/_60_/A (INVx3_ASAP7_75t_SL)
+                 16.23    8.70   39.21 v riscv/dp/pcreg/_60_/Y (INVx3_ASAP7_75t_SL)
+     5    7.73                           pc[6] (net)
+                 16.41    0.93   40.13 v boot/_14_/B (OR4x1_ASAP7_75t_SL)
+                  8.75   17.94   58.07 v boot/_14_/Y (OR4x1_ASAP7_75t_SL)
+     1    0.63                           boot/_01_ (net)
+                  8.75    0.00   58.08 v boot/_15_/E (OR5x1_ASAP7_75t_SL)
+                 12.44   23.25   81.32 v boot/_15_/Y (OR5x1_ASAP7_75t_SL)
+     1    1.23                           boot/_02_ (net)
+                 12.44    0.01   81.33 v boot/_18_/A (NOR2x1_ASAP7_75t_SL)
+                 13.85    7.94   89.28 ^ boot/_18_/Y (NOR2x1_ASAP7_75t_SL)
+     3    1.97                           boot/_05_ (net)
+                 13.85    0.03   89.30 ^ boot/_27_/B (AND5x1_ASAP7_75t_SL)
+                 20.75   24.41  113.71 ^ boot/_27_/Y (AND5x1_ASAP7_75t_SL)
+     4    3.01                           instr_int[17] (net)
+                 20.76    0.18  113.89 ^ pcmux/_054_/B (AND2x2_ASAP7_75t_SL)
+                  7.00   12.23  126.13 ^ pcmux/_054_/Y (AND2x2_ASAP7_75t_SL)
+     1    0.81                           pcmux/_007_ (net)
+                  7.00    0.02  126.14 ^ pcmux/_055_/B (AO21x2_ASAP7_75t_SL)
+                 18.17   13.57  139.71 ^ pcmux/_055_/Y (AO21x2_ASAP7_75t_SL)
+     6    5.24                           instr_out[6] (net)
+                 18.22    0.55  140.26 ^ riscv/c/md/_28_/A (INVx1_ASAP7_75t_SL)
+                 14.07    8.29  148.55 v riscv/c/md/_28_/Y (INVx1_ASAP7_75t_SL)
+     3    2.25                           riscv/c/md/_03_ (net)
+                 14.07    0.01  148.56 v riscv/c/md/_39_/B (AND4x2_ASAP7_75t_SL)
+                 69.76   37.87  186.43 v riscv/c/md/_39_/Y (AND4x2_ASAP7_75t_SL)
+    44   30.07                           riscv/imm[2] (net)
+                 69.96    2.19  188.62 v riscv/dp/rs1mux/_06_/A (INVx2_ASAP7_75t_SL)
+                 25.50   14.63  203.25 ^ riscv/dp/rs1mux/_06_/Y (INVx2_ASAP7_75t_SL)
+     5    3.66                           riscv/dp/rs1mux/_00_ (net)
+                 25.50    0.05  203.31 ^ riscv/dp/rs1mux/_08_/A2 (AO21x2_ASAP7_75t_SL)
+               1783.10  302.63  505.94 ^ riscv/dp/rs1mux/_08_/Y (AO21x2_ASAP7_75t_SL)
+   678  640.89                           riscv/dp/rs1[0] (net)
+               2256.18  498.73 1004.67 ^ riscv/dp/rf/_07012_/A (INVx1_ASAP7_75t_SL)
+               2245.37 1311.31 2315.97 v riscv/dp/rf/_07012_/Y (INVx1_ASAP7_75t_SL)
+   201  179.62                           riscv/dp/rf/_02071_ (net)
+               2249.80   58.39 2374.37 v riscv/dp/rf/_08144_/C (OA211x2_ASAP7_75t_SL)
+                111.75  499.65 2874.02 v riscv/dp/rf/_08144_/Y (OA211x2_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/rf/_03172_ (net)
+                111.75    0.01 2874.02 v riscv/dp/rf/_08148_/B (OR3x1_ASAP7_75t_SL)
+                 11.23   31.56 2905.59 v riscv/dp/rf/_08148_/Y (OR3x1_ASAP7_75t_SL)
+     1    0.76                           riscv/dp/rf/_03176_ (net)
+                 11.23    0.03 2905.62 v riscv/dp/rf/_08164_/A2 (AO32x1_ASAP7_75t_SL)
+                 20.08   15.80 2921.41 v riscv/dp/rf/_08164_/Y (AO32x1_ASAP7_75t_SL)
+     1    0.93                           riscv/dp/rf/_03192_ (net)
+                 20.08    0.03 2921.45 v riscv/dp/rf/_08192_/A2 (OA21x2_ASAP7_75t_SL)
+                 41.39   23.94 2945.39 v riscv/dp/rf/_08192_/Y (OA21x2_ASAP7_75t_SL)
+     8   13.62                           riscv/dp/srca2[17] (net)
+                 47.02    7.96 2953.34 v riscv/dp/alu/_758_/A (INVx1_ASAP7_75t_SL)
+                 17.61   10.53 2963.87 ^ riscv/dp/alu/_758_/Y (INVx1_ASAP7_75t_SL)
+     1    1.22                           riscv/dp/alu/_410_ (net)
+                 17.61    0.00 2963.87 ^ riscv/dp/alu/_835_/A (HAxp5_ASAP7_75t_SL)
+                 58.69   43.76 3007.64 ^ riscv/dp/alu/_835_/SN (HAxp5_ASAP7_75t_SL)
+     6    5.48                           riscv/dp/alu/_098_ (net)
+                 58.69    0.08 3007.72 ^ riscv/dp/alu/_562_/A2 (OA21x2_ASAP7_75t_SL)
+                  8.00   15.55 3023.27 ^ riscv/dp/alu/_562_/Y (OA21x2_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/alu/_166_ (net)
+                  8.00    0.00 3023.27 ^ riscv/dp/alu/_564_/A2 (OA21x2_ASAP7_75t_SL)
+                 11.93   14.22 3037.49 ^ riscv/dp/alu/_564_/Y (OA21x2_ASAP7_75t_SL)
+     3    3.28                           riscv/dp/alu/_168_ (net)
+                 11.96    0.31 3037.81 ^ riscv/dp/alu/_568_/A2 (OA211x2_ASAP7_75t_SL)
+                 11.12   15.83 3053.64 ^ riscv/dp/alu/_568_/Y (OA211x2_ASAP7_75t_SL)
+     2    1.84                           riscv/dp/alu/_172_ (net)
+                 11.13    0.12 3053.76 ^ riscv/dp/alu/_572_/A2 (OA21x2_ASAP7_75t_SL)
+                  8.98   13.33 3067.09 ^ riscv/dp/alu/_572_/Y (OA21x2_ASAP7_75t_SL)
+     2    2.06                           riscv/dp/alu/_176_ (net)
+                  8.98    0.03 3067.11 ^ riscv/dp/alu/_573_/B (OAI21x1_ASAP7_75t_SL)
+                 18.64   10.11 3077.22 v riscv/dp/alu/_573_/Y (OAI21x1_ASAP7_75t_SL)
+     2    3.57                           riscv/dp/alu/_177_ (net)
+                 18.65    0.20 3077.43 v riscv/dp/alu/_726_/A (INVx3_ASAP7_75t_SL)
+                 10.88    6.95 3084.37 ^ riscv/dp/alu/_726_/Y (INVx3_ASAP7_75t_SL)
+     2    3.49                           riscv/dp/alu/_357_ (net)
+                 10.88    0.12 3084.49 ^ riscv/dp/alu/_734_/A1 (OA21x2_ASAP7_75t_SL)
+                 10.20   14.59 3099.08 ^ riscv/dp/alu/_734_/Y (OA21x2_ASAP7_75t_SL)
+     1    2.58                           riscv/dp/alu/_360_ (net)
+                 10.20    0.05 3099.12 ^ riscv/dp/alu/_800_/B (FAx1_ASAP7_75t_SL)
+                 25.44   12.04 3111.16 v riscv/dp/alu/_800_/CON (FAx1_ASAP7_75t_SL)
+     1    1.25                           riscv/dp/alu/_071_ (net)
+                 25.44    0.01 3111.18 v riscv/dp/alu/_739_/B (XOR2x2_ASAP7_75t_SL)
+                  8.80   21.84 3133.02 ^ riscv/dp/alu/_739_/Y (XOR2x2_ASAP7_75t_SL)
+     1    1.40                           riscv/dp/alu/_303_ (net)
+                  8.80    0.01 3133.03 ^ riscv/dp/alu/_740_/B2 (OAI22x1_ASAP7_75t_SL)
+                 71.32    5.21 3138.24 v riscv/dp/alu/_740_/Y (OAI22x1_ASAP7_75t_SL)
+     1    0.65                           riscv/dp/alu/_304_ (net)
+                 71.32    0.01 3138.24 v riscv/dp/alu/_741_/C (AO221x1_ASAP7_75t_SL)
+                 13.15   24.27 3162.52 v riscv/dp/alu/_741_/Y (AO221x1_ASAP7_75t_SL)
+     1    0.78                           riscv/dp/aluout2[31] (net)
+                 13.15    0.01 3162.53 v riscv/dp/srccmux/_109_/A2 (AO21x1_ASAP7_75t_SL)
+                183.42   55.95 3218.48 v riscv/dp/srccmux/_109_/Y (AO21x1_ASAP7_75t_SL)
+     9   38.22                           dataadr[31] (net)
+                183.43    0.75 3219.23 v dataadr[31] (out)
+                               3219.23   data arrival time
+
+                  0.00 1300.00 1300.00   clock clk (rise edge)
+                          0.00 1300.00   clock network delay (ideal)
+                          0.00 1300.00   clock reconvergence pessimism
+                       -162.50 1137.50   output external delay
+                               1137.50   data required time
+-----------------------------------------------------------------------------
+                               1137.50   data required time
+                               -3219.23   data arrival time
+-----------------------------------------------------------------------------
+                               -2081.73   slack (VIOLATED)
+
+
+Startpoint: riscv/dp/pcreg/_73_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: riscv/dp/rf/_13084_ (falling edge-triggered flip-flop clocked by clk')
+Path Group: reg2reg
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ riscv/dp/pcreg/_73_/CLK (DFFASRHQNx1_ASAP7_75t_SL)
+                 18.73   30.49   30.49 ^ riscv/dp/pcreg/_73_/QN (DFFASRHQNx1_ASAP7_75t_SL)
+     1    2.16                           riscv/dp/pcreg/_25_ (net)
+                 18.73    0.01   30.51 ^ riscv/dp/pcreg/_60_/A (INVx3_ASAP7_75t_SL)
+                 16.23    8.70   39.21 v riscv/dp/pcreg/_60_/Y (INVx3_ASAP7_75t_SL)
+     5    7.73                           pc[6] (net)
+                 16.41    0.93   40.13 v boot/_14_/B (OR4x1_ASAP7_75t_SL)
+                  8.75   17.94   58.07 v boot/_14_/Y (OR4x1_ASAP7_75t_SL)
+     1    0.63                           boot/_01_ (net)
+                  8.75    0.00   58.08 v boot/_15_/E (OR5x1_ASAP7_75t_SL)
+                 12.44   23.25   81.32 v boot/_15_/Y (OR5x1_ASAP7_75t_SL)
+     1    1.23                           boot/_02_ (net)
+                 12.44    0.01   81.33 v boot/_18_/A (NOR2x1_ASAP7_75t_SL)
+                 13.85    7.94   89.28 ^ boot/_18_/Y (NOR2x1_ASAP7_75t_SL)
+     3    1.97                           boot/_05_ (net)
+                 13.85    0.03   89.30 ^ boot/_27_/B (AND5x1_ASAP7_75t_SL)
+                 20.75   24.41  113.71 ^ boot/_27_/Y (AND5x1_ASAP7_75t_SL)
+     4    3.01                           instr_int[17] (net)
+                 20.76    0.18  113.89 ^ pcmux/_054_/B (AND2x2_ASAP7_75t_SL)
+                  7.00   12.23  126.13 ^ pcmux/_054_/Y (AND2x2_ASAP7_75t_SL)
+     1    0.81                           pcmux/_007_ (net)
+                  7.00    0.02  126.14 ^ pcmux/_055_/B (AO21x2_ASAP7_75t_SL)
+                 18.17   13.57  139.71 ^ pcmux/_055_/Y (AO21x2_ASAP7_75t_SL)
+     6    5.24                           instr_out[6] (net)
+                 18.22    0.55  140.26 ^ riscv/c/md/_28_/A (INVx1_ASAP7_75t_SL)
+                 14.07    8.29  148.55 v riscv/c/md/_28_/Y (INVx1_ASAP7_75t_SL)
+     3    2.25                           riscv/c/md/_03_ (net)
+                 14.07    0.01  148.56 v riscv/c/md/_39_/B (AND4x2_ASAP7_75t_SL)
+                 69.76   37.87  186.43 v riscv/c/md/_39_/Y (AND4x2_ASAP7_75t_SL)
+    44   30.07                           riscv/imm[2] (net)
+                 69.96    2.19  188.62 v riscv/dp/rs1mux/_06_/A (INVx2_ASAP7_75t_SL)
+                 25.50   14.63  203.25 ^ riscv/dp/rs1mux/_06_/Y (INVx2_ASAP7_75t_SL)
+     5    3.66                           riscv/dp/rs1mux/_00_ (net)
+                 25.50    0.05  203.31 ^ riscv/dp/rs1mux/_08_/A2 (AO21x2_ASAP7_75t_SL)
+               1783.10  302.63  505.94 ^ riscv/dp/rs1mux/_08_/Y (AO21x2_ASAP7_75t_SL)
+   678  640.89                           riscv/dp/rs1[0] (net)
+               2256.18  498.73 1004.67 ^ riscv/dp/rf/_07012_/A (INVx1_ASAP7_75t_SL)
+               2245.37 1311.31 2315.97 v riscv/dp/rf/_07012_/Y (INVx1_ASAP7_75t_SL)
+   201  179.62                           riscv/dp/rf/_02071_ (net)
+               2249.80   58.39 2374.37 v riscv/dp/rf/_08144_/C (OA211x2_ASAP7_75t_SL)
+                111.75  499.65 2874.02 v riscv/dp/rf/_08144_/Y (OA211x2_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/rf/_03172_ (net)
+                111.75    0.01 2874.02 v riscv/dp/rf/_08148_/B (OR3x1_ASAP7_75t_SL)
+                 11.23   31.56 2905.59 v riscv/dp/rf/_08148_/Y (OR3x1_ASAP7_75t_SL)
+     1    0.76                           riscv/dp/rf/_03176_ (net)
+                 11.23    0.03 2905.62 v riscv/dp/rf/_08164_/A2 (AO32x1_ASAP7_75t_SL)
+                 20.08   15.80 2921.41 v riscv/dp/rf/_08164_/Y (AO32x1_ASAP7_75t_SL)
+     1    0.93                           riscv/dp/rf/_03192_ (net)
+                 20.08    0.03 2921.45 v riscv/dp/rf/_08192_/A2 (OA21x2_ASAP7_75t_SL)
+                 41.39   23.94 2945.39 v riscv/dp/rf/_08192_/Y (OA21x2_ASAP7_75t_SL)
+     8   13.62                           riscv/dp/srca2[17] (net)
+                 47.02    7.96 2953.34 v riscv/dp/alu/_758_/A (INVx1_ASAP7_75t_SL)
+                 17.61   10.53 2963.87 ^ riscv/dp/alu/_758_/Y (INVx1_ASAP7_75t_SL)
+     1    1.22                           riscv/dp/alu/_410_ (net)
+                 17.61    0.00 2963.87 ^ riscv/dp/alu/_835_/A (HAxp5_ASAP7_75t_SL)
+                 58.69   43.76 3007.64 ^ riscv/dp/alu/_835_/SN (HAxp5_ASAP7_75t_SL)
+     6    5.48                           riscv/dp/alu/_098_ (net)
+                 58.69    0.08 3007.72 ^ riscv/dp/alu/_562_/A2 (OA21x2_ASAP7_75t_SL)
+                  8.00   15.55 3023.27 ^ riscv/dp/alu/_562_/Y (OA21x2_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/alu/_166_ (net)
+                  8.00    0.00 3023.27 ^ riscv/dp/alu/_564_/A2 (OA21x2_ASAP7_75t_SL)
+                 11.93   14.22 3037.49 ^ riscv/dp/alu/_564_/Y (OA21x2_ASAP7_75t_SL)
+     3    3.28                           riscv/dp/alu/_168_ (net)
+                 11.96    0.31 3037.81 ^ riscv/dp/alu/_568_/A2 (OA211x2_ASAP7_75t_SL)
+                 11.12   15.83 3053.64 ^ riscv/dp/alu/_568_/Y (OA211x2_ASAP7_75t_SL)
+     2    1.84                           riscv/dp/alu/_172_ (net)
+                 11.13    0.12 3053.76 ^ riscv/dp/alu/_572_/A2 (OA21x2_ASAP7_75t_SL)
+                  8.98   13.33 3067.09 ^ riscv/dp/alu/_572_/Y (OA21x2_ASAP7_75t_SL)
+     2    2.06                           riscv/dp/alu/_176_ (net)
+                  8.98    0.03 3067.11 ^ riscv/dp/alu/_573_/B (OAI21x1_ASAP7_75t_SL)
+                 18.64   10.11 3077.22 v riscv/dp/alu/_573_/Y (OAI21x1_ASAP7_75t_SL)
+     2    3.57                           riscv/dp/alu/_177_ (net)
+                 18.65    0.20 3077.43 v riscv/dp/alu/_726_/A (INVx3_ASAP7_75t_SL)
+                 10.88    6.95 3084.37 ^ riscv/dp/alu/_726_/Y (INVx3_ASAP7_75t_SL)
+     2    3.49                           riscv/dp/alu/_357_ (net)
+                 10.88    0.12 3084.49 ^ riscv/dp/alu/_734_/A1 (OA21x2_ASAP7_75t_SL)
+                 10.20   14.59 3099.08 ^ riscv/dp/alu/_734_/Y (OA21x2_ASAP7_75t_SL)
+     1    2.58                           riscv/dp/alu/_360_ (net)
+                 10.20    0.05 3099.12 ^ riscv/dp/alu/_800_/B (FAx1_ASAP7_75t_SL)
+                 25.44   12.04 3111.16 v riscv/dp/alu/_800_/CON (FAx1_ASAP7_75t_SL)
+     1    1.25                           riscv/dp/alu/_071_ (net)
+                 25.44    0.01 3111.18 v riscv/dp/alu/_739_/B (XOR2x2_ASAP7_75t_SL)
+                 10.00   16.09 3127.27 v riscv/dp/alu/_739_/Y (XOR2x2_ASAP7_75t_SL)
+     1    1.40                           riscv/dp/alu/_303_ (net)
+                 10.00    0.01 3127.28 v riscv/dp/alu/_740_/B2 (OAI22x1_ASAP7_75t_SL)
+                 72.99    7.91 3135.19 ^ riscv/dp/alu/_740_/Y (OAI22x1_ASAP7_75t_SL)
+     1    0.65                           riscv/dp/alu/_304_ (net)
+                 72.99    0.01 3135.20 ^ riscv/dp/alu/_741_/C (AO221x1_ASAP7_75t_SL)
+                 13.94   16.06 3151.25 ^ riscv/dp/alu/_741_/Y (AO221x1_ASAP7_75t_SL)
+     1    0.78                           riscv/dp/aluout2[31] (net)
+                 13.94    0.01 3151.27 ^ riscv/dp/srccmux/_109_/A2 (AO21x1_ASAP7_75t_SL)
+                209.09   63.79 3215.05 ^ riscv/dp/srccmux/_109_/Y (AO21x1_ASAP7_75t_SL)
+     9   38.17                           dataadr[31] (net)
+                252.88   49.60 3264.66 ^ dmem/_133_/C (NOR3x2_ASAP7_75t_SL)
+                117.90   62.63 3327.29 v dmem/_133_/Y (NOR3x2_ASAP7_75t_SL)
+     3   20.17                           dmem/ce_mem[0] (net)
+                119.42    6.48 3333.77 v dmem/_145_/B2 (AO22x1_ASAP7_75t_SL)
+                 15.62   28.75 3362.51 v dmem/_145_/Y (AO22x1_ASAP7_75t_SL)
+     1    0.71                           dmem/_006_ (net)
+                 15.62    0.00 3362.52 v dmem/_146_/B (AO21x2_ASAP7_75t_SL)
+                 13.17   15.19 3377.71 v dmem/_146_/Y (AO21x2_ASAP7_75t_SL)
+     3    2.06                           readdata[0] (net)
+                 13.17    0.07 3377.77 v riscv/dp/halfbytemux1/_113_/A (AND2x2_ASAP7_75t_SL)
+                  6.72   12.04 3389.81 v riscv/dp/halfbytemux1/_113_/Y (AND2x2_ASAP7_75t_SL)
+     1    0.74                           riscv/dp/halfbytemux1/_003_ (net)
+                  6.72    0.01 3389.82 v riscv/dp/halfbytemux1/_114_/B (AO21x1_ASAP7_75t_SL)
+                  7.71   10.94 3400.76 v riscv/dp/halfbytemux1/_114_/Y (AO21x1_ASAP7_75t_SL)
+     1    0.76                           riscv/dp/halfbytemux1/_004_ (net)
+                  7.71    0.01 3400.77 v riscv/dp/halfbytemux1/_116_/A2 (AO21x1_ASAP7_75t_SL)
+                 10.77   10.34 3411.11 v riscv/dp/halfbytemux1/_116_/Y (AO21x1_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/readdata4[0] (net)
+                 10.77    0.02 3411.13 v riscv/dp/resmux/_040_/A (AND2x2_ASAP7_75t_SL)
+                 11.03   11.57 3422.70 v riscv/dp/resmux/_040_/Y (AND2x2_ASAP7_75t_SL)
+     1    0.79                           riscv/dp/resmux/_038_ (net)
+                 11.03    0.01 3422.71 v riscv/dp/resmux/_041_/B (AO21x1_ASAP7_75t_SL)
+                 12.24   11.59 3434.31 v riscv/dp/resmux/_041_/Y (AO21x1_ASAP7_75t_SL)
+     1    0.80                           riscv/dp/result[0] (net)
+                 12.24    0.02 3434.32 v riscv/dp/storepcmux/_041_/A1 (AO21x1_ASAP7_75t_SL)
+                132.55   53.89 3488.21 v riscv/dp/storepcmux/_041_/Y (AO21x1_ASAP7_75t_SL)
+    31   27.86                           riscv/dp/result2[0] (net)
+                139.87   16.74 3504.95 v riscv/dp/rf/_10863_/A1 (AO21x1_ASAP7_75t_SL)
+                 16.42   31.82 3536.76 v riscv/dp/rf/_10863_/Y (AO21x1_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/rf/_01089_ (net)
+                 16.42    0.00 3536.77 v riscv/dp/rf/_13084_/D (DFFLQNx1_ASAP7_75t_SL)
+                               3536.77   data arrival time
+
+                  0.00 1300.00 1300.00   clock clk' (fall edge)
+                          0.00 1300.00   clock network delay (ideal)
+                          0.00 1300.00   clock reconvergence pessimism
+                               1300.00 v riscv/dp/rf/_13084_/CLK (DFFLQNx1_ASAP7_75t_SL)
+                         -6.79 1293.21   library setup time
+                               1293.21   data required time
+-----------------------------------------------------------------------------
+                               1293.21   data required time
+                               -3536.77   data arrival time
+-----------------------------------------------------------------------------
+                               -2243.56   slack (VIOLATED)
+
+
+
+==========================================================================
+global place report_checks -unconstrained
+--------------------------------------------------------------------------
+Startpoint: instr[0] (input port clocked by clk)
+Endpoint: dataadr[31] (output port clocked by clk)
+Path Group: in2out
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                        162.50  162.50 v input external delay
+                  0.00    0.00  162.50 v instr[0] (in)
+     1    1.44                           instr[0] (net)
+                  0.33    0.10  162.60 v pcmux/_041_/A1 (AO21x1_ASAP7_75t_SL)
+                 18.06   14.86  177.46 v pcmux/_041_/Y (AO21x1_ASAP7_75t_SL)
+     4    3.32                           instr_out[0] (net)
+                 18.06    0.10  177.56 v riscv/c/md/_37_/B (NAND2x1_ASAP7_75t_SL)
+                 15.94   10.21  187.77 ^ riscv/c/md/_37_/Y (NAND2x1_ASAP7_75t_SL)
+     2    1.92                           riscv/c/md/_10_ (net)
+                 15.94    0.01  187.78 ^ riscv/c/md/_38_/B (NOR2x1_ASAP7_75t_SL)
+                 25.00   13.42  201.21 v riscv/c/md/_38_/Y (NOR2x1_ASAP7_75t_SL)
+     6    4.31                           riscv/c/md/_11_ (net)
+                 25.00    0.08  201.29 v riscv/c/md/_39_/D (AND4x2_ASAP7_75t_SL)
+                 69.76   40.54  241.83 v riscv/c/md/_39_/Y (AND4x2_ASAP7_75t_SL)
+    44   30.07                           riscv/imm[2] (net)
+                 69.96    2.19  244.02 v riscv/dp/rs1mux/_06_/A (INVx2_ASAP7_75t_SL)
+                 25.50   14.63  258.65 ^ riscv/dp/rs1mux/_06_/Y (INVx2_ASAP7_75t_SL)
+     5    3.66                           riscv/dp/rs1mux/_00_ (net)
+                 25.50    0.05  258.70 ^ riscv/dp/rs1mux/_08_/A2 (AO21x2_ASAP7_75t_SL)
+               1783.10  302.63  561.33 ^ riscv/dp/rs1mux/_08_/Y (AO21x2_ASAP7_75t_SL)
+   678  640.89                           riscv/dp/rs1[0] (net)
+               2256.18  498.73 1060.06 ^ riscv/dp/rf/_07012_/A (INVx1_ASAP7_75t_SL)
+               2245.37 1311.31 2371.37 v riscv/dp/rf/_07012_/Y (INVx1_ASAP7_75t_SL)
+   201  179.62                           riscv/dp/rf/_02071_ (net)
+               2249.80   58.39 2429.76 v riscv/dp/rf/_08144_/C (OA211x2_ASAP7_75t_SL)
+                111.75  499.65 2929.41 v riscv/dp/rf/_08144_/Y (OA211x2_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/rf/_03172_ (net)
+                111.75    0.01 2929.42 v riscv/dp/rf/_08148_/B (OR3x1_ASAP7_75t_SL)
+                 11.23   31.56 2960.98 v riscv/dp/rf/_08148_/Y (OR3x1_ASAP7_75t_SL)
+     1    0.76                           riscv/dp/rf/_03176_ (net)
+                 11.23    0.03 2961.01 v riscv/dp/rf/_08164_/A2 (AO32x1_ASAP7_75t_SL)
+                 20.08   15.80 2976.81 v riscv/dp/rf/_08164_/Y (AO32x1_ASAP7_75t_SL)
+     1    0.93                           riscv/dp/rf/_03192_ (net)
+                 20.08    0.03 2976.85 v riscv/dp/rf/_08192_/A2 (OA21x2_ASAP7_75t_SL)
+                 41.39   23.94 3000.78 v riscv/dp/rf/_08192_/Y (OA21x2_ASAP7_75t_SL)
+     8   13.62                           riscv/dp/srca2[17] (net)
+                 47.02    7.96 3008.74 v riscv/dp/alu/_758_/A (INVx1_ASAP7_75t_SL)
+                 17.61   10.53 3019.27 ^ riscv/dp/alu/_758_/Y (INVx1_ASAP7_75t_SL)
+     1    1.22                           riscv/dp/alu/_410_ (net)
+                 17.61    0.00 3019.27 ^ riscv/dp/alu/_835_/A (HAxp5_ASAP7_75t_SL)
+                 58.69   43.76 3063.03 ^ riscv/dp/alu/_835_/SN (HAxp5_ASAP7_75t_SL)
+     6    5.48                           riscv/dp/alu/_098_ (net)
+                 58.69    0.08 3063.11 ^ riscv/dp/alu/_562_/A2 (OA21x2_ASAP7_75t_SL)
+                  8.00   15.55 3078.67 ^ riscv/dp/alu/_562_/Y (OA21x2_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/alu/_166_ (net)
+                  8.00    0.00 3078.67 ^ riscv/dp/alu/_564_/A2 (OA21x2_ASAP7_75t_SL)
+                 11.93   14.22 3092.89 ^ riscv/dp/alu/_564_/Y (OA21x2_ASAP7_75t_SL)
+     3    3.28                           riscv/dp/alu/_168_ (net)
+                 11.96    0.31 3093.20 ^ riscv/dp/alu/_568_/A2 (OA211x2_ASAP7_75t_SL)
+                 11.12   15.83 3109.03 ^ riscv/dp/alu/_568_/Y (OA211x2_ASAP7_75t_SL)
+     2    1.84                           riscv/dp/alu/_172_ (net)
+                 11.13    0.12 3109.15 ^ riscv/dp/alu/_572_/A2 (OA21x2_ASAP7_75t_SL)
+                  8.98   13.33 3122.48 ^ riscv/dp/alu/_572_/Y (OA21x2_ASAP7_75t_SL)
+     2    2.06                           riscv/dp/alu/_176_ (net)
+                  8.98    0.03 3122.51 ^ riscv/dp/alu/_573_/B (OAI21x1_ASAP7_75t_SL)
+                 18.64   10.11 3132.62 v riscv/dp/alu/_573_/Y (OAI21x1_ASAP7_75t_SL)
+     2    3.57                           riscv/dp/alu/_177_ (net)
+                 18.65    0.20 3132.82 v riscv/dp/alu/_726_/A (INVx3_ASAP7_75t_SL)
+                 10.88    6.95 3139.77 ^ riscv/dp/alu/_726_/Y (INVx3_ASAP7_75t_SL)
+     2    3.49                           riscv/dp/alu/_357_ (net)
+                 10.88    0.12 3139.89 ^ riscv/dp/alu/_734_/A1 (OA21x2_ASAP7_75t_SL)
+                 10.20   14.59 3154.47 ^ riscv/dp/alu/_734_/Y (OA21x2_ASAP7_75t_SL)
+     1    2.58                           riscv/dp/alu/_360_ (net)
+                 10.20    0.05 3154.52 ^ riscv/dp/alu/_800_/B (FAx1_ASAP7_75t_SL)
+                 25.44   12.04 3166.56 v riscv/dp/alu/_800_/CON (FAx1_ASAP7_75t_SL)
+     1    1.25                           riscv/dp/alu/_071_ (net)
+                 25.44    0.01 3166.57 v riscv/dp/alu/_739_/B (XOR2x2_ASAP7_75t_SL)
+                  8.80   21.84 3188.41 ^ riscv/dp/alu/_739_/Y (XOR2x2_ASAP7_75t_SL)
+     1    1.40                           riscv/dp/alu/_303_ (net)
+                  8.80    0.01 3188.42 ^ riscv/dp/alu/_740_/B2 (OAI22x1_ASAP7_75t_SL)
+                 71.32    5.21 3193.63 v riscv/dp/alu/_740_/Y (OAI22x1_ASAP7_75t_SL)
+     1    0.65                           riscv/dp/alu/_304_ (net)
+                 71.32    0.01 3193.64 v riscv/dp/alu/_741_/C (AO221x1_ASAP7_75t_SL)
+                 13.15   24.27 3217.91 v riscv/dp/alu/_741_/Y (AO221x1_ASAP7_75t_SL)
+     1    0.78                           riscv/dp/aluout2[31] (net)
+                 13.15    0.01 3217.92 v riscv/dp/srccmux/_109_/A2 (AO21x1_ASAP7_75t_SL)
+                183.42   55.95 3273.88 v riscv/dp/srccmux/_109_/Y (AO21x1_ASAP7_75t_SL)
+     9   38.22                           dataadr[31] (net)
+                183.43    0.75 3274.63 v dataadr[31] (out)
+                               3274.63   data arrival time
+
+                  0.00 1300.00 1300.00   clock clk (rise edge)
+                          0.00 1300.00   clock network delay (ideal)
+                          0.00 1300.00   clock reconvergence pessimism
+                       -162.50 1137.50   output external delay
+                               1137.50   data required time
+-----------------------------------------------------------------------------
+                               1137.50   data required time
+                               -3274.63   data arrival time
+-----------------------------------------------------------------------------
+                               -2137.13   slack (VIOLATED)
+
+
+Startpoint: instr[0] (input port clocked by clk)
+Endpoint: riscv/dp/rf/_13084_ (falling edge-triggered flip-flop clocked by clk')
+Path Group: in2reg
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                        162.50  162.50 v input external delay
+                  0.00    0.00  162.50 v instr[0] (in)
+     1    1.44                           instr[0] (net)
+                  0.33    0.10  162.60 v pcmux/_041_/A1 (AO21x1_ASAP7_75t_SL)
+                 18.06   14.86  177.46 v pcmux/_041_/Y (AO21x1_ASAP7_75t_SL)
+     4    3.32                           instr_out[0] (net)
+                 18.06    0.10  177.56 v riscv/c/md/_37_/B (NAND2x1_ASAP7_75t_SL)
+                 15.94   10.21  187.77 ^ riscv/c/md/_37_/Y (NAND2x1_ASAP7_75t_SL)
+     2    1.92                           riscv/c/md/_10_ (net)
+                 15.94    0.01  187.78 ^ riscv/c/md/_38_/B (NOR2x1_ASAP7_75t_SL)
+                 25.00   13.42  201.21 v riscv/c/md/_38_/Y (NOR2x1_ASAP7_75t_SL)
+     6    4.31                           riscv/c/md/_11_ (net)
+                 25.00    0.08  201.29 v riscv/c/md/_39_/D (AND4x2_ASAP7_75t_SL)
+                 69.76   40.54  241.83 v riscv/c/md/_39_/Y (AND4x2_ASAP7_75t_SL)
+    44   30.07                           riscv/imm[2] (net)
+                 69.96    2.19  244.02 v riscv/dp/rs1mux/_06_/A (INVx2_ASAP7_75t_SL)
+                 25.50   14.63  258.65 ^ riscv/dp/rs1mux/_06_/Y (INVx2_ASAP7_75t_SL)
+     5    3.66                           riscv/dp/rs1mux/_00_ (net)
+                 25.50    0.05  258.70 ^ riscv/dp/rs1mux/_08_/A2 (AO21x2_ASAP7_75t_SL)
+               1783.10  302.63  561.33 ^ riscv/dp/rs1mux/_08_/Y (AO21x2_ASAP7_75t_SL)
+   678  640.89                           riscv/dp/rs1[0] (net)
+               2256.18  498.73 1060.06 ^ riscv/dp/rf/_07012_/A (INVx1_ASAP7_75t_SL)
+               2245.37 1311.31 2371.37 v riscv/dp/rf/_07012_/Y (INVx1_ASAP7_75t_SL)
+   201  179.62                           riscv/dp/rf/_02071_ (net)
+               2249.80   58.39 2429.76 v riscv/dp/rf/_08144_/C (OA211x2_ASAP7_75t_SL)
+                111.75  499.65 2929.41 v riscv/dp/rf/_08144_/Y (OA211x2_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/rf/_03172_ (net)
+                111.75    0.01 2929.42 v riscv/dp/rf/_08148_/B (OR3x1_ASAP7_75t_SL)
+                 11.23   31.56 2960.98 v riscv/dp/rf/_08148_/Y (OR3x1_ASAP7_75t_SL)
+     1    0.76                           riscv/dp/rf/_03176_ (net)
+                 11.23    0.03 2961.01 v riscv/dp/rf/_08164_/A2 (AO32x1_ASAP7_75t_SL)
+                 20.08   15.80 2976.81 v riscv/dp/rf/_08164_/Y (AO32x1_ASAP7_75t_SL)
+     1    0.93                           riscv/dp/rf/_03192_ (net)
+                 20.08    0.03 2976.85 v riscv/dp/rf/_08192_/A2 (OA21x2_ASAP7_75t_SL)
+                 41.39   23.94 3000.78 v riscv/dp/rf/_08192_/Y (OA21x2_ASAP7_75t_SL)
+     8   13.62                           riscv/dp/srca2[17] (net)
+                 47.02    7.96 3008.74 v riscv/dp/alu/_758_/A (INVx1_ASAP7_75t_SL)
+                 17.61   10.53 3019.27 ^ riscv/dp/alu/_758_/Y (INVx1_ASAP7_75t_SL)
+     1    1.22                           riscv/dp/alu/_410_ (net)
+                 17.61    0.00 3019.27 ^ riscv/dp/alu/_835_/A (HAxp5_ASAP7_75t_SL)
+                 58.69   43.76 3063.03 ^ riscv/dp/alu/_835_/SN (HAxp5_ASAP7_75t_SL)
+     6    5.48                           riscv/dp/alu/_098_ (net)
+                 58.69    0.08 3063.11 ^ riscv/dp/alu/_562_/A2 (OA21x2_ASAP7_75t_SL)
+                  8.00   15.55 3078.67 ^ riscv/dp/alu/_562_/Y (OA21x2_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/alu/_166_ (net)
+                  8.00    0.00 3078.67 ^ riscv/dp/alu/_564_/A2 (OA21x2_ASAP7_75t_SL)
+                 11.93   14.22 3092.89 ^ riscv/dp/alu/_564_/Y (OA21x2_ASAP7_75t_SL)
+     3    3.28                           riscv/dp/alu/_168_ (net)
+                 11.96    0.31 3093.20 ^ riscv/dp/alu/_568_/A2 (OA211x2_ASAP7_75t_SL)
+                 11.12   15.83 3109.03 ^ riscv/dp/alu/_568_/Y (OA211x2_ASAP7_75t_SL)
+     2    1.84                           riscv/dp/alu/_172_ (net)
+                 11.13    0.12 3109.15 ^ riscv/dp/alu/_572_/A2 (OA21x2_ASAP7_75t_SL)
+                  8.98   13.33 3122.48 ^ riscv/dp/alu/_572_/Y (OA21x2_ASAP7_75t_SL)
+     2    2.06                           riscv/dp/alu/_176_ (net)
+                  8.98    0.03 3122.51 ^ riscv/dp/alu/_573_/B (OAI21x1_ASAP7_75t_SL)
+                 18.64   10.11 3132.62 v riscv/dp/alu/_573_/Y (OAI21x1_ASAP7_75t_SL)
+     2    3.57                           riscv/dp/alu/_177_ (net)
+                 18.65    0.20 3132.82 v riscv/dp/alu/_726_/A (INVx3_ASAP7_75t_SL)
+                 10.88    6.95 3139.77 ^ riscv/dp/alu/_726_/Y (INVx3_ASAP7_75t_SL)
+     2    3.49                           riscv/dp/alu/_357_ (net)
+                 10.88    0.12 3139.89 ^ riscv/dp/alu/_734_/A1 (OA21x2_ASAP7_75t_SL)
+                 10.20   14.59 3154.47 ^ riscv/dp/alu/_734_/Y (OA21x2_ASAP7_75t_SL)
+     1    2.58                           riscv/dp/alu/_360_ (net)
+                 10.20    0.05 3154.52 ^ riscv/dp/alu/_800_/B (FAx1_ASAP7_75t_SL)
+                 25.44   12.04 3166.56 v riscv/dp/alu/_800_/CON (FAx1_ASAP7_75t_SL)
+     1    1.25                           riscv/dp/alu/_071_ (net)
+                 25.44    0.01 3166.57 v riscv/dp/alu/_739_/B (XOR2x2_ASAP7_75t_SL)
+                 10.00   16.09 3182.67 v riscv/dp/alu/_739_/Y (XOR2x2_ASAP7_75t_SL)
+     1    1.40                           riscv/dp/alu/_303_ (net)
+                 10.00    0.01 3182.68 v riscv/dp/alu/_740_/B2 (OAI22x1_ASAP7_75t_SL)
+                 72.99    7.91 3190.59 ^ riscv/dp/alu/_740_/Y (OAI22x1_ASAP7_75t_SL)
+     1    0.65                           riscv/dp/alu/_304_ (net)
+                 72.99    0.01 3190.59 ^ riscv/dp/alu/_741_/C (AO221x1_ASAP7_75t_SL)
+                 13.94   16.06 3206.65 ^ riscv/dp/alu/_741_/Y (AO221x1_ASAP7_75t_SL)
+     1    0.78                           riscv/dp/aluout2[31] (net)
+                 13.94    0.01 3206.66 ^ riscv/dp/srccmux/_109_/A2 (AO21x1_ASAP7_75t_SL)
+                209.09   63.79 3270.45 ^ riscv/dp/srccmux/_109_/Y (AO21x1_ASAP7_75t_SL)
+     9   38.17                           dataadr[31] (net)
+                252.88   49.60 3320.05 ^ dmem/_133_/C (NOR3x2_ASAP7_75t_SL)
+                117.90   62.63 3382.68 v dmem/_133_/Y (NOR3x2_ASAP7_75t_SL)
+     3   20.17                           dmem/ce_mem[0] (net)
+                119.42    6.48 3389.16 v dmem/_145_/B2 (AO22x1_ASAP7_75t_SL)
+                 15.62   28.75 3417.91 v dmem/_145_/Y (AO22x1_ASAP7_75t_SL)
+     1    0.71                           dmem/_006_ (net)
+                 15.62    0.00 3417.91 v dmem/_146_/B (AO21x2_ASAP7_75t_SL)
+                 13.17   15.19 3433.10 v dmem/_146_/Y (AO21x2_ASAP7_75t_SL)
+     3    2.06                           readdata[0] (net)
+                 13.17    0.07 3433.17 v riscv/dp/halfbytemux1/_113_/A (AND2x2_ASAP7_75t_SL)
+                  6.72   12.04 3445.21 v riscv/dp/halfbytemux1/_113_/Y (AND2x2_ASAP7_75t_SL)
+     1    0.74                           riscv/dp/halfbytemux1/_003_ (net)
+                  6.72    0.01 3445.22 v riscv/dp/halfbytemux1/_114_/B (AO21x1_ASAP7_75t_SL)
+                  7.71   10.94 3456.16 v riscv/dp/halfbytemux1/_114_/Y (AO21x1_ASAP7_75t_SL)
+     1    0.76                           riscv/dp/halfbytemux1/_004_ (net)
+                  7.71    0.01 3456.17 v riscv/dp/halfbytemux1/_116_/A2 (AO21x1_ASAP7_75t_SL)
+                 10.77   10.34 3466.51 v riscv/dp/halfbytemux1/_116_/Y (AO21x1_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/readdata4[0] (net)
+                 10.77    0.02 3466.53 v riscv/dp/resmux/_040_/A (AND2x2_ASAP7_75t_SL)
+                 11.03   11.57 3478.10 v riscv/dp/resmux/_040_/Y (AND2x2_ASAP7_75t_SL)
+     1    0.79                           riscv/dp/resmux/_038_ (net)
+                 11.03    0.01 3478.11 v riscv/dp/resmux/_041_/B (AO21x1_ASAP7_75t_SL)
+                 12.24   11.59 3489.70 v riscv/dp/resmux/_041_/Y (AO21x1_ASAP7_75t_SL)
+     1    0.80                           riscv/dp/result[0] (net)
+                 12.24    0.02 3489.72 v riscv/dp/storepcmux/_041_/A1 (AO21x1_ASAP7_75t_SL)
+                132.55   53.89 3543.61 v riscv/dp/storepcmux/_041_/Y (AO21x1_ASAP7_75t_SL)
+    31   27.86                           riscv/dp/result2[0] (net)
+                139.87   16.74 3560.34 v riscv/dp/rf/_10863_/A1 (AO21x1_ASAP7_75t_SL)
+                 16.42   31.82 3592.16 v riscv/dp/rf/_10863_/Y (AO21x1_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/rf/_01089_ (net)
+                 16.42    0.00 3592.16 v riscv/dp/rf/_13084_/D (DFFLQNx1_ASAP7_75t_SL)
+                               3592.16   data arrival time
+
+                  0.00 1300.00 1300.00   clock clk' (fall edge)
+                          0.00 1300.00   clock network delay (ideal)
+                          0.00 1300.00   clock reconvergence pessimism
+                               1300.00 v riscv/dp/rf/_13084_/CLK (DFFLQNx1_ASAP7_75t_SL)
+                         -6.79 1293.21   library setup time
+                               1293.21   data required time
+-----------------------------------------------------------------------------
+                               1293.21   data required time
+                               -3592.16   data arrival time
+-----------------------------------------------------------------------------
+                               -2298.95   slack (VIOLATED)
+
+
+Startpoint: riscv/dp/pcreg/_73_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: dataadr[31] (output port clocked by clk)
+Path Group: reg2out
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ riscv/dp/pcreg/_73_/CLK (DFFASRHQNx1_ASAP7_75t_SL)
+                 18.73   30.49   30.49 ^ riscv/dp/pcreg/_73_/QN (DFFASRHQNx1_ASAP7_75t_SL)
+     1    2.16                           riscv/dp/pcreg/_25_ (net)
+                 18.73    0.01   30.51 ^ riscv/dp/pcreg/_60_/A (INVx3_ASAP7_75t_SL)
+                 16.23    8.70   39.21 v riscv/dp/pcreg/_60_/Y (INVx3_ASAP7_75t_SL)
+     5    7.73                           pc[6] (net)
+                 16.41    0.93   40.13 v boot/_14_/B (OR4x1_ASAP7_75t_SL)
+                  8.75   17.94   58.07 v boot/_14_/Y (OR4x1_ASAP7_75t_SL)
+     1    0.63                           boot/_01_ (net)
+                  8.75    0.00   58.08 v boot/_15_/E (OR5x1_ASAP7_75t_SL)
+                 12.44   23.25   81.32 v boot/_15_/Y (OR5x1_ASAP7_75t_SL)
+     1    1.23                           boot/_02_ (net)
+                 12.44    0.01   81.33 v boot/_18_/A (NOR2x1_ASAP7_75t_SL)
+                 13.85    7.94   89.28 ^ boot/_18_/Y (NOR2x1_ASAP7_75t_SL)
+     3    1.97                           boot/_05_ (net)
+                 13.85    0.03   89.30 ^ boot/_27_/B (AND5x1_ASAP7_75t_SL)
+                 20.75   24.41  113.71 ^ boot/_27_/Y (AND5x1_ASAP7_75t_SL)
+     4    3.01                           instr_int[17] (net)
+                 20.76    0.18  113.89 ^ pcmux/_054_/B (AND2x2_ASAP7_75t_SL)
+                  7.00   12.23  126.13 ^ pcmux/_054_/Y (AND2x2_ASAP7_75t_SL)
+     1    0.81                           pcmux/_007_ (net)
+                  7.00    0.02  126.14 ^ pcmux/_055_/B (AO21x2_ASAP7_75t_SL)
+                 18.17   13.57  139.71 ^ pcmux/_055_/Y (AO21x2_ASAP7_75t_SL)
+     6    5.24                           instr_out[6] (net)
+                 18.22    0.55  140.26 ^ riscv/c/md/_28_/A (INVx1_ASAP7_75t_SL)
+                 14.07    8.29  148.55 v riscv/c/md/_28_/Y (INVx1_ASAP7_75t_SL)
+     3    2.25                           riscv/c/md/_03_ (net)
+                 14.07    0.01  148.56 v riscv/c/md/_39_/B (AND4x2_ASAP7_75t_SL)
+                 69.76   37.87  186.43 v riscv/c/md/_39_/Y (AND4x2_ASAP7_75t_SL)
+    44   30.07                           riscv/imm[2] (net)
+                 69.96    2.19  188.62 v riscv/dp/rs1mux/_06_/A (INVx2_ASAP7_75t_SL)
+                 25.50   14.63  203.25 ^ riscv/dp/rs1mux/_06_/Y (INVx2_ASAP7_75t_SL)
+     5    3.66                           riscv/dp/rs1mux/_00_ (net)
+                 25.50    0.05  203.31 ^ riscv/dp/rs1mux/_08_/A2 (AO21x2_ASAP7_75t_SL)
+               1783.10  302.63  505.94 ^ riscv/dp/rs1mux/_08_/Y (AO21x2_ASAP7_75t_SL)
+   678  640.89                           riscv/dp/rs1[0] (net)
+               2256.18  498.73 1004.67 ^ riscv/dp/rf/_07012_/A (INVx1_ASAP7_75t_SL)
+               2245.37 1311.31 2315.97 v riscv/dp/rf/_07012_/Y (INVx1_ASAP7_75t_SL)
+   201  179.62                           riscv/dp/rf/_02071_ (net)
+               2249.80   58.39 2374.37 v riscv/dp/rf/_08144_/C (OA211x2_ASAP7_75t_SL)
+                111.75  499.65 2874.02 v riscv/dp/rf/_08144_/Y (OA211x2_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/rf/_03172_ (net)
+                111.75    0.01 2874.02 v riscv/dp/rf/_08148_/B (OR3x1_ASAP7_75t_SL)
+                 11.23   31.56 2905.59 v riscv/dp/rf/_08148_/Y (OR3x1_ASAP7_75t_SL)
+     1    0.76                           riscv/dp/rf/_03176_ (net)
+                 11.23    0.03 2905.62 v riscv/dp/rf/_08164_/A2 (AO32x1_ASAP7_75t_SL)
+                 20.08   15.80 2921.41 v riscv/dp/rf/_08164_/Y (AO32x1_ASAP7_75t_SL)
+     1    0.93                           riscv/dp/rf/_03192_ (net)
+                 20.08    0.03 2921.45 v riscv/dp/rf/_08192_/A2 (OA21x2_ASAP7_75t_SL)
+                 41.39   23.94 2945.39 v riscv/dp/rf/_08192_/Y (OA21x2_ASAP7_75t_SL)
+     8   13.62                           riscv/dp/srca2[17] (net)
+                 47.02    7.96 2953.34 v riscv/dp/alu/_758_/A (INVx1_ASAP7_75t_SL)
+                 17.61   10.53 2963.87 ^ riscv/dp/alu/_758_/Y (INVx1_ASAP7_75t_SL)
+     1    1.22                           riscv/dp/alu/_410_ (net)
+                 17.61    0.00 2963.87 ^ riscv/dp/alu/_835_/A (HAxp5_ASAP7_75t_SL)
+                 58.69   43.76 3007.64 ^ riscv/dp/alu/_835_/SN (HAxp5_ASAP7_75t_SL)
+     6    5.48                           riscv/dp/alu/_098_ (net)
+                 58.69    0.08 3007.72 ^ riscv/dp/alu/_562_/A2 (OA21x2_ASAP7_75t_SL)
+                  8.00   15.55 3023.27 ^ riscv/dp/alu/_562_/Y (OA21x2_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/alu/_166_ (net)
+                  8.00    0.00 3023.27 ^ riscv/dp/alu/_564_/A2 (OA21x2_ASAP7_75t_SL)
+                 11.93   14.22 3037.49 ^ riscv/dp/alu/_564_/Y (OA21x2_ASAP7_75t_SL)
+     3    3.28                           riscv/dp/alu/_168_ (net)
+                 11.96    0.31 3037.81 ^ riscv/dp/alu/_568_/A2 (OA211x2_ASAP7_75t_SL)
+                 11.12   15.83 3053.64 ^ riscv/dp/alu/_568_/Y (OA211x2_ASAP7_75t_SL)
+     2    1.84                           riscv/dp/alu/_172_ (net)
+                 11.13    0.12 3053.76 ^ riscv/dp/alu/_572_/A2 (OA21x2_ASAP7_75t_SL)
+                  8.98   13.33 3067.09 ^ riscv/dp/alu/_572_/Y (OA21x2_ASAP7_75t_SL)
+     2    2.06                           riscv/dp/alu/_176_ (net)
+                  8.98    0.03 3067.11 ^ riscv/dp/alu/_573_/B (OAI21x1_ASAP7_75t_SL)
+                 18.64   10.11 3077.22 v riscv/dp/alu/_573_/Y (OAI21x1_ASAP7_75t_SL)
+     2    3.57                           riscv/dp/alu/_177_ (net)
+                 18.65    0.20 3077.43 v riscv/dp/alu/_726_/A (INVx3_ASAP7_75t_SL)
+                 10.88    6.95 3084.37 ^ riscv/dp/alu/_726_/Y (INVx3_ASAP7_75t_SL)
+     2    3.49                           riscv/dp/alu/_357_ (net)
+                 10.88    0.12 3084.49 ^ riscv/dp/alu/_734_/A1 (OA21x2_ASAP7_75t_SL)
+                 10.20   14.59 3099.08 ^ riscv/dp/alu/_734_/Y (OA21x2_ASAP7_75t_SL)
+     1    2.58                           riscv/dp/alu/_360_ (net)
+                 10.20    0.05 3099.12 ^ riscv/dp/alu/_800_/B (FAx1_ASAP7_75t_SL)
+                 25.44   12.04 3111.16 v riscv/dp/alu/_800_/CON (FAx1_ASAP7_75t_SL)
+     1    1.25                           riscv/dp/alu/_071_ (net)
+                 25.44    0.01 3111.18 v riscv/dp/alu/_739_/B (XOR2x2_ASAP7_75t_SL)
+                  8.80   21.84 3133.02 ^ riscv/dp/alu/_739_/Y (XOR2x2_ASAP7_75t_SL)
+     1    1.40                           riscv/dp/alu/_303_ (net)
+                  8.80    0.01 3133.03 ^ riscv/dp/alu/_740_/B2 (OAI22x1_ASAP7_75t_SL)
+                 71.32    5.21 3138.24 v riscv/dp/alu/_740_/Y (OAI22x1_ASAP7_75t_SL)
+     1    0.65                           riscv/dp/alu/_304_ (net)
+                 71.32    0.01 3138.24 v riscv/dp/alu/_741_/C (AO221x1_ASAP7_75t_SL)
+                 13.15   24.27 3162.52 v riscv/dp/alu/_741_/Y (AO221x1_ASAP7_75t_SL)
+     1    0.78                           riscv/dp/aluout2[31] (net)
+                 13.15    0.01 3162.53 v riscv/dp/srccmux/_109_/A2 (AO21x1_ASAP7_75t_SL)
+                183.42   55.95 3218.48 v riscv/dp/srccmux/_109_/Y (AO21x1_ASAP7_75t_SL)
+     9   38.22                           dataadr[31] (net)
+                183.43    0.75 3219.23 v dataadr[31] (out)
+                               3219.23   data arrival time
+
+                  0.00 1300.00 1300.00   clock clk (rise edge)
+                          0.00 1300.00   clock network delay (ideal)
+                          0.00 1300.00   clock reconvergence pessimism
+                       -162.50 1137.50   output external delay
+                               1137.50   data required time
+-----------------------------------------------------------------------------
+                               1137.50   data required time
+                               -3219.23   data arrival time
+-----------------------------------------------------------------------------
+                               -2081.73   slack (VIOLATED)
+
+
+Startpoint: riscv/dp/pcreg/_73_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: riscv/dp/rf/_13084_ (falling edge-triggered flip-flop clocked by clk')
+Path Group: reg2reg
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ riscv/dp/pcreg/_73_/CLK (DFFASRHQNx1_ASAP7_75t_SL)
+                 18.73   30.49   30.49 ^ riscv/dp/pcreg/_73_/QN (DFFASRHQNx1_ASAP7_75t_SL)
+     1    2.16                           riscv/dp/pcreg/_25_ (net)
+                 18.73    0.01   30.51 ^ riscv/dp/pcreg/_60_/A (INVx3_ASAP7_75t_SL)
+                 16.23    8.70   39.21 v riscv/dp/pcreg/_60_/Y (INVx3_ASAP7_75t_SL)
+     5    7.73                           pc[6] (net)
+                 16.41    0.93   40.13 v boot/_14_/B (OR4x1_ASAP7_75t_SL)
+                  8.75   17.94   58.07 v boot/_14_/Y (OR4x1_ASAP7_75t_SL)
+     1    0.63                           boot/_01_ (net)
+                  8.75    0.00   58.08 v boot/_15_/E (OR5x1_ASAP7_75t_SL)
+                 12.44   23.25   81.32 v boot/_15_/Y (OR5x1_ASAP7_75t_SL)
+     1    1.23                           boot/_02_ (net)
+                 12.44    0.01   81.33 v boot/_18_/A (NOR2x1_ASAP7_75t_SL)
+                 13.85    7.94   89.28 ^ boot/_18_/Y (NOR2x1_ASAP7_75t_SL)
+     3    1.97                           boot/_05_ (net)
+                 13.85    0.03   89.30 ^ boot/_27_/B (AND5x1_ASAP7_75t_SL)
+                 20.75   24.41  113.71 ^ boot/_27_/Y (AND5x1_ASAP7_75t_SL)
+     4    3.01                           instr_int[17] (net)
+                 20.76    0.18  113.89 ^ pcmux/_054_/B (AND2x2_ASAP7_75t_SL)
+                  7.00   12.23  126.13 ^ pcmux/_054_/Y (AND2x2_ASAP7_75t_SL)
+     1    0.81                           pcmux/_007_ (net)
+                  7.00    0.02  126.14 ^ pcmux/_055_/B (AO21x2_ASAP7_75t_SL)
+                 18.17   13.57  139.71 ^ pcmux/_055_/Y (AO21x2_ASAP7_75t_SL)
+     6    5.24                           instr_out[6] (net)
+                 18.22    0.55  140.26 ^ riscv/c/md/_28_/A (INVx1_ASAP7_75t_SL)
+                 14.07    8.29  148.55 v riscv/c/md/_28_/Y (INVx1_ASAP7_75t_SL)
+     3    2.25                           riscv/c/md/_03_ (net)
+                 14.07    0.01  148.56 v riscv/c/md/_39_/B (AND4x2_ASAP7_75t_SL)
+                 69.76   37.87  186.43 v riscv/c/md/_39_/Y (AND4x2_ASAP7_75t_SL)
+    44   30.07                           riscv/imm[2] (net)
+                 69.96    2.19  188.62 v riscv/dp/rs1mux/_06_/A (INVx2_ASAP7_75t_SL)
+                 25.50   14.63  203.25 ^ riscv/dp/rs1mux/_06_/Y (INVx2_ASAP7_75t_SL)
+     5    3.66                           riscv/dp/rs1mux/_00_ (net)
+                 25.50    0.05  203.31 ^ riscv/dp/rs1mux/_08_/A2 (AO21x2_ASAP7_75t_SL)
+               1783.10  302.63  505.94 ^ riscv/dp/rs1mux/_08_/Y (AO21x2_ASAP7_75t_SL)
+   678  640.89                           riscv/dp/rs1[0] (net)
+               2256.18  498.73 1004.67 ^ riscv/dp/rf/_07012_/A (INVx1_ASAP7_75t_SL)
+               2245.37 1311.31 2315.97 v riscv/dp/rf/_07012_/Y (INVx1_ASAP7_75t_SL)
+   201  179.62                           riscv/dp/rf/_02071_ (net)
+               2249.80   58.39 2374.37 v riscv/dp/rf/_08144_/C (OA211x2_ASAP7_75t_SL)
+                111.75  499.65 2874.02 v riscv/dp/rf/_08144_/Y (OA211x2_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/rf/_03172_ (net)
+                111.75    0.01 2874.02 v riscv/dp/rf/_08148_/B (OR3x1_ASAP7_75t_SL)
+                 11.23   31.56 2905.59 v riscv/dp/rf/_08148_/Y (OR3x1_ASAP7_75t_SL)
+     1    0.76                           riscv/dp/rf/_03176_ (net)
+                 11.23    0.03 2905.62 v riscv/dp/rf/_08164_/A2 (AO32x1_ASAP7_75t_SL)
+                 20.08   15.80 2921.41 v riscv/dp/rf/_08164_/Y (AO32x1_ASAP7_75t_SL)
+     1    0.93                           riscv/dp/rf/_03192_ (net)
+                 20.08    0.03 2921.45 v riscv/dp/rf/_08192_/A2 (OA21x2_ASAP7_75t_SL)
+                 41.39   23.94 2945.39 v riscv/dp/rf/_08192_/Y (OA21x2_ASAP7_75t_SL)
+     8   13.62                           riscv/dp/srca2[17] (net)
+                 47.02    7.96 2953.34 v riscv/dp/alu/_758_/A (INVx1_ASAP7_75t_SL)
+                 17.61   10.53 2963.87 ^ riscv/dp/alu/_758_/Y (INVx1_ASAP7_75t_SL)
+     1    1.22                           riscv/dp/alu/_410_ (net)
+                 17.61    0.00 2963.87 ^ riscv/dp/alu/_835_/A (HAxp5_ASAP7_75t_SL)
+                 58.69   43.76 3007.64 ^ riscv/dp/alu/_835_/SN (HAxp5_ASAP7_75t_SL)
+     6    5.48                           riscv/dp/alu/_098_ (net)
+                 58.69    0.08 3007.72 ^ riscv/dp/alu/_562_/A2 (OA21x2_ASAP7_75t_SL)
+                  8.00   15.55 3023.27 ^ riscv/dp/alu/_562_/Y (OA21x2_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/alu/_166_ (net)
+                  8.00    0.00 3023.27 ^ riscv/dp/alu/_564_/A2 (OA21x2_ASAP7_75t_SL)
+                 11.93   14.22 3037.49 ^ riscv/dp/alu/_564_/Y (OA21x2_ASAP7_75t_SL)
+     3    3.28                           riscv/dp/alu/_168_ (net)
+                 11.96    0.31 3037.81 ^ riscv/dp/alu/_568_/A2 (OA211x2_ASAP7_75t_SL)
+                 11.12   15.83 3053.64 ^ riscv/dp/alu/_568_/Y (OA211x2_ASAP7_75t_SL)
+     2    1.84                           riscv/dp/alu/_172_ (net)
+                 11.13    0.12 3053.76 ^ riscv/dp/alu/_572_/A2 (OA21x2_ASAP7_75t_SL)
+                  8.98   13.33 3067.09 ^ riscv/dp/alu/_572_/Y (OA21x2_ASAP7_75t_SL)
+     2    2.06                           riscv/dp/alu/_176_ (net)
+                  8.98    0.03 3067.11 ^ riscv/dp/alu/_573_/B (OAI21x1_ASAP7_75t_SL)
+                 18.64   10.11 3077.22 v riscv/dp/alu/_573_/Y (OAI21x1_ASAP7_75t_SL)
+     2    3.57                           riscv/dp/alu/_177_ (net)
+                 18.65    0.20 3077.43 v riscv/dp/alu/_726_/A (INVx3_ASAP7_75t_SL)
+                 10.88    6.95 3084.37 ^ riscv/dp/alu/_726_/Y (INVx3_ASAP7_75t_SL)
+     2    3.49                           riscv/dp/alu/_357_ (net)
+                 10.88    0.12 3084.49 ^ riscv/dp/alu/_734_/A1 (OA21x2_ASAP7_75t_SL)
+                 10.20   14.59 3099.08 ^ riscv/dp/alu/_734_/Y (OA21x2_ASAP7_75t_SL)
+     1    2.58                           riscv/dp/alu/_360_ (net)
+                 10.20    0.05 3099.12 ^ riscv/dp/alu/_800_/B (FAx1_ASAP7_75t_SL)
+                 25.44   12.04 3111.16 v riscv/dp/alu/_800_/CON (FAx1_ASAP7_75t_SL)
+     1    1.25                           riscv/dp/alu/_071_ (net)
+                 25.44    0.01 3111.18 v riscv/dp/alu/_739_/B (XOR2x2_ASAP7_75t_SL)
+                 10.00   16.09 3127.27 v riscv/dp/alu/_739_/Y (XOR2x2_ASAP7_75t_SL)
+     1    1.40                           riscv/dp/alu/_303_ (net)
+                 10.00    0.01 3127.28 v riscv/dp/alu/_740_/B2 (OAI22x1_ASAP7_75t_SL)
+                 72.99    7.91 3135.19 ^ riscv/dp/alu/_740_/Y (OAI22x1_ASAP7_75t_SL)
+     1    0.65                           riscv/dp/alu/_304_ (net)
+                 72.99    0.01 3135.20 ^ riscv/dp/alu/_741_/C (AO221x1_ASAP7_75t_SL)
+                 13.94   16.06 3151.25 ^ riscv/dp/alu/_741_/Y (AO221x1_ASAP7_75t_SL)
+     1    0.78                           riscv/dp/aluout2[31] (net)
+                 13.94    0.01 3151.27 ^ riscv/dp/srccmux/_109_/A2 (AO21x1_ASAP7_75t_SL)
+                209.09   63.79 3215.05 ^ riscv/dp/srccmux/_109_/Y (AO21x1_ASAP7_75t_SL)
+     9   38.17                           dataadr[31] (net)
+                252.88   49.60 3264.66 ^ dmem/_133_/C (NOR3x2_ASAP7_75t_SL)
+                117.90   62.63 3327.29 v dmem/_133_/Y (NOR3x2_ASAP7_75t_SL)
+     3   20.17                           dmem/ce_mem[0] (net)
+                119.42    6.48 3333.77 v dmem/_145_/B2 (AO22x1_ASAP7_75t_SL)
+                 15.62   28.75 3362.51 v dmem/_145_/Y (AO22x1_ASAP7_75t_SL)
+     1    0.71                           dmem/_006_ (net)
+                 15.62    0.00 3362.52 v dmem/_146_/B (AO21x2_ASAP7_75t_SL)
+                 13.17   15.19 3377.71 v dmem/_146_/Y (AO21x2_ASAP7_75t_SL)
+     3    2.06                           readdata[0] (net)
+                 13.17    0.07 3377.77 v riscv/dp/halfbytemux1/_113_/A (AND2x2_ASAP7_75t_SL)
+                  6.72   12.04 3389.81 v riscv/dp/halfbytemux1/_113_/Y (AND2x2_ASAP7_75t_SL)
+     1    0.74                           riscv/dp/halfbytemux1/_003_ (net)
+                  6.72    0.01 3389.82 v riscv/dp/halfbytemux1/_114_/B (AO21x1_ASAP7_75t_SL)
+                  7.71   10.94 3400.76 v riscv/dp/halfbytemux1/_114_/Y (AO21x1_ASAP7_75t_SL)
+     1    0.76                           riscv/dp/halfbytemux1/_004_ (net)
+                  7.71    0.01 3400.77 v riscv/dp/halfbytemux1/_116_/A2 (AO21x1_ASAP7_75t_SL)
+                 10.77   10.34 3411.11 v riscv/dp/halfbytemux1/_116_/Y (AO21x1_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/readdata4[0] (net)
+                 10.77    0.02 3411.13 v riscv/dp/resmux/_040_/A (AND2x2_ASAP7_75t_SL)
+                 11.03   11.57 3422.70 v riscv/dp/resmux/_040_/Y (AND2x2_ASAP7_75t_SL)
+     1    0.79                           riscv/dp/resmux/_038_ (net)
+                 11.03    0.01 3422.71 v riscv/dp/resmux/_041_/B (AO21x1_ASAP7_75t_SL)
+                 12.24   11.59 3434.31 v riscv/dp/resmux/_041_/Y (AO21x1_ASAP7_75t_SL)
+     1    0.80                           riscv/dp/result[0] (net)
+                 12.24    0.02 3434.32 v riscv/dp/storepcmux/_041_/A1 (AO21x1_ASAP7_75t_SL)
+                132.55   53.89 3488.21 v riscv/dp/storepcmux/_041_/Y (AO21x1_ASAP7_75t_SL)
+    31   27.86                           riscv/dp/result2[0] (net)
+                139.87   16.74 3504.95 v riscv/dp/rf/_10863_/A1 (AO21x1_ASAP7_75t_SL)
+                 16.42   31.82 3536.76 v riscv/dp/rf/_10863_/Y (AO21x1_ASAP7_75t_SL)
+     1    0.72                           riscv/dp/rf/_01089_ (net)
+                 16.42    0.00 3536.77 v riscv/dp/rf/_13084_/D (DFFLQNx1_ASAP7_75t_SL)
+                               3536.77   data arrival time
+
+                  0.00 1300.00 1300.00   clock clk' (fall edge)
+                          0.00 1300.00   clock network delay (ideal)
+                          0.00 1300.00   clock reconvergence pessimism
+                               1300.00 v riscv/dp/rf/_13084_/CLK (DFFLQNx1_ASAP7_75t_SL)
+                         -6.79 1293.21   library setup time
+                               1293.21   data required time
+-----------------------------------------------------------------------------
+                               1293.21   data required time
+                               -3536.77   data arrival time
+-----------------------------------------------------------------------------
+                               -2243.56   slack (VIOLATED)
+
+
+
+==========================================================================
+global place report_power
+--------------------------------------------------------------------------
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             1.36e-03   6.87e-05   1.52e-05   1.44e-03  13.3%
+Combinational          8.51e-03   3.29e-04   5.75e-04   9.42e-03  86.7%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  9.87e-03   3.98e-04   5.90e-04   1.09e-02 100.0%
+                          90.9%       3.7%       5.4%
+
+==========================================================================
+global place report_design_area
+--------------------------------------------------------------------------
+Design area 2288 u^2 21% utilization.
+
+Elapsed time: 0:38.85[h:]min:sec. CPU time: user 38.11 sys 0.59 (99%). Peak memory: 378760KB.
