@@ -6,6 +6,25 @@ load_design 3_place.odb 3_place.sdc "Starting CTS"
 # so cts does not try to buffer the inverted clocks.
 repair_clock_inverters
 
+if {[info exists ::env(CTS_MIN_ROUTING_LAYER)] && [info exists ::env(CTS_MAX_ROUTING_LAYER)]} {
+set_routing_layers -clock "$::env(CTS_MIN_ROUTING_LAYER)-$::env(CTS_MAX_ROUTING_LAYER)"
+set match [lsort -unique [string trim [regsub -all {\w\d} [regexp -all -inline -- {(\w)*(\d)} "$::env(CTS_MIN_ROUTING_LAYER) $::env(CTS_MAX_ROUTING_LAYER)"] ""]]]
+for { set i [lindex $match 0] } { $i <= [lindex $match 1] } { incr i } {
+set_wire_rc -clock -layer "[lindex $match 2]$i"
+}
+} elseif {[info exists ::env(CTS_MIN_ROUTING_LAYER)]} {
+set_routing_layers -clock "$::env(CTS_MIN_ROUTING_LAYER)"
+set_wire_rc -clock -layer "$::env(CTS_MIN_ROUTING_LAYER)"
+} elseif {[info exists ::env(CTS_MAX_ROUTING_LAYER)]} {
+set_routing_layers -clock "$::env(CTS_MAX_ROUTING_LAYER)"
+set_wire_rc -clock -layer "$::env(CTS_MAX_ROUTING_LAYER)"
+} else {
+puts "Clock routing layer not specified. Using default specification."
+}
+
+remove_buffers
+repair_design
+
 # Run CTS
 if {[info exist ::env(CTS_CLUSTER_SIZE)]} {
   set cluster_size "$::env(CTS_CLUSTER_SIZE)"
@@ -18,15 +37,16 @@ if {[info exist ::env(CTS_CLUSTER_DIAMETER)]} {
   set cluster_diameter 100
 }
 
+
 if {[info exist ::env(CTS_BUF_DISTANCE)]} {
-clock_tree_synthesis -root_buf "$::env(CTS_BUF_CELL)" -buf_list "$::env(CTS_BUF_CELL)" \
+clock_tree_synthesis -root_buf "$::env(CTS_ROOT_BUF_CELL)" -buf_list "$::env(CTS_BUF_CELL)"\
                      -sink_clustering_enable \
                      -sink_clustering_size $cluster_size \
                      -sink_clustering_max_diameter $cluster_diameter \
                      -distance_between_buffers "$::env(CTS_BUF_DISTANCE)" \
                      -balance_levels
 } else {
-clock_tree_synthesis -root_buf "$::env(CTS_BUF_CELL)" -buf_list "$::env(CTS_BUF_CELL)" \
+clock_tree_synthesis -root_buf "$::env(CTS_ROOT_BUF_CELL)" -buf_list "$::env(CTS_BUF_CELL)" \
                      -sink_clustering_enable \
                      -sink_clustering_size $cluster_size \
                      -sink_clustering_max_diameter $cluster_diameter \
@@ -41,11 +61,13 @@ set_dont_use $::env(DONT_USE_CELLS)
 utl::push_metrics_stage "cts__{}__pre_repair"
 source $::env(SCRIPTS_DIR)/report_metrics.tcl
 
+repair_design
 estimate_parasitics -placement
 report_metrics "cts pre-repair"
 utl::pop_metrics_stage
 
 repair_clock_nets
+repair_design
 
 utl::push_metrics_stage "cts__{}__post_repair"
 estimate_parasitics -placement
@@ -58,6 +80,7 @@ set_placement_padding -global \
 detailed_placement
 
 estimate_parasitics -placement
+repair_design
 
 puts "Repair setup and hold violations..."
 
@@ -72,13 +95,13 @@ if { [info exists ::env(HOLD_SLACK_MARGIN)] && $::env(HOLD_SLACK_MARGIN) > 0.0} 
   append additional_args " -hold_margin $::env(HOLD_SLACK_MARGIN)"
 }
 
-
-if { [info exists ::env(REPAIR_TNS)] && $::env(REPAIR_TNS) > 0.0} {
-  puts "Total percentage of violating paths to repair  $::env(REPAIR_TNS)"
-  append additional_args " -repair_tns $::env(REPAIR_TNS)"
+if { [info exists ::env(REPAIR_TNS)] && $::env(REPAIR_TNS) > 0.0 } {
+	puts "Total percentage of violating paths to repair repair $::env(REPAIR_TNS)"
+	append additional_args " -repair_tns $::env(REPAIR_TNS)"
 }
 
 repair_timing {*}$additional_args
+repair_design
 
 detailed_placement
 check_placement -verbose

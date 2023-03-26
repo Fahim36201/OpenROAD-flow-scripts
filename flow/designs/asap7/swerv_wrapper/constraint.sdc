@@ -2,7 +2,7 @@ current_design swerv_wrapper
 
 set clk_name core_clock 
 set clk_port_name clk
-set clk_period 2500 
+set clk_period 2300 
 set clk_io_pct 0.1
 
 set clk_port [get_ports $clk_port_name]

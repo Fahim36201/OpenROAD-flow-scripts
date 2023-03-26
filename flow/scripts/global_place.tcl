@@ -49,6 +49,7 @@ global_placement -density $place_density \
 }
 
 estimate_parasitics -placement
+set_placement_padding -instances {dmem/_145_ dmem/_144_ dmem/_142_ dmem/_146_} -right 5 -left 5
 
 source $::env(SCRIPTS_DIR)/report_metrics.tcl
 report_metrics "global place" false false

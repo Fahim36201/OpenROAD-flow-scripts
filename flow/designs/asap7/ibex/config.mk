@@ -14,3 +14,8 @@ export PLACE_DENSITY_LB_ADDON  = 0.20
 export ENABLE_DPO = 0
 
 export DFF_LIB_FILE           = $($(CORNER)_DFF_LIB_FILE)
+#export REPAIR_TNS  = 100
+#export SETUP_SLACK_MARGIN = 100
+#export HOLD_SLACK_MARGIN = 100
+export REMOVE_BUFFER_TREE = 1
+

@@ -10,6 +10,7 @@ if {[info exists ::env(FLOORPLAN_DEF)]} {
   place_pins -hor_layer $::env(IO_PLACER_H) \
            -ver_layer $::env(IO_PLACER_V) \
            {*}$::env(PLACE_PINS_ARGS)
+#   place_pins -random -hor_layer $::env(IO_PLACER_H) -ver_layer $::env(IO_PLACER_V) -min_distance 0.2
 }
 
 if {![info exists save_checkpoint] || $save_checkpoint} {

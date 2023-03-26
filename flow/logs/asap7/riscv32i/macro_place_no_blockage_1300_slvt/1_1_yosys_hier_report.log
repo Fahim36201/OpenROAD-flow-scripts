@@ -28,7 +28,7 @@
 28. Executing Liberty frontend.
 29. Executing Liberty frontend.
 30. Executing Liberty frontend.
-31. Executing Verilog-2005 frontend: ./platforms/asap7/yoSys/cells_clkgate_SL.v
+31. Executing Verilog-2005 frontend: ./platforms/asap7/yoSys/cells_clkgate_R.v
 32. Executing SYNTH pass.
 32.1. Executing HIERARCHY pass (managing design hierarchy).
 32.2. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_top'.
@@ -256,7 +256,7 @@ Warning: Resizing cell port dmem.dmem0.rd_out from 1 bits to 32 bits.
 32.26. Printing statistics.
 32.27. Executing CHECK pass (checking for obvious problems).
 33. Executing TECHMAP pass (map to technology primitives).
-33.1. Executing Verilog-2005 frontend: ./platforms/asap7/yoSys/cells_adders_SL.v
+33.1. Executing Verilog-2005 frontend: ./platforms/asap7/yoSys/cells_adders_R.v
 33.2. Continuing TECHMAP pass.
 34. Executing TECHMAP pass (map to technology primitives).
 34.1. Executing Verilog-2005 frontend: /home/fahim/NSL/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/techmap.v
@@ -358,7 +358,7 @@ Found module shifter
 Found module signext
 Found module $paramod\mux5\WIDTH=s32'00000000000000000000000000100000
 39. Printing statistics.
-Area of module \riscv_top is 2287.826440
+Area of module \riscv_top is 2287.651480
 Preserving hierarchical module: \riscv_top
 40. Printing statistics.
 Area of module $paramod\mux2\WIDTH=s32'00000000000000000000000000100000 is 6.794280
@@ -370,43 +370,43 @@ Preserving hierarchical module: \ROM
 Area of module \dmem is 1102.064200
 Preserving hierarchical module: \dmem
 43. Printing statistics.
-Area of module \riscv is 1177.480800
+Area of module \riscv is 1177.305840
 Preserving hierarchical module: \riscv
 44. Printing statistics.
-Area of module \controller is 8.048160
+Area of module \controller is 8.485560
 Preserving hierarchical module: \controller
 45. Printing statistics.
-Area of module $paramod\mux2\WIDTH=s32'00000000000000000000000000000001 is 0.233280
+Area of module $paramod\mux2\WIDTH=s32'00000000000000000000000000000001 is 0.291600
 Preserving hierarchical module: $paramod\mux2\WIDTH=s32'00000000000000000000000000000001
 46. Printing statistics.
 Area of module $paramod\mux2\WIDTH=s32'00000000000000000000000000000100 is 0.801900
 Preserving hierarchical module: $paramod\mux2\WIDTH=s32'00000000000000000000000000000100
 47. Printing statistics.
-Area of module \aludec is 3.076380
+Area of module \aludec is 3.236760
 Preserving hierarchical module: \aludec
 48. Printing statistics.
-Area of module \maindec is 2.566080
+Area of module \maindec is 2.799360
 Preserving hierarchical module: \maindec
 49. Printing statistics.
-Area of module \datapath is 1169.432640
+Area of module \datapath is 1168.820280
 Preserving hierarchical module: \datapath
 50. Printing statistics.
 Area of module $paramod\flopr\WIDTH=s32'00000000000000000000000000100000 is 15.367320
 Preserving hierarchical module: $paramod\flopr\WIDTH=s32'00000000000000000000000000100000
 51. Printing statistics.
-Area of module $paramod\mux2\WIDTH=s32'00000000000000000000000000000101 is 1.006020
+Area of module $paramod\mux2\WIDTH=s32'00000000000000000000000000000101 is 0.991440
 Preserving hierarchical module: $paramod\mux2\WIDTH=s32'00000000000000000000000000000101
 52. Printing statistics.
 Area of module $paramod\mux2\WIDTH=s32'00000000000000000000000000100000 is 6.794280
 Preserving hierarchical module: $paramod\mux2\WIDTH=s32'00000000000000000000000000100000
 53. Printing statistics.
-Area of module $paramod\mux3\WIDTH=s32'00000000000000000000000000100000 is 13.005360
+Area of module $paramod\mux3\WIDTH=s32'00000000000000000000000000100000 is 12.874140
 Preserving hierarchical module: $paramod\mux3\WIDTH=s32'00000000000000000000000000100000
 54. Printing statistics.
-Area of module \adder is 17.962560
+Area of module \adder is 17.977140
 Preserving hierarchical module: \adder
 55. Printing statistics.
-Area of module \alu is 40.619880
+Area of module \alu is 40.663620
 Preserving hierarchical module: \alu
 56. Printing statistics.
 Area of module \magcompare32 is 13.836420
@@ -418,19 +418,19 @@ Preserving hierarchical module: \magcompare2b
 Area of module \magcompare2c is 0.306180
 Preserving hierarchical module: \magcompare2c
 59. Printing statistics.
-Area of module \regfile is 892.558440
+Area of module \regfile is 892.514700
 Preserving hierarchical module: \regfile
 60. Printing statistics.
-Area of module \shifter is 66.732660
+Area of module \shifter is 66.441060
 Preserving hierarchical module: \shifter
 61. Printing statistics.
-Area of module \signext is 15.075720
+Area of module \signext is 15.017400
 Preserving hierarchical module: \signext
 62. Printing statistics.
-Area of module $paramod\mux5\WIDTH=s32'00000000000000000000000000100000 is 15.075720
+Area of module $paramod\mux5\WIDTH=s32'00000000000000000000000000100000 is 15.017400
 Preserving hierarchical module: $paramod\mux5\WIDTH=s32'00000000000000000000000000100000
 Warnings: 17 unique messages, 17 total
-End of script. Logfile hash: 7c15b66225, CPU: user 75.56s system 3.41s, MEM: 145.70 MB peak
+End of script. Logfile hash: a9499f8583, CPU: user 92.15s system 2.98s, MEM: 146.14 MB peak
 Yosys 0.13+15 (git sha1 bc027b2ca, gcc 9.4.0-1ubuntu1~20.04.1 -fPIC -Os)
-Time spent: 53% 2x abc (89 sec), 34% 26x stat (58 sec), ...
-Elapsed time: 2:48.77[h:]min:sec. CPU time: user 160.05 sys 7.47 (99%). Peak memory: 149432KB.
+Time spent: 52% 2x abc (104 sec), 37% 26x stat (73 sec), ...
+Elapsed time: 3:22.65[h:]min:sec. CPU time: user 188.65 sys 8.98 (97%). Peak memory: 149748KB.

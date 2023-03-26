@@ -1,0 +1,1000 @@
+  234  make clean_all 
+  235  make finish
+  236  vi scripts/cts.tcl 
+  237  make clean_all 
+  238  make finish
+  239  vi logs/asap7/riscv32i/repairtns/6_report.log 
+  240  vi scripts/cts.tcl 
+  241  vi Makefile
+  242  make finish
+  243  vi logs/asap7/riscv32i/repairtns_ckinv/6_report.log 
+  244  tkdiff
+  245  sudo apt install tkcvs
+  246  tkdiff logs/asap7/riscv32i/repairtns/6_report.log logs/asap7/riscv32i/repairtns_ckinv/6_report.log 
+  247  vi scripts/cts.tcl 
+  248  vi designs/asap7/riscv32i/config.mk 
+  249  vi scripts/cts.tcl 
+  250  vi designs/asap7/riscv32i/config.mk 
+  251  vi scripts/cts.tcl 
+  252  vi designs/asap7/riscv32i/config.mk 
+  253  vi scripts/cts.tcl 
+  254  make clean_all
+  255  make finish
+  256  vi scripts/cts.tcl 
+  257  vi designs/asap7/riscv32i/config.mk 
+  258  grep -R platforms/asap7/lib/
+  259  grep -R CKINV  platforms/asap7/lib/
+  260  grep -R CKINV platforms/asap7/lib/
+  261  vi platforms/asap7/lib/asap7sc7p5t_INVBUF_SLVT_FF_nldm_220122.lib.gz 
+  262  vi designs/asap7/riscv32i/config.mk 
+  263  tkdiff logs/asap7/riscv32i/repairtns/6_report.json logs/asap7/riscv32i/repairtns_ckinv/6_report.json
+  264  tkdiff logs/asap7/riscv32i/repairtns/2_1_floorplan.json logs/asap7/riscv32i/repairtns_ckinv/2_1_floorplan.json
+  265  tkdiff logs/asap7/riscv32i/repairtns/2_2_floorplan_io.json logs/asap7/riscv32i/repairtns_ckinv/2_2_floorplan_io.json
+  266  tkdiff logs/asap7/riscv32i/repairtns/2_3_tdms.json logs/asap7/riscv32i/repairtns_ckinv/2_3_tdms.json
+  267  tkdiff logs/asap7/riscv32i/repairtns/2_4_mplace.json logs/asap7/riscv32i/repairtns_ckinv/2_4_mplace.json
+  268  tkdiff logs/asap7/riscv32i/repairtns/2_5_tapcell.json logs/asap7/riscv32i/repairtns_ckinv/2_5_tapcell.json
+  269  tkdiff logs/asap7/riscv32i/repairtns/2_6_pdn.json logs/asap7/riscv32i/repairtns_ckinv/2_6_pdn.json
+  270  tkdiff logs/asap7/riscv32i/repairtns/3_1_place_gp_skip_io.json logs/asap7/riscv32i/repairtns_ckinv/3_1_place_gp_skip_io.json
+  271  tkdiff logs/asap7/riscv32i/repairtns/3_2_place_iop.json logs/asap7/riscv32i/repairtns_ckinv/3_2_place_iop.json
+  272  tkdiff logs/asap7/riscv32i/repairtns/3_3_place_gp.json\ logs/asap7/riscv32i/repairtns_ckinv/3_3_place_gp.json
+  273  tkdiff logs/asap7/riscv32i/repairtns/3_3_place_gp.json logs/asap7/riscv32i/repairtns_ckinv/3_3_place_gp.json
+  274  vi designs/asap7/riscv32i/config.mk
+  275  vi scripts/cts.tcl 
+  276  grep -R CTS_BUF_CELL
+  277  vi designs/asap7/swerv_wrapper/config.mk
+  278  vi platforms/asap7/config.mk
+  279  vi scripts/cts.tcl
+  280  pwd
+  281  ll platforms/asap7/config.mk 
+  282  vi platforms/asap7/config.mk
+  283  vi designs/asap7/riscv32i/config.mk 
+  284  mv platforms/asap7/config.mk platforms/asap7/old_config.mk
+  285  cp designs/asap7/riscv32i/config.mk platforms/asap7/config.mk
+  286  ll platforms/asap7/
+  287  cd platforms/asap7/lib/
+  288  ll
+  289  vi asap7sc7p5t_INVBUF_SLVT_FF_nldm_220122.lib.gz
+  290  pwd
+  291  vi ../config.mk 
+  292  cd ../../
+  293  cd ..
+  294  vi designs/asap7/riscv32i/config.mk 
+  295  grep -r MACRO_PLACE_HALO
+  296  vi designs/asap7/mock-array-big/Element/config.mk
+  297  vi designs/asap7/riscv32i/metadata-base-ok.json
+  298  grep -R halo_x
+  299  grep -r halo_x ../
+  300  vi platforms/asap7/config.mk 
+  301  vi scripts/cts.tcl 
+  302  vi Makefile
+  303  make finish
+  304  vi platforms/asap7/config.mk 
+  305  make clean_all
+  306  make finish
+  307  vi scripts/cts.tcl 
+  308  make clean_all
+  309  make finish
+  310  vi scripts/cts.tcl 
+  311  make clean_all
+  312  make finish
+  313  vi scripts/cts.tcl 
+  314  make clean_all
+  315  make finish
+  316  vi scripts/cts.tcl 
+  317  make clean_all
+  318  make finish
+  319  vi scripts/cts.tcl 
+  320  make clean_all
+  321  make finish
+  322  vi scripts/cts.tcl 
+  323  make clean_all
+  324  make finish
+  325  vi scripts/cts.tcl 
+  326  make clean_all
+  327  make finish
+  328  vi scripts/cts.tcl 
+  329  make clean_all
+  330  make finish
+  331  ;
+  332  vi scripts/cts.tcl 
+  333  make clean_all
+  334  make finish
+  335  make clean_all
+  336  make finish
+  337  make clean_all
+  338  vi scripts/cts.tcl 
+  339  make clean_all
+  340  make finish
+  341  vi scripts/cts.tcl 
+  342  make clean_all
+  343  make finish
+  344  vi scripts/cts.tcl 
+  345  make clean_all
+  346  make finish
+  347  vi scripts/cts.tcl 
+  348  make clean_all
+  349  make finish
+  350  vi scripts/cts.tcl 
+  351  make clean_all
+  352  make finish
+  353  vi scripts/cts.tcl 
+  354  make clean_all
+  355  make finish
+  356  vi scripts/cts.tcl 
+  357  make clean_all
+  358  make finish
+  359  vi scripts/cts.tcl 
+  360  make clean_all
+  361  make finish
+  362  vi scripts/cts.tcl 
+  363  make clean_all
+  364  make finish
+  365  vi scripts/cts.tcl 
+  366  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_M2_M8/6_report.log
+  367  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_M2_M8/6_report.json 
+  368  vi scripts/cts.tcl 
+  369  make clean_all
+  370  make finish
+  371  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_M2_M8/6_report.log 
+  372  vi scripts/cts.tcl 
+  373  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_M2_M8/6_report.log 
+  374  vi scripts/cts.tcl 
+  375  make clean_all
+  376  make finish
+  377  vi scripts/cts.tcl 
+  378  make clean_all
+  379  make finish
+  380  vi scripts/cts.tcl 
+  381  make clean_all
+  382  make finish
+  383  vi scripts/cts.tcl 
+  384  make clean_all
+  385  make finish
+  386  vi scripts/cts.tcl 
+  387  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_M2_M8/2_1_floorplan.json
+  388  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_M2_M8/4_1_cts.json 
+  389  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_M2_M8/1_1_yosys.log 
+  390  vi scripts/cts.tcl 
+  391  vi Makefile
+  392  make finish
+  393  vi scripts/cts.tcl 
+  394  make clean_all
+  395  make finish
+  396  make gui_6_final.odb
+  397  exit
+  398  vi platforms/asap7/openRoad/pdn/grid_strategy-M2-M5-M7.tcl 
+  399  vi scripts/cts.tcl 
+  400  vi scripts/report_metrics.tcl 
+  401  vi scripts/cts.tcl 
+  402  vi scripts/report_metrics.tcl 
+  403  cp scripts/report_metrics.tcl report_metrics_synthesis.tcl
+  404  vi report_metrics_synthesis.tcl
+  405  vi scripts/report_metrics.tcl 
+  406  grep -R report_tns_metric
+  407  source ../setup_env.sh 
+  408  openroad
+  409  vi platforms/asap7/config.mk 
+  410  grep -R ADDITIONAL_LIBS
+  411  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_1200/6_report.log
+  412  vi designs/asap7/riscv32i/constraint.sdc
+  413  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/6_report.log
+  414  vi reports/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/5_route_drc.rpt
+  415  vi designs/asap7/riscv32i/config.mk 
+  416  vi scripts/load.tcl 
+  417  vi scripts/report_metrics.tcl 
+  418  cp report_metrics_synthesis.tcl scripts/report_metrics.tcl 
+  419  vi scripts/report_metrics.tcl 
+  420  vi report_metrics_synthesis.tcl 
+  421  vi scripts/load.tcl 
+  422  vi report_metrics_synthesis.tcl 
+  423  vi reports/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/5_route_drc.rpt
+  424  vi Makefile
+  425  vi scripts/cts.tcl 
+  426  vi designs/asap7/ibex/config.mk 
+  427  vi designs/asap7/ibex/constraint.sdc 
+  428  vi scripts/cts.tcl 
+  429  vi designs/asap7/ibex/autotuner.json
+  430  vi designs/asap7/ibex/config.mk 
+  431  tkdiff designs/asap7/ibex/config.mk designs/asap7/riscv32i/config.mk
+  432  vi designs/asap7/ibex/config.mk
+  433  grep -R PLACE_DENSITY_LB_ADDON
+  434  vi scripts/global_place.tcl
+  435  ds -u
+  436  du -sh ~
+  437  vi scripts/cts.tcl 
+  438  vi platforms/asap7/openRoad/pdn/grid_strategy-M2-M5-M7.tcl 
+  439  vi scripts/cts_mod.tcl 
+  440  vi Makefilek
+  441  vi Makefile
+  442  vi designs/asap7/ibex/config.mk 
+  443  vi logs/asap7/ibex/repairtns_real_ckinvx8_slvt_1200/5_2_TritonRoute.log
+  444  vi logs/asap7/ibex/repairtns_real_ckinvx8_slvt_1200/5_1_fastroute.log
+  445  vi scripts/cts.tcl 
+  446  vi platforms/asap7/config.mk 
+  447  vi scripts/load.tcl 
+  448  grep -R load.tcl
+  449  vi scripts/load.tcl 
+  450  vi designs/asap7/ibex/config.mk 
+  451  vi scripts/cts.tcl 
+  452  vi logs/asap7/riscv32i/repairtns_real_ckinvx8/6_report.log
+  453  vi logs/asap7/riscv32i/repairtns_real_ckinvx8/4_1_cts.log
+  454  vi scripts/cts.tcl
+  455  vi designs/asap7/riscv32i/constraint.sdc 
+  456  vi scripts/cts.tcl
+  457  ll designs/asap7/swerv_wrapper/lib/
+  458  vi  designs/asap7/swerv_wrapper/lib/fakeram7_2048x39.lib
+  459  vi platforms/asap7/config.mk 
+  460  ll platforms/asap7/lib/*SLVT*FF*
+  461  ll platforms/asap7/lib/*SLVT*SS*
+  462  ll platforms/asap7/lib/*SLVT*TT*
+  463  vi scripts/placement_blockages.tcl
+  464  grep -R check_placement
+  465  vi scripts/cts.tcl 
+  466  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/1_1_yosys.log
+  467  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/2_2_floorplan_io.json
+  468  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/2_1_floorplan.json 
+  469  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/2_1_floorplan.log 
+  470  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/2_3_tdms.json
+  471  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/2_4_mplace.log
+  472  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/2_4_mplace.json
+  473  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/2_5_tapcell.json
+  474  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/2_6_pdn.json
+  475  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/3_1_place_gp_skip_io.json
+  476  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/3_2_place_iop.json
+  477  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/3_3_place_gp.json
+  478  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/3_3_place_gp.log 
+  479  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/4_1_cts.json
+  480  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/4_1_cts.log 
+  481  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/4_1_cts.json
+  482  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/4_1_cts.log 
+  483  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/6_report.json
+  484  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/6_report.log 
+  485  vi reports/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/synth_hier_stat.txt
+  486  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/1_1_yosys_hier_report.log
+  487  vi scripts/cts.tcl 
+  488  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/6_report.log 
+  489  vi scripts/cts.tcl 
+  490  subl scripts/cts.tcl
+  491  sudo snap install sublime-text
+  492  vi scripts/cts.tcl 
+  493  vi Makefile
+  494  make clean_all
+  495  make finish
+  496  vi scripts/cts.tcl 
+  497  make clean_all
+  498  make finish
+  499  vi scripts/cts.tcl 
+  500  make cts finish
+  501  make clean_cts 
+  502  make clean_all 
+  503  make finish
+  504  vi scripts/cts.tcl 
+  505  make clean_all 
+  506  make finish
+  507  vi scripts/cts.tcl 
+  508  make clean_all 
+  509  make finish
+  510  vi scripts/cts.tcl 
+  511  make clean_all 
+  512  make finish
+  513  vi scripts/cts.tcl 
+  514  make clean_all 
+  515  make finish
+  516  make clean_all 
+  517  vi scripts/cts.tcl 
+  518  make finish
+  519  vi scripts/cts.tcl 
+  520  make clean_all 
+  521  make finish
+  522  vi scripts/cts.tcl 
+  523  make clean_all 
+  524  make finish
+  525  vi scripts/cts.tcl 
+  526  vi designs/asap7/riscv32i/constraint.sdc 
+  527  make clean_all 
+  528  make finish
+  529  vi scripts/cts.tcl 
+  530  vi Makefile
+  531  make finish
+  532  vi scripts/cts.tcl 
+  533  make clean_all 
+  534  make finish
+  535  vi scripts/cts.tcl 
+  536  make clean_all 
+  537  make finish
+  538  vi scripts/cts.tcl 
+  539  make clean_all 
+  540  make finish
+  541  vi scripts/cts.tcl 
+  542  make clean_all 
+  543  make finish
+  544  vi scripts/cts.tcl 
+  545  vi designs/asap7/riscv32i/config.mk 
+  546  vi designs/asap7/riscv32i/constraint.sdc 
+  547  vi scripts/cts.tcl 
+  548  make clean_all 
+  549  make finish
+  550  riscv/dp/shift/_1323_
+  551  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_invtest/6_report.log 
+  552  vi Makefile
+  553  vi designs/asap7/riscv32i/config.mk 
+  554  make finish
+  555  make clean_all
+  556  make finish
+  557  vi designs/asap7/riscv32i/config.mk 
+  558  vi designs/asap7/ibex/config.mk 
+  559  make clean_all
+  560  make finish
+  561  make clean_all
+  562  vi designs/asap7/ibex/config.mk 
+  563  make finish
+  564  vi designs/asap7/ibex/config.mk 
+  565  make cts finish
+  566  vi scripts/cts.tcl 
+  567  vi designs/asap7/ibex/config.mk
+  568  vi designs/asap7/riscv32i/config.mk
+  569  vi scripts/cts.tcl 
+  570  make clean_all
+  571  make finish
+  572  vi scripts/cts.tcl 
+  573  make clean_all
+  574  make finish
+  575  vi scripts/cts.tcl 
+  576  make clean_all
+  577  make finish
+  578  vi Makefile
+  579  vi scripts/cts.tcl 
+  580  make clean_all
+  581  make finish
+  582  vi scripts/cts.tcl 
+  583  make clean_all
+  584  make finish
+  585  vi scripts/cts.tcl 
+  586  vi Makefile
+  587  vi scripts/cts.tcl 
+  588  make clean_all
+  589  make finish
+  590  vi designs/asap7/riscv32i/constraint.sdc
+  591  ll ~/Downloads/
+  592  cp ~/Downloads/cts.tcl_old scripts/cts_old.tcl
+  593  ll scripts/
+  594  vi cts_old.tcl
+  595  vi scripts/cts_old.tcl 
+  596  vi Makefile
+  597  make clean_all
+  598  make finish
+  599  vi Makefile
+  600  ll scripts/
+  601  mv scripts/cts.tcl scripts/cts_mod.tcl
+  602  mv scripts/cts_old.tcl scripts/cts.tcl
+  603  vi scripts/cts.tcl 
+  604  vi platforms/asap7/config.mk 
+  605  make clean_all
+  606  make finish
+  607  vi Makefile
+  608  vi scripts/cts.tcl 
+  609  vi designs/asap7/ibex/constraint.sdc 
+  610  make clean_all 
+  611  make finish
+  612  vi scripts/cts.tcl 
+  613  vi scripts/cts_mod.tcl 
+  614  cp scripts/cts.tcl scripts/cts_original.tcl
+  615  cp scripts/cts_mod.tcl scripts/cts.tcl 
+  616  vi scripts/cts.tcl 
+  617  make clean_all 
+  618  make finish
+  619  vi scripts/cts.tcl 
+  620  make clean_all 
+  621  make finish
+  622  vi designs/
+  623  vi designs/asap7/ibex/constraint.sdc 
+  624  vi platforms/asap7/config.mk 
+  625  make clean_all 
+  626  make finish
+  627  make clean_all 
+  628  make finish
+  629  vi designs/asap7/ibex/config.mk 
+  630  vi designs/asap7/ibex/constraint.sdc 
+  631  cp scripts/cts_mod.tcl scripts/cts.tcl 
+  632  vi scripts/cts.tcl 
+  633  cp scripts/cts_original.tcl scripts/cts.tcl 
+  634  vi scripts/cts.tcl 
+  635  make finish
+  636  make clean_all
+  637  make finish
+  638  vi scripts/cts.tcl 
+  639  vi platforms/asap7/config.mk 
+  640  make clean_all
+  641  make finish
+  642  vi scripts/cts.tcl 
+  643  make clean_all
+  644  make finish
+  645  vi scripts/cts.tcl 
+  646  make clean_all
+  647  make finish
+  648  vi scripts/cts.tcl 
+  649  vi platforms/asap7/config.mk 
+  650  make clean_all
+  651  make finish
+  652  vi platforms/asap7/config.mk 
+  653  vi scripts/cts.tcl 
+  654  make clean_all
+  655  make finish
+  656  vi scripts/cts.tcl 
+  657  make clean_all
+  658  make finish
+  659  vi scripts/cts.tcl 
+  660  vi designs/asap7/ibex/config.mk 
+  661  make finish
+  662  make clean_all
+  663  make finish
+  664  vi scripts/cts.tcl 
+  665  make clean_all
+  666  make finish
+  667  vi scripts/cts.tcl 
+  668  vi designs/asap7/ibex/config.mk 
+  669  vi platforms/asap7/config.mk 
+  670  make clean_all
+  671  make finish
+  672  vi platforms/asap7/config.mk 
+  673  vi scripts/cts.tcl 
+  674  make clean_all
+  675  vi designs/asap7/ibex/config.mk 
+  676  make clean_all
+  677  make finish
+  678  vi designs/asap7/ibex/config.mk 
+  679  vi platforms/asap7/config.mk 
+  680  make clean_all
+  681  make finish
+  682  vi platforms/asap7/config.mk 
+  683  vi designs/asap7/ibex/config.mk 
+  684  vi scripts/cts.tcl 
+  685  cd ~/NSL/
+  686  ll
+  687  cd OpenROAD-flow-scripts/flow/
+  688  ll
+  689  vi Makefile
+  690  vi designs/asap7/swerv_wrapper/config.mk 
+  691  make finish
+  692  vi scripts/cts.tcl 
+  693  vi Makefile
+  694  vi designs/asap7/riscv32i/config.mk 
+  695  grep -R SLACK_MARGIN
+  696  vi scripts/cts.tcl 
+  697  make finish
+  698  vi logs/asap7/riscv32i/base/6_report.
+  699  vi logs/asap7/riscv32i/base/6_report.log 
+  700  vi designs/asap7/riscv32i/config.mk 
+  701  grep -R repair_tns 
+  702  grep -R repair_tns scripts/
+  703  grep -R repair_tns 
+  704  vi scripts/cts.tcl 
+  705  grep -R CTS_BUF_DISTANCE
+  706  vi scripts/cts.tcl 
+  707  vi designs/asap7/riscv32i/config.mk
+  708  vi scripts/cts.tcl 
+  709  make finish
+  710  vi logs/asap7/riscv32i/repairtns_ckinv/6_report.log
+  711  tkdiff logs/asap7/riscv32i/repairtns_ckinv/6_report.log logs/asap7/riscv32i/repairtns/6_report.log
+  712  vi scripts/cts.tcl 
+  713  tkdiff logs/asap7/riscv32i/repairtns/6_report.json logs/asap7/riscv32i/repairtns_ckinv/6_report.json 
+  714  vi scripts/cts.tcl 
+  715  vi designs/asap7/riscv32i/config.mk 
+  716  vi Makefile
+  717  vi scripts/cts.tcl 
+  718  make finish
+  719  vi Makefile
+  720  make clean_all 
+  721  make finish
+  722  vi scripts/cts.tcl 
+  723  make clean_all 
+  724  make finish
+  725  vi scripts/cts.tcl 
+  726  vi Makefile
+  727  make finish
+  728  vi Makefile
+  729  vi designs/asap7/riscv32i/config.mk 
+  730  make finish
+  731  cd  designs/asap7/
+  732  ll
+  733  cd riscv32i/
+  734  ll
+  735  rm config.mk 
+  736  cp  /home/fahim/Downloads/config.mk  .
+  737  ll
+  738  vi config.mk 
+  739  cd  /home/fahim/Downloads/
+  740  rm config.mk 
+  741  cd -
+  742  cp /home/fahim/Downloads/config.mk  .
+  743  ll
+  744  vi config.mk 
+  745  cd ../../..
+  746  vi platforms/asap7/config.mk 
+  747  vi designs/asap7/riscv32i/constraint.sdc 
+  748  vi Makefile
+  749  make finish
+  750  vi scripts/cts.tcl 
+  751  make clean_all
+  752  make finish
+  753  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt/6_report.json
+  754  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt/6_report.log 
+  755  vi designs/asap7/riscv32i/config.mk 
+  756  vi Makefile
+  757  make finish
+  758  make clean_all
+  759  make finish
+  760  vi scripts/cts.tcl 
+  761  make clean_all
+  762  make finish
+  763  vi scripts/cts.tcl 
+  764  make clean_all
+  765  make finish
+  766  vi designs/asap7/riscv32i/config.mk 
+  767  make clean_all
+  768  make finish
+  769  vi Makefile
+  770  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_nomargin/6_report.log
+  771  grep -Ri blockage 
+  772  grep -Ri blockage scripts/
+  773  grep -Ri blockage platforms/asap7/
+  774  grep -Ri blockage designs/asap7/
+  775  grep -Ri blockage scripts/
+  776  vi MACRO_BLOCKAGE_HALO
+  777  vi scripts/macro_place.tcl
+  778  vi scripts/add_routing_blk.tcl
+  779  vi scripts/macro_place.tcl
+  780  vi scripts/placement_blockages.tcl
+  781  grep -R block_channels
+  782  vi scripts/macro_place.tcl
+  783  vi scripts/cts.tcl 
+  784  make gui_cts 
+  785  rg signal
+  786  grep -r signal
+  787  grep -r signal scripts/
+  788  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_nomargin/
+  789  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_nomargin/6_report.log
+  790  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_nomargin/4_1_cts.
+  791  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_nomargin/4_1_cts.json 
+  792  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_M2_M8//4_1_cts.json 
+  793  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_nomargin/4_1_cts.json 
+  794  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_nomargin/4_1_cts.log 
+  795  vi scripts/cts.tcl 
+  796  vi Makefile
+  797  vi scripts/cts.tcl 
+  798  make finish
+  799  vi scripts/cts.tcl 
+  800  make clean_all 
+  801  make finish
+  802  vi scripts/cts.tcl 
+  803  make clean_all 
+  804  make finish
+  805  vi scripts/cts.tcl 
+  806  make clean_all 
+  807  make finish
+  808  make clean_all 
+  809  make finish
+  810  make gui_cts
+  811  vi scripts/cts.tcl 
+  812  grep -Ri NDR
+  813  grep -R NDR
+  814  vi scripts/cts.tcl 
+  815  ll logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_M2_M8/
+  816  vi reports/asap7/riscv32i/repairtns_real_ckinvx8_slvt_nomargin/5_route_drc.rpt
+  817  vi scripts/detail_route.tcl
+  818  vi scripts/cts.tcl 
+  819  make gui_cts
+  820  source ../setup_env.sh 
+  821  openroad
+  822  make gui_cts 
+  823  vi scripts/test101.tcl
+  824  tclsh scripts/test101.tcl
+  825  vi scripts/test101.tcl
+  826  tclsh scripts/test101.tcl
+  827  vi scripts/test101.tcl
+  828  tclsh scripts/test101.tcl
+  829  vi scripts/test101.tcl
+  830  tclsh scripts/test101.tcl
+  831  vi scripts/test101.tcl
+  832  tclsh scripts/test101.tcl
+  833  vi scripts/test101.tcl
+  834  tclsh scripts/test101.tcl
+  835  vi scripts/test101.tcl
+  836  tclsh scripts/test101.tcl
+  837  vi scripts/test101.tcl
+  838  tclsh scripts/test101.tcl
+  839  vi scripts/test101.tcl
+  840  tclsh scripts/test101.tcl
+  841  vi scripts/test101.tcl
+  842  vi Makefile
+  843  yosys
+  844  make gui_cts
+  845  make gui_place 
+  846  make gui_place
+  847  $ ssh-keygen -t ed25519 -C "your_email@example.com"
+  848  $ ssh-keygen -t ed25519 -C "djsirus.ds@gmail.com"
+  849  ssh-keygen -t ed25519 -C "djsirus.ds@gmail.com"
+  850  eval "$(ssh-agent -s)"
+  851  ssh-add ~/.ssh/id_ed25519
+  852  cat ~/.ssh/id_ed25519.pub
+  853  git remote -v
+  854  git remote set-url origin git@github.com:Fahim36201/OpenROAD-flow-scripts.git
+  855  git remote -v
+  856  git config --global user.name "Fahim36201"
+  857  origingit@github.com:Fahim36201/OpenROAD-flow-scripts.git (fetch)
+  858  git config --global user.email "djsirus.ds@gmail.com"
+  859  git status
+  860  git branch fahim_test_pull
+  861  git branch
+  862  git checkout fahim_test_pull
+  863  git branch
+  864  git add flow/scripts/cts.tcl
+  865  git add scripts/cts.tcl
+  866  git status
+  867  git commit -m "checking 123"
+  868  git push origin fahim_test_pull
+  869  history
+  870  echo [history]
+  871  echo history
+  872  history > gui_push_pull.txt
+  873  vi gui_push_pull.txt
+  874  openroad
+  875  make gui_place
+  876  vi Makefile
+  877  opensta
+  878  sta
+  879  vi wafin.tcl
+  880  sta
+  881  vi scripts/cts.tcl 
+  882  sta
+  883  vi wafin.tcl
+  884  sta
+  885  vi wafin.tcl 
+  886  vi wafin.tcl
+  887  source wafin
+  888  source wafin.tcl
+  889  vi wafin.tcl
+  890  vi scripts/cts.tcl 
+  891  vi platforms/asap7/config.mk 
+  892  vi designs/asap7/riscv32i/config.mk 
+  893  vi logs/asap7/riscv32i/base/6_report.log
+  894  vi logs/asap7/riscv32i/base/6_r
+  895  vi logs/asap7/riscv32i/base/6_report.log
+  896  vi logs/asap7/riscv32i/base/6_report.json 
+  897  vi logs/asap7/riscv32i/base/6_report.log
+  898  vi logs/asap7/riscv32i/repairtns/6_report.json 
+  899  vi logs/asap7/riscv32i/repairtns_ckinv/6_report.json 
+  900  vi logs/asap7/riscv32i/repairtns/6_report.json 
+  901  vi logs/asap7/riscv32i/repairtns_ckinv/6_report.json 
+  902  vi logs/asap7/riscv32i/repairtns/6_report.json 
+  903  vi logs/asap7/riscv32i/repairtns_ckinv/6_report.json 
+  904  vi logs/asap7/riscv32i/repairtns_ckinv8/6_report.json 
+  905  vi logs/asap7/riscv32i/repairtns_ckinvx8/6_report.log
+  906  vi logs/asap7/riscv32i/repairtns_ckinvx8/6_report.json
+  907  vi logs/asap7/riscv32i/repairtns_ckinv/6_report.json 
+  908  vi logs/asap7/riscv32i/base/6_report.json 
+  909  vi logs/asap7/riscv32i/repairtns_real_ckinvx8//6_report.json 
+  910  vi logs/asap7/riscv32i/repairtns_real_ckinvx8/6_report.json 
+  911  vi logs/asap7/riscv32i/repairtns_real_ckinvx8/6_report.json
+  912  vi logs/asap7/riscv32i/repairtns_real_ckinvx8/6_report.log 
+  913  vi logs/asap7/riscv32i/repairtns_real_ckinvx8/6_report.json 
+  914  vi logs/asap7/riscv32i/repairtns_real_ckinvx8/6_report.log 
+  915  vi logs/asap7/riscv32i/base/6_report.log 
+  916  vi logs/asap7/riscv32i/base/5_2_TritonRoute.log
+  917  vi logs/asap7/riscv32i/repairtns_real_ckinvx8/5_2_TritonRoute.log 
+  918  vi logs/asap7/riscv32i/base/5_2_TritonRoute.log
+  919  vi logs/asap7/riscv32i/repairtns_real_ckinvx8/6_report.log 
+  920  vi logs/asap7/riscv32i/base/6_report.log 
+  921  vi logs/asap7/riscv32i/base/4_1_cts.json
+  922  vi logs/asap7/riscv32i/repairtns_real_ckinvx8/4_1_cts.json
+  923  vi logs/asap7/riscv32i/repairtns_real_ckinvx8/6_report.json 
+  924  vi logs/asap7/riscv32i/base/6_report.json
+  925  vi logs/asap7/riscv32i/repairtns_real_ckinvx8/6_report.json 
+  926  vi scripts/cts.tcl 
+  927  vi platforms/asap7/config.mk 
+  928  vi platforms/asap7/old_config.mk 
+  929  vi scripts/cts.tcl 
+  930  vi platforms/asap7/old_config.mk 
+  931  vi scripts/cts.tcl 
+  932  vi platforms/asap7/old_config.mk
+  933  tkdiff platforms/asap7/old_config.mk platforms/asap7/config.mk
+  934  vi platforms/asap7/old_config.mk
+  935  vi designs/asap7/riscv32i/config.mk
+  936  vi scripts/cts.tcl 
+  937  make gui_cts
+  938  cd platforms/asap7/lib/
+  939  ll
+  940  vi asap7sc7p5t_INVBUF_SLVT_FF_nldm_220122.lib.gz 
+  941  vi asap7sc7p5t_AO_SLVT_FF_nldm_211120.lib.gz
+  942  ll *SLVT*
+  943  vi asap7sc7p5t_OA_SLVT_FF_nldm_211120.lib.gz
+  944  vi asap7sc7p5t_SIMPLE_SLVT_FF_nldm_211120.lib.gz
+  945  vi asap7sc7p5t_OA_SLVT_FF_nldm_211120.lib.gz
+  946  vi asap7sc7p5t_AO_SLVT_FF_nldm_211120.lib.gz
+  947  vi asap7sc7p5t_SEQ_SLVT_FF_nldm_220123.lib
+  948  vi asap7sc7p5t_OA_SLVT_FF_nldm_211120.lib.gz
+  949  vi asap7sc7p5t_SIMPLE_SLVT_FF_nldm_211120.lib.gz
+  950  grep AO21x2_ASAP7_75t_SL *SLVT*
+  951  vi asap7sc7p5t_INVBUF_SLVT_FF_nldm_220122.lib.gz
+  952  vi asap7sc7p5t_AO_SLVT_SS_nldm_211120.lib.gz
+  953  vi asap7sc7p5t_OA_SLVT_TT_nldm_211120.lib.gz
+  954  vi asap7sc7p5t_INVBUF_SLVT_FF_nldm_220122.lib.gz
+  955  cd NSL/OpenROAD-flow-scripts/flow/
+  956  vi scripts/report_metrics.tcl 
+  957  sta
+  958  source ../setup_env.sh 
+  959  sta
+  960  vi wafin.tcl 
+  961  sta
+  962  vi scripts/report_metrics.tcl 
+  963  vi wafin.tcl 
+  964  sta
+  965  vi wafin.tcl 
+  966  sta
+  967  cd NSL/OpenROAD-flow-scripts/flow/
+  968  ll
+  969  vi wafin.tcl 
+  970  vi report_metrics_synthesis.tcl 
+  971  vi wafin.tcl 
+  972  sta
+  973  source ../setup_env.sh 
+  974  sta
+  975  vi wafin.tcl 
+  976  realpath platforms/asap7/lib/asap7sc7p5t_AO_RVT_FF_nldm_211120.lib.gz
+  977  vi wafin.tcl 
+  978  realpath platforms/asap7/lib/fakeram7_*
+  979  vi wafin.tcl 
+  980  cd platforms/asap7/
+  981  ll
+  982  mkdir drc
+  983  vi asap7.lydrc
+  984  mv asap7.lydrc drc/
+  985  ll drc/
+  986  vi config.mk 
+  987  vi drc/asap7.lydrc 
+  988  cd ../../
+  989  ll
+  990  mv wafin.tcl synthesis_timing.tcl
+  991  ll
+  992  ping 8.8.8.8
+  993  ll
+  994  vi gui_push_pull.txt 
+  995  ping 8.8.8.8
+  996  vi synthesis_timing.tcl 
+  997  sta
+  998  vi synthesis_timing.tcl 
+  999  git status
+ 1000  git branch openroad_contest
+ 1001  git branch
+ 1002  git checkout openroad_contest 
+ 1003  git branch
+ 1004  git add synthesis_timing.tcl scripts/report_metrics.tcl platforms/asap7/drc/asap7.lydrc  platforms/asap7/config.mk 
+ 1005  git status
+ 1006  git commit -m "openroad_contest"
+ 1007  git push origin openroad_contest 
+ 1008  vi synthesis_timing.tcl 
+ 1009  vi ~/.bashrc
+ 1010  vi ~/.bash_aliases
+ 1011  vi ~/.bashrc
+ 1012  vi Makefile
+ 1013  vi Makefile
+ 1014  vi synthesis_timing.tcl 
+ 1015  source synthesis_timing.tcl
+ 1016  vi synthesis_timing.tcl 
+ 1017  vi Makefile
+ 1018  make synth
+ 1019  vi Makefile
+ 1020  vi platforms/asap7/config.mk
+ 1021  vi designs/asap7/ibex/config.mk 
+ 1022  vi designs/asap7/ibex/constraint.sdc 
+ 1023  vi scripts/cts.tcl 
+ 1024  make clean_synth 
+ 1025  make synth
+ 1026  vi scripts/cts.tcl 
+ 1027  sta synthesis_timing.tcl -exit
+ 1028  sta synthesis_timing.tcl -exit | tee $(LOG_DIR)/1_2_yosys_timing.log
+ 1029  sta synthesis_timing.tcl -exit | tee 1_2_yosys_timing.log
+ 1030  ll
+ 1031  vi 1_2_yosys_timing.log
+ 1032  vi platforms/asap7/config.mk
+ 1033  cp synthesis_timing.tcl test_synthesis_timing.tcl
+ 1034  vi synthesis_timing.tcl 
+ 1035  vi scripts/floorplan.tcl
+ 1036  vi scripts/load.tcl 
+ 1037  vi scripts/read_liberty.tcl 
+ 1038  vi synthesis_timing.tcl 
+ 1039  sta synthesis_timing.tcl -exit
+ 1040  source platforms/asap7/config.mk 
+ 1041  vi Makefile
+ 1042  include platforms/asap7/config.mk 
+ 1043  vi Makefile
+ 1044  sta synthesis_timing.tcl -exit
+ 1045  vi synthesis_timing.tcl
+ 1046  make clean_all
+ 1047  make finish
+ 1048  vi Makefile
+ 1049  make clean_all
+ 1050  make finish
+ 1051  vi Makefile
+ 1052  vi synthesis_timing.tcl 
+ 1053  vi Makefile
+ 1054  vi synthesis_timing.tcl 
+ 1055  grep -R $(RESULTS_DIR)
+ 1056  grep -R "$(RESULTS_DIR)"
+ 1057  grep -R "RESULTS_DIR"
+ 1058  vi synthesis_timing.tcl 
+ 1059  make clean_all
+ 1060  make finish
+ 1061  vi logs/asap7/riscv32i/slvt_syn_timing/4_1_cts.log
+ 1062  vi logs/asap7/riscv32i/repairtns_real_ckinvx8_slvt_1200/4_1_cts.log
+ 1063  vi logs/asap7/riscv32i/slvt_syn_timing/1_2_yosys.log 
+ 1064  vi scripts/cts_mod.tcl 
+ 1065  cp scripts/cts.tcl scripts/cts_ibex.tcl
+ 1066  cp scripts/cts_mod.tcl scripts/cts.tcl
+ 1067  vi scripts/cts.tcl
+ 1068  make clean_all
+ 1069  make finish
+ 1070  vi synthesis_timing.tcl 
+ 1071  vi platforms/asap7/config.mk 
+ 1072  make clean_all
+ 1073  make finish
+ 1074  vi 
+ 1075  vi platforms/asap7/config.mk 
+ 1076  vi Makefile
+ 1077  vi scripts/global_route.tcl 
+ 1078  vi platforms/asap7/config.mk 
+ 1079  vi scripts/cts_ibex.tcl 
+ 1080  cp scripts/cts.tcl scripts/cts_riscv.tcl
+ 1081  cp scripts/cts_ibex.tcl scripts/cts.tcl
+ 1082  vi scripts/cts.tcl
+ 1083  vi Makefile
+ 1084  make finish
+ 1085  vi reports/asap7/ibex/slvt_syn_timing/5_route_drc.rpt 
+ 1086  vi gui_push_pull.txt 
+ 1087  vi scripts/cts_mod.tcl 
+ 1088  vi synthesis_timing.tcl 
+ 1089  ll platforms/asap7/lib/
+ 1090  exec [ll platforms/asap7/lib/]
+ 1091  tclsh
+ 1092  vi synthesis_timing.tcl 
+ 1093  vi platforms/asap7/config.mk
+ 1094  vi Makefile
+ 1095  vi platforms/asap7/config.mk
+ 1096  vi Makefile
+ 1097  make synth
+ 1098  vi synthesis_timing.tcl 
+ 1099  sta
+ 1100  source ../setup_env.sh 
+ 1101  sta
+ 1102  vi Makefile
+ 1103  vi logs/asap7/riscv32i/slvt_syn_timing/1_2_yosys.log
+ 1104  vi Makefile
+ 1105  vi synthesis_timing.tcl 
+ 1106  vi designs/asap7/riscv32i/config.mk 
+ 1107  vi scripts/report_metrics.tcl 
+ 1108  cp synthesis_timing.tcl 
+ 1109  cp synthesis_timing.tcl sec_synthesis_timing.tcl 
+ 1110  vi synthesis_timing.tcl
+ 1111  vi sec_synthesis_timing.tcl
+ 1112  tkdiff synthesis_timing.tcl sec_synthesis_timing.tcl
+ 1113  vi scripts/report_metrics.tcl 
+ 1114  cd NSL/OpenROAD-flow-scripts/flow/
+ 1115  subl scripts/custom_macro_place.tcl
+ 1116  sudo snap install sublime-text
+ 1117  vi scripts/custom_macro_place.tcl
+ 1118  vi scripts/macro_place.tcl 
+ 1119  vi Makefile
+ 1120  make finish
+ 1121  make clean_all
+ 1122  make floorplan
+ 1123  vi Makefile
+ 1124  make floorplan
+ 1125  make gui_floorplan
+ 1126  vi scripts/macro_place.tcl 
+ 1127  vi scripts/synthesis_timing.tcl
+ 1128  vi Makefile
+ 1129  make clean_all
+ 1130  vi Makefile
+ 1131  make clean_all
+ 1132  vi Makefile
+ 1133  make floorplan
+ 1134  vi Makefile
+ 1135  make floorplan
+ 1136  source ../setup_env.sh 
+ 1137  make floorplan
+ 1138  make clean_all
+ 1139  make floorplan
+ 1140  vi Makefile
+ 1141  make clean_all
+ 1142  vi Makefile
+ 1143  vi ~/.bashrc
+ 1144  realpath ../setup_env.sh 
+ 1145  vi ~/.bashrc
+ 1146  find -name setup_env.sh ~
+ 1147  find -name setup_env.sh /home
+ 1148  find -name setup_env.sh 
+ 1149  find /home/fahim/ -name setup_env.sh 
+ 1150  find /home/fahim/ -name setup_env.sh | source 
+ 1151  source_tool=$(find /home/fahim/ -name setup_env.sh)
+ 1152  echo $source_tool 
+ 1153  vi ~/.bashrc 
+ 1154  source ~/.bashrc
+ 1155  man source
+ 1156  help source
+ 1157  vi ~/.bashrc 
+ 1158  source ~/.bashrc
+ 1159  vi ~/.bashrc 
+ 1160  source ~/.bashrc
+ 1161  vi ~/.bashrc 
+ 1162  source ~/.bashrc
+ 1163  cd /home/fahim/NSL/OpenROAD-flow-scripts/flow
+ 1164  ll designs/asap7/riscv32i/
+ 1165  vi designs/asap7/riscv32i/riscv32i_macro_placement.cfg
+ 1166  make gui_floorplan
+ 1167  make clean_floorplan
+ 1168  make floorplan
+ 1169  make gui_floorplan 
+ 1170  make clean_floorplan
+ 1171  make floorplan
+ 1172  make gui_floorplan 
+ 1173  make clean_floorplan
+ 1174  make floorplan
+ 1175  make gui_floorplan 
+ 1176  make clean_floorplan
+ 1177  make floorplan
+ 1178  make gui_floorplan 
+ 1179  make clean_floorplan
+ 1180  make floorplan
+ 1181  make gui_floorplan 
+ 1182  make clean_floorplan
+ 1183  make floorplan
+ 1184  make gui_floorplan 
+ 1185  make clean_floorplan
+ 1186  make gui_floorplan 
+ 1187  make floorplan
+ 1188  make gui_floorplan 
+ 1189  make finish
+ 1190  vi Makefile
+ 1191  vi designs/asap7/riscv32i/constraint.sdc 
+ 1192  make finish
+ 1193  vi Makefile
+ 1194  cd platforms/asap7/
+ 1195  ll
+ 1196  vi config.mk 
+ 1197  cp config_slvt.mk config.mk 
+ 1198  vi config.mk 
+ 1199  cd -
+ 1200  vi config.mk 
+ 1201  make finish
+ 1202  cd -
+ 1203  make finish
+ 1204  vi scripts/cts.tcl 
+ 1205  cp scripts/cts_riscv.tcl scripts/cts.tcl 
+ 1206  vi scripts/cts.tcl 
+ 1207  make clean_all
+ 1208  make finish
+ 1209  vi scripts/cts.tcl 
+ 1210  cp scripts/cts.tcl scripts/cts_dynamic.tcl
+ 1211  vi platforms/asap7/config.mk 
+ 1212  make clean_all
+ 1213  make finish
+ 1214  vi scripts/cts.tcl 
+ 1215  make clean_cts 
+ 1216  make finish
+ 1217  make clean_cts
+ 1218  make cts
+ 1219  make clean_all
+ 1220  make finish
+ 1221  make clean_all
+ 1222  make finish
+ 1223  git status
+ 1224  cd ..
+ 1225  git remote -v
+ 1226  git status
+ 1227  git add flow/scripts/synthesis_timing.tcl flow/scripts/report_metrics.tcl flow/platforms/asap7/config.mk flow/designs/asap7/riscv32i/config.mk flow/designs/asap7/riscv32i/riscv32i_macro_placement.cfg flow/Makefile flow//platforms/asap7/openRoad/pdn/grid_strategy-M2-M5-M7.tcl flow/platforms/asap7/drc/asap7.lydrc flow/logs/asap7/riscv32i/macro_place_no_blockage_1300_slvt/1_1_synth_timing.log 
+ 1228  git add -f flow/scripts/synthesis_timing.tcl flow/scripts/report_metrics.tcl flow/platforms/asap7/config.mk flow/designs/asap7/riscv32i/config.mk flow/designs/asap7/riscv32i/riscv32i_macro_placement.cfg flow/Makefile flow//platforms/asap7/openRoad/pdn/grid_strategy-M2-M5-M7.tcl flow/platforms/asap7/drc/asap7.lydrc flow/logs/asap7/riscv32i/macro_place_no_blockage_1300_slvt/1_1_synth_timing.log 
+ 1229  git status
+ 1230  git commit -m "openroad_contest flow improvement updated" 
+ 1231  git push origin openroad_contest 
+ 1232  #git add -f flow/logs/asap7/riscv32i/macro_place_no_blockage_1300_slvt/
+ 1233  history > git_mock2

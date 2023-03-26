@@ -40,9 +40,7 @@ if {[find_macros] != ""} {
   lassign $::env(MACRO_PLACE_CHANNEL) channel_x channel_y
   set halo_max [expr max($halo_x, $halo_y)]
   set channel_max [expr max($channel_x, $channel_y)]
-  #  set blockage_width [expr max($halo_max/4, $channel_max/2)]
-  #set blockage_width 0
-  set blockage_width [expr max($halo_max/4, $channel_max/4)]
+  set blockage_width [expr max($halo_max, $channel_max/2)]
 
   
   if {[info exists ::env(MACRO_BLOCKAGE_HALO)]} {
@@ -102,8 +100,15 @@ if {[find_macros] != ""} {
 
 
     puts "Call Macro Placer $additional_rtlmp_args"
-    rtl_macro_placer \
-                 {*}$additional_rtlmp_args
+########### Macro placement ############
+#    rtl_macro_placer \
+#                 {*}$additional_rtlmp_args
+   source $::env(SCRIPTS_DIR)/custom_macro_place.tcl
+   custom_mac dmem/dmem0 20000 30000 R0 FIRM
+   custom_mac dmem/dmem1 20000 50000 R90 FIRM
+   custom_mac dmem/dmem2 30000 70000 R180 FIRM
+   custom_mac dmem/dmem3 10000 10000 R270 FIRM
+########################################
     puts "Delete buffers for RTLMP flow..."
     remove_buffers
   } else {

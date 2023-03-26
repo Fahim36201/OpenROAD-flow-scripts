@@ -28,7 +28,7 @@
 28. Executing Liberty frontend.
 29. Executing Liberty frontend.
 30. Executing Liberty frontend.
-31. Executing Verilog-2005 frontend: ./platforms/asap7/yoSys/cells_clkgate_SL.v
+31. Executing Verilog-2005 frontend: ./platforms/asap7/yoSys/cells_clkgate_R.v
 Sourcing ./objects/asap7/riscv32i/macro_place_no_blockage_1300_slvt/mark_hier_stop_modules.tcl
 32. Executing HIERARCHY pass (managing design hierarchy).
 33. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_top'.
@@ -271,7 +271,7 @@ Warning: Resizing cell port dmem.dmem0.rd_out from 1 bits to 32 bits.
 35.16. Finished OPT passes. (There is nothing left to do.)
 36. Executing EXTRACT_FA pass (find and extract full/half adders).
 37. Executing TECHMAP pass (map to technology primitives).
-37.1. Executing Verilog-2005 frontend: ./platforms/asap7/yoSys/cells_adders_SL.v
+37.1. Executing Verilog-2005 frontend: ./platforms/asap7/yoSys/cells_adders_R.v
 37.2. Continuing TECHMAP pass.
 38. Executing TECHMAP pass (map to technology primitives).
 38.1. Executing Verilog-2005 frontend: /home/fahim/NSL/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/techmap.v
@@ -283,7 +283,7 @@ Warning: Resizing cell port dmem.dmem0.rd_out from 1 bits to 32 bits.
 39.4. Executing OPT_CLEAN pass (remove unused cells and wires).
 39.5. Finished fast OPT passes.
 40. Executing TECHMAP pass (map to technology primitives).
-40.1. Executing Verilog-2005 frontend: ./platforms/asap7/yoSys/cells_latch_SL.v
+40.1. Executing Verilog-2005 frontend: ./platforms/asap7/yoSys/cells_latch_R.v
 40.2. Continuing TECHMAP pass.
 41. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
 41.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
@@ -381,7 +381,7 @@ Using ABC speed script.
 50. Printing statistics.
 51. Executing Verilog backend.
 Warnings: 17 unique messages, 17 total
-End of script. Logfile hash: d899b4ccf2, CPU: user 35.83s system 0.67s, MEM: 146.36 MB peak
+End of script. Logfile hash: 814e0d5e6c, CPU: user 38.83s system 0.98s, MEM: 146.88 MB peak
 Yosys 0.13+15 (git sha1 bc027b2ca, gcc 9.4.0-1ubuntu1~20.04.1 -fPIC -Os)
-Time spent: 75% 2x abc (106 sec), 5% 35x opt_expr (7 sec), ...
-Elapsed time: 2:22.96[h:]min:sec. CPU time: user 137.18 sys 4.39 (99%). Peak memory: 150176KB.
+Time spent: 76% 2x abc (128 sec), 4% 35x opt_expr (7 sec), ...
+Elapsed time: 2:51.76[h:]min:sec. CPU time: user 160.01 sys 6.75 (97%). Peak memory: 150632KB.

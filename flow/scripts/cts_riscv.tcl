@@ -1,0 +1,186 @@
+utl::set_metrics_stage "cts__{}"
+source $::env(SCRIPTS_DIR)/load.tcl
+load_design 3_place.odb 3_place.sdc "Starting CTS"
+
+# Clone clock tree inverters next to register loads
+# so cts does not try to buffer the inverted clocks.
+repair_clock_inverters
+
+set_routing_layers -clock M3-M5
+#set_wire_rc -clock -layer M7
+#set_wire_rc -clock -layer M6
+set_wire_rc -clock -layer M5
+set_wire_rc -clock -layer M4
+set_wire_rc -clock -layer M3
+
+remove_buffers
+repair_design
+
+# Run CTS
+if {[info exist ::env(CTS_CLUSTER_SIZE)]} {
+  set cluster_size "$::env(CTS_CLUSTER_SIZE)"
+} else {
+  set cluster_size 30
+}
+if {[info exist ::env(CTS_CLUSTER_DIAMETER)]} {
+  set cluster_diameter "$::env(CTS_CLUSTER_DIAMETER)"
+} else {
+  set cluster_diameter 100
+}
+
+
+if {[info exist ::env(CTS_BUF_DISTANCE)]} {
+#set CTS_BUF_CELL {CKINVDCx10_ASAP7_75t_R CKINVDCx11_ASAP7_75t_R CKINVDCx12_ASAP7_75t_R CKINVDCx16_ASAP7_75t_R CKINVDCx20_ASAP7_75t_R CKINVDCx6p67_ASAP7_75t_R}
+#set ROOT_BUF CKINVDCx20_ASAP7_75t_R
+#set CTS_BUF_CELL {CKINVDCx5p33_ASAP7_75t_SL CKINVDCx6p67_ASAP7_75t_SL CKINVDCx8_ASAP7_75t_SL CKINVDCx9p33_ASAP7_75t_SL}
+set CTS_BUF_CELL CKINVDCx8_ASAP7_75t_SL
+set ROOT_BUF CKINVDCx8_ASAP7_75t_SL
+set cluster_size 20
+set cluster_diameter 30
+
+clock_tree_synthesis -root_buf $CTS_BUF_CELL -buf_list $CTS_BUF_CELL \
+                     -sink_clustering_enable \
+                     -sink_clustering_size $cluster_size \
+                     -sink_clustering_max_diameter $cluster_diameter \
+                     -balance_levels
+
+#clock_tree_synthesis -root_buf "$::env(CTS_BUF_CELL)" -buf_list "$::env(CTS_BUF_CELL)"\
+#                     -sink_clustering_enable \
+#                     -sink_clustering_size $cluster_size \
+#                     -sink_clustering_max_diameter $cluster_diameter \
+#                     -distance_between_buffers "$::env(CTS_BUF_DISTANCE)" \
+#                     -balance_levels
+} else {
+#clock_tree_synthesis -root_buf "$::env(CTS_BUF_CELL)" -buf_list "$::env(CTS_BUF_CELL)" \
+#                     -sink_clustering_enable \
+#                     -sink_clustering_size $cluster_size \
+#                     -sink_clustering_max_diameter $cluster_diameter \
+#                     -balance_levels
+#set CTS_BUF_CELL {CKINVDCx10_ASAP7_75t_R CKINVDCx11_ASAP7_75t_R CKINVDCx12_ASAP7_75t_R CKINVDCx16_ASAP7_75t_R CKINVDCx20_ASAP7_75t_R CKINVDCx6p67_ASAP7_75t_R}
+#set CTS_BUF_CELL {CKINVDCx5p33_ASAP7_75t_SL CKINVDCx6p67_ASAP7_75t_SL CKINVDCx8_ASAP7_75t_SL CKINVDCx9p33_ASAP7_75t_SL}
+#set CTS_BUF_CELL {CKINVDCx5p33_ASAP7_75t_SL CKINVDCx6p67_ASAP7_75t_SL CKINVDCx8_ASAP7_75t_SL CKINVDCx9p33_ASAP7_75t_SL CKINVDCx10_ASAP7_75t_SL CKINVDCx11_ASAP7_75t_SL CKINVDCx12_ASAP7_75t_SL CKINVDCx14_ASAP7_75t_SL CKINVDCx16_ASAP7_75t_SL CKINVDCx20_ASAP7_75t_SL}
+set CTS_BUF_CELL {CKINVDCx12_ASAP7_75t_SL CKINVDCx5p33_ASAP7_75t_SL CKINVDCx6p67_ASAP7_75t_SL}
+#set CTS_BUF_CELL {CKINVDCx12_ASAP7_75t_SL}
+#set CTS_BUF_CELL CKINVDCx6p67_ASAP7_75t_SL
+#set CTS_BUF_CELL CKINVDCx12_ASAP7_75t_SL
+#set CTS_BUF_CELL CKINVDCx11_ASAP7_75t_SL
+set ROOT_BUF CKINVDCx20_ASAP7_75t_SL
+#set ROOT_BUF CKINVDCx20_ASAP7_75t_R
+set cluster_size 10
+set cluster_diameter 30
+set exponent_value 4
+set clustering_unbalance_ratio_value 0.6
+
+#clock_tree_synthesis -root_buf $ROOT_BUF -buf_list $CTS_BUF_CELL \
+#                     -sink_clustering_enable \
+#                     -sink_clustering_size $cluster_size \
+#                     -sink_clustering_max_diameter $cluster_diameter \
+#                     -balance_levels
+#
+clock_tree_synthesis -root_buf $ROOT_BUF -buf_list $CTS_BUF_CELL \
+                     -sink_clustering_enable \
+                     -sink_clustering_size $cluster_size \
+                     -sink_clustering_max_diameter $cluster_diameter \
+		     -clustering_exponent $exponent_value \
+                     -clustering_unbalance_ratio $clustering_unbalance_ratio_value \
+		     -balance_levels
+}
+
+
+set_propagated_clock [all_clocks]
+
+set_dont_use $::env(DONT_USE_CELLS)
+
+utl::push_metrics_stage "cts__{}__pre_repair"
+source $::env(SCRIPTS_DIR)/report_metrics.tcl
+
+repair_design
+estimate_parasitics -placement
+report_metrics "cts pre-repair"
+utl::pop_metrics_stage
+
+repair_clock_nets
+repair_design
+
+utl::push_metrics_stage "cts__{}__post_repair"
+estimate_parasitics -placement
+report_metrics "cts post-repair"
+utl::pop_metrics_stage
+
+set_placement_padding -global \
+    -left $::env(CELL_PAD_IN_SITES_DETAIL_PLACEMENT) \
+    -right $::env(CELL_PAD_IN_SITES_DETAIL_PLACEMENT)
+detailed_placement
+
+estimate_parasitics -placement
+repair_design
+
+############ replace cells to improve DRV violations #############
+
+#if { [info exists ::env(DESIGN_NICKNAME)] && $::env(DESIGN_NICKNAME) == "riscv32i" } {
+#replace_cell riscv/dp/shift/_0928_ AND4x2_ASAP7_75t_SL
+#replace_cell riscv/dp/shift/_1140_ AO21x2_ASAP7_75t_SL
+#replace_cell riscv/dp/shift/_1282_ OA211x2_ASAP7_75t_SL
+#replace_cell riscv/dp/shift/_1324_ OA211x2_ASAP7_75t_SL
+#replace_cell riscv/dp/shift/_0667_ CKINVDCx16_ASAP7_75t_SL
+#replace_cell riscv/dp/shift/_0980_ NOR2x2_ASAP7_75t_SL
+#replace_cell riscv/dp/shift/_0982_ AND2x4_ASAP7_75t_SL
+#replace_cell riscv/dp/shift/_0772_ NOR2x2_ASAP7_75t_SL
+#replace_cell riscv/dp/shift/_1187_ OR3x1_ASAP7_75t_SL
+#replace_cell riscv/dp/shift/_1353_ AND2x4_ASAP7_75t_SL
+#replace_cell riscv/dp/shift/_1268_ AND2x4_ASAP7_75t_SL
+#replace_cell riscv/dp/shift/_0765_ AND2x4_ASAP7_75t_SL
+#replace_cell riscv/dp/shift/_1339_ NAND2x2_ASAP7_75t_SL
+#replace_cell riscv/dp/shift/_1323_ NAND2x2_ASAP7_75t_SL
+#replace_cell riscv/dp/shift/_0767_ AND2x6_ASAP7_75t_SL
+#replace_cell riscv/dp/shift/_1295_ OA21x2_ASAP7_75t_SL
+#replace_cell riscv/dp/shift/_1291_ AOI211x1_ASAP7_75t_SL
+#replace_cell riscv/dp/shift/_1291_ OA21x2_ASAP7_75t_SL
+#replace_cell riscv/dp/shift/_1197_ OA21x2_ASAP7_75t_SL
+#replace_cell riscv/dp/shift/_1083_ OR3x4_ASAP7_75t_SL
+#replace_cell riscv/dp/shift/_0917_ AOI211x1_ASAP7_75t_SL
+#}
+
+#################################################################
+
+puts "Repair setup and hold violations..."
+
+# process user settings
+set additional_args ""
+if { [info exists ::env(SETUP_SLACK_MARGIN)] && $::env(SETUP_SLACK_MARGIN) > 0.0} {
+  puts "Setup slack margin $::env(SETUP_SLACK_MARGIN)"
+  append additional_args " -setup_margin $::env(SETUP_SLACK_MARGIN)"
+}
+if { [info exists ::env(HOLD_SLACK_MARGIN)] && $::env(HOLD_SLACK_MARGIN) > 0.0} {
+  puts "Hold slack margin $::env(HOLD_SLACK_MARGIN)"
+  append additional_args " -hold_margin $::env(HOLD_SLACK_MARGIN)"
+}
+
+############ Modified to number of violating paths to repair ###############
+
+if { [info exists ::env(REPAIR_TNS)] && $::env(REPAIR_TNS) > 0.0 } {
+	puts "Total percentage of violating paths to repair repair $::env(REPAIR_TNS)"
+	append additional_args " -repair_tns $::env(REPAIR_TNS)"
+}
+
+############################################################################
+
+repair_timing {*}$additional_args
+repair_design
+
+detailed_placement
+check_placement -verbose
+
+report_metrics "cts final"
+
+if { [info exists ::env(POST_CTS_TCL)] } {
+  source $::env(POST_CTS_TCL)
+}
+
+if {![info exists save_checkpoint] || $save_checkpoint} {
+  if {[info exists ::env(GALLERY_REPORT)]  && $::env(GALLERY_REPORT) != 0} {
+      write_def $::env(RESULTS_DIR)/4_1_cts.def
+  }
+  write_db $::env(RESULTS_DIR)/4_1_cts.odb
+  write_sdc $::env(RESULTS_DIR)/4_cts.sdc
+}

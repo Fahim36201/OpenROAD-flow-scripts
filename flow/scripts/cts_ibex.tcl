@@ -10,7 +10,7 @@ repair_clock_inverters
 if {[info exist ::env(CTS_CLUSTER_SIZE)]} {
   set cluster_size "$::env(CTS_CLUSTER_SIZE)"
 } else {
-  set cluster_size 30
+  set cluster_size 50
 }
 if {[info exist ::env(CTS_CLUSTER_DIAMETER)]} {
   set cluster_diameter "$::env(CTS_CLUSTER_DIAMETER)"
