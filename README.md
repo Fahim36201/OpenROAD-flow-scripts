@@ -11,7 +11,7 @@ Most EDA toold that perform synthesis does the following:
 
 <p align=“center”> <img width=“750” height=“400” src=“openroad_pics/1.png”> </p>
 
-here present picture 1
+![plot](./openroad_pics/1.png)
 
 &nbsp;
 
@@ -19,7 +19,7 @@ here present picture 1
 
 <p align=“center”> <img width=“750” height=“400” src=“openroad_pics/2.png”> </p>
 
-here present picture 2
+![plot](./openroad_pics/2.png)
 
 &nbsp;
 
@@ -56,11 +56,11 @@ Script description:
 
 <p align=“center”> <img width=“750” height=“400” src=“openroad_pics/3.png”> </p>
 
-here present picture 3
+![plot](./openroad_pics/3.png)
 
 <p align=“center”> <img width=“750” height=“400” src=“openroad_pics/4.png”> </p>
 
-here present picture 4
+![plot](./openroad_pics/4.png)
 
 &nbsp;
 
@@ -95,11 +95,11 @@ Script description:
 
 <p align=“center”> <img width=“750” height=“400” src=“openroad_pics/5.png”> </p>
 
-here present picture 5
+![plot](./openroad_pics/5.png)
 
 <p align=“center”> <img width=“750” height=“400” src=“openroad_pics/6.png”> </p>
 
-here present picture 6
+![plot](./openroad_pics/6.png)
 
 &nbsp;
 
@@ -130,11 +130,11 @@ Script description:
 
 <p align=“center”> <img width=“750” height=“400” src=“openroad_pics/7.png”> </p>
 
-here present picture 7
+![plot](./openroad_pics/7.png)
 
 <p align=“center”> <img width=“750” height=“400” src=“openroad_pics/8.png”> </p>
 
-here present picture 8
+![plot](./openroad_pics/8.png)
 
 &nbsp;
 
@@ -144,15 +144,15 @@ Using the modifications and scripts mentioned in version 3, all the desired resu
 
 <p align=“center”> <img width=“750” height=“400” src=“openroad_pics/9.png”> </p>
 
-here present picture 9
+![plot](./openroad_pics/9.png)
 
 <p align=“center”> <img width=“750” height=“400” src=“openroad_pics/10.png”> </p>
 
-here present picture 10
+![plot](./openroad_pics/10.png)
 
 <p align=“center”> <img width=“750” height=“400” src=“openroad_pics/11.png”> </p>
 
-here present picture 11
+![plot](./openroad_pics/11.png)
 
 &nbsp;
 
@@ -198,7 +198,7 @@ export KLAYOUT_DRC_FILE = $(PLATFORM_DIR)/drc/asap7.lydrc
 
 <p align=“center”> <img width=“750” height=“400” src=“openroad_pics/12.png”> </p>
 
-here present picture 12
+![plot](./openroad_pics/12.png)
 
 &nbsp;
 
@@ -213,7 +213,7 @@ here present picture 12
 
 <p align=“center”> <img width=“750” height=“400” src=“openroad_pics/13.png”> </p>
 
-here present picture 13
+![plot](./openroad_pics/13.png)
 
 &nbsp;
 
@@ -231,7 +231,7 @@ here present picture 13
 
 <p align=“center”> <img width=“750” height=“400” src=“openroad_pics/14.png”> </p>
 
-here present picture 14
+![plot](./openroad_pics/14.png)
 
 &nbsp;
 
@@ -250,4 +250,4 @@ add_pdn_connect -grid {core_macro} -layers {M4 M5}
 
 <p align=“center”> <img width=“750” height=“400” src=“openroad_pics/15.png”> </p>
 
-here present picture 15
+![plot](./openroad_pics/15.png)
