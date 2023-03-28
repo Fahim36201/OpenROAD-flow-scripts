@@ -9,17 +9,17 @@ Most EDA toold that perform synthesis does the following:
 * However, the OpenROAD flow lacked this feature.
 * The task was to explore how to add these necessary checks after sythesizing a design and generate timing reorts sucessfully.
 
-<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/1.png”> </p>
+<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/1.PNG”> </p>
 
-![plot](./openroad_pics/1.png)
+![plot](./openroad_pics/1.PNG)
 
 &nbsp;
 
 ### 1.a. Synthesis report generation flow
 
-<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/2.png”> </p>
+<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/2.PNG”> </p>
 
-![plot](./openroad_pics/2.png)
+![plot](./openroad_pics/2.PNG)
 
 &nbsp;
 
@@ -54,13 +54,13 @@ source scripts/ver1_synthesis_timing.tcl
 ````
 Script description:
 
-<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/3.png”> </p>
+<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/3.PNG”> </p>
 
-![plot](./openroad_pics/3.png)
+![plot](./openroad_pics/3.PNG)
 
-<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/4.png”> </p>
+<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/4.PNG”> </p>
 
-![plot](./openroad_pics/4.png)
+![plot](./openroad_pics/4.PNG)
 
 &nbsp;
 
@@ -93,13 +93,13 @@ Make synth
 ````
 Script description:
 
-<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/5.png”> </p>
+<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/5.PNG”> </p>
 
-![plot](./openroad_pics/5.png)
+![plot](./openroad_pics/5.PNG)
 
-<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/6.png”> </p>
+<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/6.PNG”> </p>
 
-![plot](./openroad_pics/6.png)
+![plot](./openroad_pics/6.PNG)
 
 &nbsp;
 
@@ -128,13 +128,13 @@ source $source_tool >/dev/null
 ````
 Script description:
 
-<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/7.png”> </p>
+<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/7.PNG”> </p>
 
-![plot](./openroad_pics/7.png)
+![plot](./openroad_pics/7.PNG)
 
-<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/8.png”> </p>
+<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/8.PNG”> </p>
 
-![plot](./openroad_pics/8.png)
+![plot](./openroad_pics/8.PNG)
 
 &nbsp;
 
@@ -142,17 +142,17 @@ Script description:
 
 Using the modifications and scripts mentioned in version 3, all the desired results was acheived in log file `1_1_synth_timing_report.log`
 
-<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/9.png”> </p>
+<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/9.PNG”> </p>
 
-![plot](./openroad_pics/9.png)
+![plot](./openroad_pics/9.PNG)
 
-<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/10.png”> </p>
+<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/10.PNG”> </p>
 
-![plot](./openroad_pics/10.png)
+![plot](./openroad_pics/10.PNG)
 
-<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/11.png”> </p>
+<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/11.PNG”> </p>
 
-![plot](./openroad_pics/11.png)
+![plot](./openroad_pics/11.PNG)
 
 &nbsp;
 
@@ -196,9 +196,9 @@ export KLAYOUT_DRC_FILE = $(PLATFORM_DIR)/drc/asap7.lydrc
 
 ### 2.d. Flow for generating drc reports
 
-<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/12.png”> </p>
+<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/12.PNG”> </p>
 
-![plot](./openroad_pics/12.png)
+![plot](./openroad_pics/12.PNG)
 
 &nbsp;
 
@@ -211,9 +211,9 @@ export KLAYOUT_DRC_FILE = $(PLATFORM_DIR)/drc/asap7.lydrc
 ````
 * Using `6_drc.lyrdb` and `6_final.gds` we can explore drc violations in the design using **klayout**.
 
-<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/13.png”> </p>
+<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/13.PNG”> </p>
 
-![plot](./openroad_pics/13.png)
+![plot](./openroad_pics/13.PNG)
 
 &nbsp;
 
@@ -229,9 +229,9 @@ export KLAYOUT_DRC_FILE = $(PLATFORM_DIR)/drc/asap7.lydrc
 ### 3.b. Observation
 * Analyzing the issue revealed that power stripes for both VDD and VSS at M5 were present above macros but they lacked via connection to macros power grid which is at M4.
 
-<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/14.png”> </p>
+<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/14.PNG”> </p>
 
-![plot](./openroad_pics/14.png)
+![plot](./openroad_pics/14.PNG)
 
 &nbsp;
 
@@ -248,6 +248,6 @@ add_pdn_connect -grid {core_macro} -layers {M4 M5}
 ````
 * This successfully establishing power connection to macros. Power via form M5 to M4 was generated connecting power stripe to macros.
 
-<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/15.png”> </p>
+<p align=“center”> <img width=“750” height=“400” src=“openroad_pics/15.PNG”> </p>
 
-![plot](./openroad_pics/15.png)
+![plot](./openroad_pics/15.PNG)
