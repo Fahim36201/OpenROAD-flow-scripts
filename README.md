@@ -9,13 +9,13 @@ Most EDA toold that perform synthesis does the following:
 * However, the OpenROAD flow lacked this feature.
 * The task was to explore how to add these necessary checks after sythesizing a design and generate timing reorts sucessfully.
 
-![plot](/home/fahim/NSL/OpenROAD-flow-scripts/openroad_pics/1.png)
+![plot](https://github.com/Fahim36201/OpenROAD-flow-scripts/blob/openroad_contest/openroad_pics/1.png)
 
 &nbsp;
 
 ### 1.a. Synthesis report generation flow
 
-![plot](/home/fahim/NSL/OpenROAD-flow-scripts/openroad_pics/2.png)
+![plot](https://github.com/Fahim36201/OpenROAD-flow-scripts/blob/openroad_contest/openroad_pics/2.png)
 
 &nbsp;
 
@@ -50,9 +50,9 @@ source scripts/ver1_synthesis_timing.tcl
 ````
 Script description:
 
-![plot](/home/fahim/NSL/OpenROAD-flow-scripts/openroad_pics/3.png)
+![plot](https://github.com/Fahim36201/OpenROAD-flow-scripts/blob/openroad_contest/openroad_pics/3.png)
 
-![plot](/home/fahim/NSL/OpenROAD-flow-scripts/openroad_pics/4.png)
+![plot](https://github.com/Fahim36201/OpenROAD-flow-scripts/blob/openroad_contest/openroad_pics/4.png)
 
 &nbsp;
 
@@ -85,9 +85,9 @@ Make synth
 ````
 Script description:
 
-![plot](/home/fahim/NSL/OpenROAD-flow-scripts/openroad_pics/5.png)
+![plot](https://github.com/Fahim36201/OpenROAD-flow-scripts/blob/openroad_contest/openroad_pics/5.png)
 
-![plot](/home/fahim/NSL/OpenROAD-flow-scripts/openroad_pics/6.png)
+![plot](https://github.com/Fahim36201/OpenROAD-flow-scripts/blob/openroad_contest/openroad_pics/6.png)
 
 &nbsp;
 
@@ -116,9 +116,9 @@ source $source_tool >/dev/null
 ````
 Script description:
 
-![plot](/home/fahim/NSL/OpenROAD-flow-scripts/openroad_pics/7.png)
+![plot](https://github.com/Fahim36201/OpenROAD-flow-scripts/blob/openroad_contest/openroad_pics/7.png)
 
-![plot](/home/fahim/NSL/OpenROAD-flow-scripts/openroad_pics/8.png)
+![plot](https://github.com/Fahim36201/OpenROAD-flow-scripts/blob/openroad_contest/openroad_pics/8.png)
 
 &nbsp;
 
@@ -126,11 +126,11 @@ Script description:
 
 Using the modifications and scripts mentioned in version 3, all the desired results was acheived in log file `1_1_synth_timing_report.log`
 
-![plot](/home/fahim/NSL/OpenROAD-flow-scripts/openroad_pics/9.png)
+![plot](https://github.com/Fahim36201/OpenROAD-flow-scripts/blob/openroad_contest/openroad_pics/9.png)
 
-![plot](/home/fahim/NSL/OpenROAD-flow-scripts/openroad_pics/10.png)
+![plot](https://github.com/Fahim36201/OpenROAD-flow-scripts/blob/openroad_contest/openroad_pics/10.png)
 
-![plot](/home/fahim/NSL/OpenROAD-flow-scripts/openroad_pics/11.png)
+![plot](https://github.com/Fahim36201/OpenROAD-flow-scripts/blob/openroad_contest/openroad_pics/11.png)
 
 &nbsp;
 
@@ -174,7 +174,7 @@ export KLAYOUT_DRC_FILE = $(PLATFORM_DIR)/drc/asap7.lydrc
 
 ### 2.d. Flow for generating drc reports
 
-![plot](/home/fahim/NSL/OpenROAD-flow-scripts/openroad_pics/12.png)
+![plot](https://github.com/Fahim36201/OpenROAD-flow-scripts/blob/openroad_contest/openroad_pics/12.png)
 
 &nbsp;
 
@@ -187,7 +187,7 @@ export KLAYOUT_DRC_FILE = $(PLATFORM_DIR)/drc/asap7.lydrc
 ````
 * Using `6_drc.lyrdb` and `6_final.gds` we can explore drc violations in the design using **klayout**.
 
-![plot](/home/fahim/NSL/OpenROAD-flow-scripts/openroad_pics/13.png)
+![plot](https://github.com/Fahim36201/OpenROAD-flow-scripts/blob/openroad_contest/openroad_pics/13.png)
 
 &nbsp;
 
@@ -203,7 +203,7 @@ export KLAYOUT_DRC_FILE = $(PLATFORM_DIR)/drc/asap7.lydrc
 ### 3.b. Observation
 * Analyzing the issue revealed that power stripes for both VDD and VSS at M5 were present above macros but they lacked via connection to macros power grid which is at M4.
 
-![plot](/home/fahim/NSL/OpenROAD-flow-scripts/openroad_pics/14.png)
+![plot](https://github.com/Fahim36201/OpenROAD-flow-scripts/blob/openroad_contest/openroad_pics/14.png)
 
 &nbsp;
 
@@ -220,4 +220,4 @@ add_pdn_connect -grid {core_macro} -layers {M4 M5}
 ````
 * This successfully establishing power connection to macros. Power via form M5 to M4 was generated connecting power stripe to macros.
 
-![plot](/home/fahim/NSL/OpenROAD-flow-scripts/openroad_pics/15.png)
+![plot](https://github.com/Fahim36201/OpenROAD-flow-scripts/blob/openroad_contest/openroad_pics/15.png)
