@@ -179,7 +179,7 @@ To add drc support for **asap7** pdk and run `make drc`:
 
 ![plot](./openroad_pics/git_issue_snip.PNG)
 
-* Secondly, Create (or copy) a KLayout .lydrc file at 
+* Secondly, Create (or copy) the KLayout .lydrc file at 
 `flow/platforms/$(PLATFORM)/drc/$(PLATFORM).lydrc`
 
 * Add the following line at the end of `flow/platforms/$(PLATFORM)/config.mk:`
