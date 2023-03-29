@@ -163,7 +163,7 @@ The `.lydrc` file can only be used with `v27.1` or above.
 
 Now, to install klayout:
 
-* First, to download klayout use the following [link](https://www.klayout.de/build.html).
+* First, to download klayout use the [link](https://www.klayout.de/build.html).
 
 * Then, install klayout. Here, version `v28.5` was downloaded and installed.
 ````
