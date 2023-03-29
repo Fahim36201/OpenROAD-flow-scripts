@@ -175,7 +175,7 @@ sudo apt install <realpath of the downloaded klayout_0.28.5-1_amd64.deb>
 ### 2.d. Work done to resolve this issue
 
 To add drc support for **asap7** pdk and run `make drc`:
-* First, ensure that a KLayout tech file (`.lydrc` ) exists for the platform. If not, you can download the a community-contributed KLayout enablement from this github post by **laurentc2**: https://github.com/laurentc2/ASAP7_for_KLayout. This source was also suggested by the community when another user `its-rakib` raised the same issue https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/discussions/850 .
+* First, ensure that a KLayout tech file (`.lydrc` ) exists for the platform. If not, you can download the a community-contributed KLayout enablement from this github post by [**laurentc2**](https://github.com/laurentc2): https://github.com/laurentc2/ASAP7_for_KLayout. This source was also suggested by the community when another user [**its-rakib**](https://github.com/its-rakib) raised the same issue https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/discussions/850 .
 
 ![plot](./openroad_pics/git_issue_snip.PNG)
 
