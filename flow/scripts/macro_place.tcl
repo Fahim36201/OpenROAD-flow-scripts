@@ -40,9 +40,7 @@ if {[find_macros] != ""} {
   lassign $::env(MACRO_PLACE_CHANNEL) channel_x channel_y
   set halo_max [expr max($halo_x, $halo_y)]
   set channel_max [expr max($channel_x, $channel_y)]
-  #  set blockage_width [expr max($halo_max/4, $channel_max/2)]
-  #set blockage_width 0
-  set blockage_width [expr max($halo_max/4, $channel_max/4)]
+  set blockage_width [expr max($halo_max/4, $channel_max/2)]
 
   
   if {[info exists ::env(MACRO_BLOCKAGE_HALO)]} {

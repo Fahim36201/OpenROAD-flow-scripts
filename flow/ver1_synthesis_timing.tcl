@@ -31,5 +31,5 @@ link_design riscv_top
 #read_sdc results/asap7/riscv32i/base/1_synth.sdc
 read_sdc results/asap7/riscv32i/slvt_syn_timing/1_synth.sdc
 
-source scripts/report_metrics.tcl
+source scripts/report_metrics_synthesis.tcl
 report_metrics synthesis

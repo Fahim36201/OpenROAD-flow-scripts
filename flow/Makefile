@@ -166,20 +166,6 @@ export SYNTH_ARGS ?= -flatten
 # Global setting for Floorplan
 export PLACE_PINS_ARGS
 
-#export FLOW_VARIANT = repairtns
-#export FLOW_VARIANT = repairtns_ckinv
-#export FLOW_VARIANT = repairtns_ckinvx8
-#export FLOW_VARIANT = repairtns_real_ckinvx8
-#export FLOW_VARIANT = repairtns_real_ckinvx8_slvt
-#export FLOW_VARIANT = repairtns_real_ckinvx8_slvt_nomargin
-#export FLOW_VARIANT = repairtns_real_ckinvx8_slvt_M2_M8
-#export FLOW_VARIANT = repairtns_real_ckinvx8_slvt_invtest
-#export FLOW_VARIANT = repairtns_real_ckinvx8_slvt_invtest2
-#export FLOW_VARIANT = repairtns_real_ckinvx8_slvt_1200
-#export FLOW_VARIANT = slvt_syn_timing
-#export FLOW_VARIANT = macro_place
-#export FLOW_VARIANT = macro_place_no_blockage
-export FLOW_VARIANT = macro_place_no_blockage_1300_slvt
 export FLOW_VARIANT ?= base
 
 export GPL_TIMING_DRIVEN ?= 1
