@@ -179,7 +179,7 @@ sudo apt install /home/<user>/Downloads/klayout_0.28.5-1_amd64.deb
 ### 2.d. Work done to resolve this issue
 
 To add drc support for **asap7** pdk and run `make drc`:
-* First, ensure that a KLayout tech file (`.lydrc` ) exists for the platform. If not, you can use download it form:  `https://github.com/laurentc2/ASAP7_for_KLayout/tree/main/drc`
+* First, ensure that a KLayout tech file (`.lydrc` ) exists for the platform. If not, you can use download it form: https://github.com/laurentc2/ASAP7_for_KLayout/tree/main/drc
 * Secondly, Create (or copy) a KLayout .lydrc file at 
 `flow/platforms/$(PLATFORM)/drc/$(PLATFORM).lydrc`
 
