@@ -159,19 +159,15 @@ $(PLATFORM).lydrc
 
 ### 2.c. Installing Klayout
 
-The klayout integrated with ORFS is `v26.4`. but, the `.lydrc` file can only be used with `v27.1` or above. So, a newer versions of klayout is required.
+The `.lydrc` file can only be used with `v27.1` or above.
 
 Now, to install klayout:
 
-* First, to download a newer version of klayout use the following link: https://www.klayout.de/build.html
+* First, to download klayout use the following link: https://www.klayout.de/build.html
 
-* Secondly, remove the existing klayout which for this case was `v26.4`.
+* Then, install klayout. Here, version `v28.5` was downloaded and installed.
 ````
-sudo apt-get remove klayout
-````
-* Then, istall the newer version. for this version `v28.5` was downloaded and installed.
-````
-sudo apt install /home/<user>/Downloads/klayout_0.28.5-1_amd64.deb
+sudo apt install <realpath of the downloaded klayout_0.28.5-1_amd64.deb>
 ````
 
 &nbsp;
