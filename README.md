@@ -221,3 +221,16 @@ add_pdn_connect -grid {core_macro} -layers {M4 M5}
 * This successfully establishing power connection to macros. Power via form M5 to M4 was generated connecting power stripe to macros.
 
 ![plot](./openroad_pics/15.PNG)
+
+&nbsp;
+
+## 4. Conclusion
+
+All the modifications proposed so far have been summed up below.
+
+| Base Flow  | Modified Flow |
+| ------------- | ------------- |
+| 1. In the base flow, timing and Power reports are not available after synthesis. | 1. Using the proposed modifacations Timing and Power reports can be generated after synthesis. |
+| 2. The base flow also doesn't report timing paths based on their path groups. | 2. The proposed modifications also report timing paths based on path groups in log file which is helpful during debugging.  |
+| 3. After postroute, DRC checking was not possible using **asap7** pdk. | 3. After including the necessary files and modifications, DRC check is now possible using the **asap7** pdk after completing the RTL to GDS flow.  |
+| 4. Power via connection is not established for macros in **riscv32i** design.  | 4. Power via connection to macros were established for **riscv32i** design using the suggested modifications.  |
