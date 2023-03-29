@@ -257,3 +257,6 @@ export IR_DROP_LAYER ?= M1
 
 # Allow empty GDS cell
 export GDS_ALLOW_EMPTY = fakeram.*
+
+# KLayout DRC ruledeck
+export KLAYOUT_DRC_FILE = $(PLATFORM_DIR)/drc/asap7.lydrc
