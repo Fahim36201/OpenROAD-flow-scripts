@@ -157,10 +157,29 @@ $(PLATFORM).lydrc
 
 &nbsp;
 
-### 2.c. Work done to resolve this issue
+### 2.c. Installing Klayout
+
+The klayout integrated with ORFS is `v26.4`. but, the `.lydrc` file can only be used with `v27.1` or above. So, a newer versions of klayout is required.
+
+Now, to install klayout:
+
+* First, to download a newer version of klayout use the following link: https://www.klayout.de/build.html
+
+* Secondly, remove the existing klayout which for this case was `v26.4`.
+````
+sudo apt-get remove klayout
+````
+* Then, istall the newer version. for this version `v28.5` was downloaded and installed.
+````
+sudo apt install /home/<user>/Downloads/klayout_0.28.5-1_amd64.deb
+````
+
+&nbsp;
+
+### 2.d. Work done to resolve this issue
 
 To add drc support for **asap7** pdk and run `make drc`:
-* First, ensure that a KLayout tech file (`.lydrc` ) exists for the platform. If not, create it.
+* First, ensure that a KLayout tech file (`.lydrc` ) exists for the platform. If not, you can use download it form:  `https://github.com/laurentc2/ASAP7_for_KLayout/tree/main/drc`
 * Secondly, Create (or copy) a KLayout .lydrc file at 
 `flow/platforms/$(PLATFORM)/drc/$(PLATFORM).lydrc`
 
@@ -172,13 +191,13 @@ export KLAYOUT_DRC_FILE = $(PLATFORM_DIR)/drc/asap7.lydrc
 
 &nbsp;
 
-### 2.d. Flow for generating drc reports
+### 2.e. Flow for generating drc reports
 
 ![plot](./openroad_pics/12.PNG)
 
 &nbsp;
 
-### 2.e. DRCs in Klayout
+### 2.f. DRCs in Klayout
 * The output files gennerated from `make drc`:
 ````
 6_drc.log
