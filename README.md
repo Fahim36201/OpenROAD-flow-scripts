@@ -1,21 +1,47 @@
 # OpenROAD Flow Improvement
 
+&nbsp;
+
+## Table of Contents
+1. [Limitation of OpenROAD Synthesis flow](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#1-limitation-of-openroad-synthesis-flow)
+ - 1.a. [Synthesis report generation flow](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#1a-synthesis-report-generation-flow)
+ - 1.b. [Evolution of the proposed Synthesis Flow
+](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#1b-evolution-of-the-proposed-synthesis-flow)
+     - 1.b.1. [Version 1](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#1b1-version-1)
+     - 1.b.2. [Version 2](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#1b2-version-2)
+     - 1.b.3. [Version 3](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#1b3-version-3)
+ - 1.c. [Final Output](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#1c-final-output)
+2. [Limitation of DRC check options](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#2-limitation-of-drc-check-options)
+ - 2.a. [Challenges](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#2a-challenges)
+ - 2.b. [Observation](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#2b-observation)
+ - 2.c. [Installing Klayout](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#2c-installing-klayout)
+ - 2.d. [Work done to resolve this issue](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#2d-work-done-to-resolve-this-issue)
+ - 2.e. [Flow for generating drc reports](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#2e-flow-for-generating-drc-reports)
+ - 2.f. [DRCs in Klayout](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#2f-drcs-in-klayout)
+3. [Lack of Power grid connection to Macro](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#3-lack-of-power-grid-connection-to-macro)
+ - 3.a. [Challenges](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#3a-challenges)
+ - 3.b. [Observation](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#3b-observation)
+ - 3.c. [Work done to resolve this issue](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#3c-work-done-to-resolve-this-issue)
+4. [Conclusion](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#4-conclusion)
+
+&nbsp;
+
 ## 1. Limitation of OpenROAD Synthesis flow
 
-Most EDA toold that perform synthesis does the following:
+Most EDA tools that perform synthesis does the following:
 
 * Provides essential reports to check power, timing etc.
 * Allowing the designer to get an early estimate about the feasibility of the design.
 * However, the OpenROAD flow lacked this feature.
-* The task was to explore how to add these necessary checks after sythesizing a design and generate timing reorts sucessfully.
+* The task was to explore how to add these necessary checks after synthesizing a design and generate timing reorts sucessfully.
 
-![plot](./openroad_pics/1.PNG)
+![plot](./readme_images/1.PNG)
 
 &nbsp;
 
 ### 1.a. Synthesis report generation flow
 
-![plot](./openroad_pics/2.PNG)
+![plot](./readme_images/2.PNG)
 
 &nbsp;
 
@@ -50,9 +76,9 @@ source scripts/ver1_synthesis_timing.tcl
 ````
 Script description:
 
-![plot](./openroad_pics/3.PNG)
+![plot](./readme_images/3.PNG)
 
-![plot](./openroad_pics/4.PNG)
+![plot](./readme_images/4.PNG)
 
 &nbsp;
 
@@ -85,9 +111,9 @@ Make synth
 ````
 Script description:
 
-![plot](./openroad_pics/5.PNG)
+![plot](./readme_images/5.PNG)
 
-![plot](./openroad_pics/6.PNG)
+![plot](./readme_images/6.PNG)
 
 &nbsp;
 
@@ -116,9 +142,9 @@ source $source_tool >/dev/null
 ````
 Script description:
 
-![plot](./openroad_pics/7.PNG)
+![plot](./readme_images/7.PNG)
 
-![plot](./openroad_pics/8.PNG)
+![plot](./readme_images/8.PNG)
 
 &nbsp;
 
@@ -126,11 +152,11 @@ Script description:
 
 Using the modifications and scripts mentioned in version 3, all the desired results was acheived in log file `1_1_synth_timing_report.log`
 
-![plot](./openroad_pics/9.PNG)
+![plot](./readme_images/9.PNG)
 
-![plot](./openroad_pics/10.PNG)
+![plot](./readme_images/10.PNG)
 
-![plot](./openroad_pics/11.PNG)
+![plot](./readme_images/11.PNG)
 
 &nbsp;
 
@@ -177,7 +203,7 @@ sudo apt install <realpath of the downloaded klayout_0.28.5-1_amd64.deb>
 To add drc support for **asap7** pdk and run `make drc`:
 * First, ensure that a KLayout tech file (`.lydrc`) exists for the platform. If not, you can download a community-contributed KLayout enablement from this github [post](https://github.com/laurentc2/ASAP7_for_KLayout) by [**laurentc2**](https://github.com/laurentc2). This source was also suggested by the community when another user [**its-rakib**](https://github.com/its-rakib) raised the same [issue](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/discussions/850).
 
-![plot](./openroad_pics/git_issue_snip.PNG)
+![plot](./readme_images/git_issue_snip.PNG)
 
 * Secondly, Create (or copy) the KLayout .lydrc file at 
 `flow/platforms/$(PLATFORM)/drc/$(PLATFORM).lydrc`
@@ -192,7 +218,7 @@ export KLAYOUT_DRC_FILE = $(PLATFORM_DIR)/drc/asap7.lydrc
 
 ### 2.e. Flow for generating drc reports
 
-![plot](./openroad_pics/12.PNG)
+![plot](./readme_images/12.PNG)
 
 &nbsp;
 
@@ -205,7 +231,7 @@ export KLAYOUT_DRC_FILE = $(PLATFORM_DIR)/drc/asap7.lydrc
 ````
 * Using `6_drc.lyrdb` and `6_final.gds` we can explore drc violations in the design using **klayout**.
 
-![plot](./openroad_pics/13.PNG)
+![plot](./readme_images/13.PNG)
 
 &nbsp;
 
@@ -221,7 +247,7 @@ export KLAYOUT_DRC_FILE = $(PLATFORM_DIR)/drc/asap7.lydrc
 ### 3.b. Observation
 * Analyzing the issue revealed that power stripes for both VDD and VSS at M5 were present above macros but they lacked via connection to macros power grid which is at M4.
 
-![plot](./openroad_pics/14.PNG)
+![plot](./readme_images/14.PNG)
 
 &nbsp;
 
@@ -238,7 +264,7 @@ add_pdn_connect -grid {core_macro} -layers {M4 M5}
 ````
 * This successfully establishing power connection to macros. Power via form M5 to M4 was generated connecting power stripe to macros.
 
-![plot](./openroad_pics/15.PNG)
+![plot](./readme_images/15.PNG)
 
 &nbsp;
 
