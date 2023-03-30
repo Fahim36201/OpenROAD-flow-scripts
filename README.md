@@ -1,5 +1,5 @@
 # OpenROAD Flow Improvement
-This repository epitomizes report generation system for synthesis, drc after final gds for 7nm **asap7** pdk and macro power via connection in riscv32i design for The OpenROAD 7nm Physical Design Contest.
+This repository epitomizes report generation system for synthesis, check drc after final gds generation for 7nm **asap7** pdk and creating macro power via connection in riscv32i design for The OpenROAD 7nm Physical Design Contest.
 
 &nbsp;
 
@@ -56,7 +56,7 @@ Objective: Secure the success of the implemenatation.
 
 Assesment:
 
-* Using the OpenSTA tool to load the verilog(.v) and sdc(.sdc) file generated using the synthesis tool Yosys.
+* Using the OpenSTA tool to load the verilog(.v) and generated sdc(.sdc) file using the synthesis tool Yosys.
 * Perform timing and power checks using OpenSTA.
 
 Shortcomings:
@@ -89,7 +89,7 @@ Script description:
 &nbsp;
 
 #### 1.b.2 Version 2
-Objective: Integrating the modifications of `report_metrics_synthesis.tcl` into `report_metrics.tcl` and integrating this syntheis report generation to Flow.
+Objective: Integrating the modifications of `report_metrics_synthesis.tcl` into `report_metrics.tcl` and integrating this synthesis report generation to the flow.
 
 Assesment:
 
