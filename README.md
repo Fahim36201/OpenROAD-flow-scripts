@@ -246,7 +246,9 @@ export KLAYOUT_DRC_FILE = $(PLATFORM_DIR)/drc/asap7.lydrc
 
 ### 2.e. Flow for generating drc reports
 
-![plot](./readme_images/12.PNG)
+<div align="center">
+    <img src="./readme_images/12.PNG">
+</div>
 
 &nbsp;
 
