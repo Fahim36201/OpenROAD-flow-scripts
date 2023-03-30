@@ -77,9 +77,13 @@ sta
 source ver1_synthesis_timing.tcl
 ````
 Script description:
-`flow/scripts/ver1_synthesis_timing.tcl` used in this version:
+
+* `flow/scripts/ver1_synthesis_timing.tcl` used in this version:
+
 ![plot](./readme_images/3.PNG)
-`flow/scripts/report_metrics_synthesis.tcl` which was modified to work with **OpenSTA**:
+
+* `flow/scripts/report_metrics_synthesis.tcl` which was modified to work with **OpenSTA**:
+
 ![plot](./readme_images/4.PNG)
 
 &nbsp;
