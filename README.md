@@ -37,13 +37,17 @@ Most EDA tools that perform synthesis does the following:
 * However, the OpenROAD flow lacked this feature.
 * The task was to explore how to add these necessary checks after synthesizing a design and generate timing reorts sucessfully.
 
-![plot](./readme_images/1.PNG)
+<div align="center">
+    <img src="./readme_images/1.PNG">
+</div>
 
 &nbsp;
 
 ### 1.a. Synthesis report generation flow
 
-![plot](./readme_images/2.PNG)
+<div align="center">
+    <img src="./readme_images/2.PNG">
+</div>
 
 &nbsp;
 
@@ -80,11 +84,15 @@ Script description:
 
 * `flow/scripts/ver1_synthesis_timing.tcl` used in this version:
 
-![plot](./readme_images/3.PNG)
+<div align="center">
+    <img src="./readme_images/3.PNG">
+</div>
 
 * `flow/scripts/report_metrics_synthesis.tcl` which was modified to work with **OpenSTA**:
 
-![plot](./readme_images/4.PNG)
+<div align="center">
+    <img src="./readme_images/4.PNG">
+</div>
 
 &nbsp;
 
@@ -119,11 +127,15 @@ Script description:
 
 * `flow/scripts/report_metrics.tcl` modifications to ensure it works for all physical design stages:
 
-![plot](./readme_images/5.PNG)
+<div align="center">
+    <img src="./readme_images/5.PNG">
+</div>
 
 * `flow/Makefile` modifications done to ensure synthesis report are generated through make flow:
 
-![plot](./readme_images/6.PNG)
+<div align="center">
+    <img src="./readme_images/6.PNG">
+</div>
 
 &nbsp;
 
@@ -157,19 +169,28 @@ Script description:
 
 * `flow/scripts/synthesis_timing.tcl` used to generate timing reports for synthesis stage in this version:
 
-![plot](./readme_images/7.PNG)
+<div align="center">
+    <img src="./readme_images/7.PNG">
+</div>
 
 * `flow/Makefile` modifications to include the new `synthesis_timing.tcl and also remove hardcoded locations:
  
-![plot](./readme_images/dynamic_make.PNG)
+<div align="center">
+    <img src="./readme_images/dynamic_make.PNG">
+</div>
+
 
 * `~/.bashrc` modifications for local machine:
 
-![plot](./readme_images/bashrc.PNG)
+<div align="center">
+    <img src="./readme_images/bashrc.PNG">
+</div>
 
 * `flow/scripts/report_metrics.tcl` modifications to include path groups. `USE_GROUP_PATH` included in `flow/designs/asap7/<DESIGN_NICKNAME>/config.mk` switch needs to be toggled on:
 
-![plot](./readme_images/8.PNG)
+<div align="center">
+    <img src="./readme_images/8.PNG">
+</div>
 
 &nbsp;
 
@@ -177,15 +198,21 @@ Script description:
 
 Using the modifications and scripts mentioned in version 3, all the desired results was acheived in log file `1_1_synth_timing_report.log`.
 
-![plot](./readme_images/9.PNG)
+<div align="center">
+    <img src="./readme_images/9.PNG">
+</div>
 
 timing reports following path groups in log file after synthesis.
 
-![plot](./readme_images/10.PNG)
+<div align="center">
+    <img src="./readme_images/10.PNG">
+</div>
 
 power reports generated after synthesis.
 
-![plot](./readme_images/11.PNG)
+<div align="center">
+    <img src="./readme_images/11.PNG">
+</div>
 
 &nbsp;
 
@@ -231,7 +258,10 @@ sudo apt install <realpath of the downloaded klayout_0.28.5-1_amd64.deb>
 To add drc support for **asap7** pdk and run `make drc`:
 * First, ensure that a KLayout tech file (`.lydrc`) exists for the platform. If not, you can download a community-contributed KLayout enablement from this github [post](https://github.com/laurentc2/ASAP7_for_KLayout) by [**laurentc2**](https://github.com/laurentc2). This source was also suggested by the community when another user [**its-rakib**](https://github.com/its-rakib) raised the same [issue](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/discussions/850).
 
-![plot](./readme_images/git_issue_snip.PNG)
+<div align="center">
+    <img src="./readme_images/git_issue_snip.PNG">
+</div>
+
 
 * Secondly, Create (or copy) the KLayout .lydrc file at 
 `flow/platforms/$(PLATFORM)/drc/$(PLATFORM).lydrc`
@@ -261,7 +291,9 @@ export KLAYOUT_DRC_FILE = $(PLATFORM_DIR)/drc/asap7.lydrc
 ````
 * Using `6_drc.lyrdb` and `6_final.gds` we can explore drc violations in the design using **klayout**. A snippet of of **riscv32i** loaded in **klayout** after gds dump.
 
-![plot](./readme_images/13.PNG)
+<div align="center">
+    <img src="./readme_images/13.PNG">
+</div>
 
 &nbsp;
 
@@ -277,7 +309,9 @@ export KLAYOUT_DRC_FILE = $(PLATFORM_DIR)/drc/asap7.lydrc
 ### 3.b. Observation
 * Analyzing the issue revealed that power stripes for both VDD and VSS at M5 were present above macros but they lacked via connection to macros power grid which is at M4.
 
-![plot](./readme_images/14.PNG)
+<div align="center">
+    <img src="./readme_images/14.PNG">
+</div>
 
 &nbsp;
 
@@ -293,7 +327,9 @@ add_pdn_connect -grid {core_macro} -layers {M4 M5}
 ````
 * This successfully establishing power connection to macros. Power via form M5 to M4 was generated connecting power stripe to macros.
 
-![plot](./readme_images/15.PNG)
+<div align="center">
+    <img src="./readme_images/15.PNG">
+</div>
 
 &nbsp;
 
