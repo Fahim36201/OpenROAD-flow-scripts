@@ -291,5 +291,5 @@ Dhaka, Bangladesh
 &nbsp;
 
 ## 6. Acknowledgement
-* Neural Semiconductor Limited
-* Neural Semiconductor Physical Design Team
+* Neural Semiconductor Limited.
+* Neural Semiconductor Physical Design Team.
