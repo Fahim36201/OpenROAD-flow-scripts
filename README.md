@@ -222,7 +222,7 @@ power reports generated after synthesis.
 
 ### 2.a. Challenges
 * In the OpenROAD flow, DRC checks work on **nangate45** and **sky130hd** with `make drc` command. 
-* But for asap7, There was no rule file ( `.lydrc` ) to run DRC checks with.
+* But for **asap7**, There was no rule file ( `.lydrc` ) to run DRC checks with.
 * `.lydrc` file works for Klayout version 0.27.1 or higher
 
 &nbsp;
