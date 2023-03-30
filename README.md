@@ -74,12 +74,12 @@ After synthesis generate reports using:
 # form flow directory
 source ../setup_env.sh
 sta
-source scripts/ver1_synthesis_timing.tcl
+source ver1_synthesis_timing.tcl
 ````
 Script description:
-
+`flow/scripts/ver1_synthesis_timing.tcl` used in this version:
 ![plot](./readme_images/3.PNG)
-
+`flow/scripts/report_metrics_synthesis.tcl` which was modified to work with **OpenSTA**:
 ![plot](./readme_images/4.PNG)
 
 &nbsp;
@@ -113,7 +113,11 @@ Make synth
 ````
 Script description:
 
+* `flow/scripts/report_metrics.tcl` modifications to ensure it works for all physical design stages:
+
 ![plot](./readme_images/5.PNG)
+
+* `flow/Makefile` modifications done to ensure synthesis report are generated through make flow:
 
 ![plot](./readme_images/6.PNG)
 
@@ -147,11 +151,19 @@ source $source_tool >/dev/null
 ````
 Script description:
 
+* `flow/scripts/synthesis_timing.tcl` used to generate timing reports for synthesis stage in this version:
+
 ![plot](./readme_images/7.PNG)
 
+* `flow/Makefile` modifications to include the new `synthesis_timing.tcl and also remove hardcoded locations:
+ 
 ![plot](./readme_images/dynamic_make.PNG)
 
+* `~/.bashrc` modifications for local machine:
+
 ![plot](./readme_images/bashrc.PNG)
+
+* `flow/scripts/report_metrics.tcl` modifications to include path groups. `USE_GROUP_PATH` included in `flow/designs/asap7/<DESIGN_NICKNAME>/config.mk` switch needs to be toggled on:
 
 ![plot](./readme_images/8.PNG)
 
@@ -159,11 +171,15 @@ Script description:
 
 ### 1.c Final Output
 
-Using the modifications and scripts mentioned in version 3, all the desired results was acheived in log file `1_1_synth_timing_report.log`
+Using the modifications and scripts mentioned in version 3, all the desired results was acheived in log file `1_1_synth_timing_report.log`.
 
 ![plot](./readme_images/9.PNG)
 
+timing reports following path groups in log file after synthesis.
+
 ![plot](./readme_images/10.PNG)
+
+power reports generated after synthesis.
 
 ![plot](./readme_images/11.PNG)
 
@@ -237,7 +253,7 @@ export KLAYOUT_DRC_FILE = $(PLATFORM_DIR)/drc/asap7.lydrc
 6_drc_count.rpt
 6_drc.lyrdb
 ````
-* Using `6_drc.lyrdb` and `6_final.gds` we can explore drc violations in the design using **klayout**.
+* Using `6_drc.lyrdb` and `6_final.gds` we can explore drc violations in the design using **klayout**. A snippet of of **riscv32i** loaded in **klayout** after gds dump.
 
 ![plot](./readme_images/13.PNG)
 
