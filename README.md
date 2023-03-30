@@ -1,4 +1,5 @@
 # OpenROAD Flow Improvement
+This repository epitomizes report generation system for synthesis, drc after final gds for 7nm **asap7** pdk and macro power via connection in riscv32i design for The OpenROAD 7nm Physical Design Contest.
 
 &nbsp;
 
@@ -279,6 +280,9 @@ All the modifications proposed so far have been summed up below.
 | 2. The base flow also doesn't report timing paths based on their path groups. | 2. The proposed modifications also report timing paths based on path groups in log file which is helpful during debugging.  |
 | 3. After postroute, DRC checking was not possible using **asap7** pdk. | 3. After including the necessary files and modifications, DRC check is now possible using the **asap7** pdk after completing the RTL to GDS flow.  |
 | 4. Power via connection is not established for macros in **riscv32i** design.  | 4. Power via connection to macros were established for **riscv32i** design using the suggested modifications.  |
+
+**Note:** 
+* After cloning the repository, you may need to source the `setup.env.sh` file.
 
 &nbsp;
 
