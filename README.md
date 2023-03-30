@@ -23,7 +23,8 @@
  - 3.b. [Observation](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#3b-observation)
  - 3.c. [Work done to resolve this issue](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#3c-work-done-to-resolve-this-issue)
 4. [Conclusion](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#4-conclusion)
-
+5. [Author](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#5-Author)
+6. [Acknowledgement](https://github.com/Fahim36201/OpenROAD-flow-scripts/tree/test_final_content#6-Acknowledgement)
 &nbsp;
 
 ## 1. Limitation of OpenROAD Synthesis flow
@@ -278,3 +279,19 @@ All the modifications proposed so far have been summed up below.
 | 2. The base flow also doesn't report timing paths based on their path groups. | 2. The proposed modifications also report timing paths based on path groups in log file which is helpful during debugging.  |
 | 3. After postroute, DRC checking was not possible using **asap7** pdk. | 3. After including the necessary files and modifications, DRC check is now possible using the **asap7** pdk after completing the RTL to GDS flow.  |
 | 4. Power via connection is not established for macros in **riscv32i** design.  | 4. Power via connection to macros were established for **riscv32i** design using the suggested modifications.  |
+
+&nbsp;
+
+## 5. Author
+**Fahim Faisal**, Physical Design Engineer, fahim.faisal@neural-semiconductor.com
+
+Physical Design Department  
+[Neural Semiconductor Limited](http://www.neural-semiconductor.com/)
+
+Dhaka, Bangladesh
+
+&nbsp;
+
+## 6. Acknowledgement
+* Neural Semiconductor Limited
+* Neural Semiconductor Physical Design Team
