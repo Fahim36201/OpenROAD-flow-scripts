@@ -98,7 +98,7 @@ Assesment:
 
 Shortcomings:
 * `ver1_synthesis_timing` was used which is hardcoded. also modifications to flow `Makefile` were not completely dynamic.
-* Also for local machine there was an issue with OpenSTA tool not being setup through flow. sourcing `setup_env.sh` elevate this problem. This was not an issue for cloud machine.
+* Also for local machine there was an issue with OpenSTA tool not being setup through flow. sourcing `setup_env.sh` circumvent this problem. This was not an issue for cloud machine.
 
 Scripts:
 ````
