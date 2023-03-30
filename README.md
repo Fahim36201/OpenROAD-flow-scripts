@@ -284,10 +284,8 @@ All the modifications proposed so far have been summed up below.
 
 ## 5. Author
 **Fahim Faisal**, Physical Design Engineer, fahim.faisal@neural-semiconductor.com
-
 Physical Design Department  
-[Neural Semiconductor Limited](http://www.neural-semiconductor.com/)
-
+[Neural Semiconductor Limited](http://www.neural-semiconductor.com/)  
 Dhaka, Bangladesh
 
 &nbsp;
