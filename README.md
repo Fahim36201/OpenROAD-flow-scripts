@@ -126,7 +126,10 @@ Objective: Creating a dynamic `synthesis_timing.tcl` along with the modification
 Assesment:
 
 * Ensuring that the whole proposed flow was dynamic along with the scripts used.
-* Adding **Group Path** option to `report_metrics.tcl`. This was helpful to check timing paths based on group which is useful when debugging certain paths for causes of timing violation.
+* Adding **Group Path** option to `report_metrics.tcl`. This was helpful to check timing paths based on group which is useful when debugging certain paths for causes of timing violation. A switch `USE_GROUP_PATH` has been added to `flow/designs/asap7/<DESIGN_NICKNAME>/config.mk` which needs to be set to **true** if you want to report timing paths according to path groups.
+````
+export USE_GROUP_PATH = true
+````
 
 Scripts:
 ````
@@ -145,6 +148,10 @@ source $source_tool >/dev/null
 Script description:
 
 ![plot](./readme_images/7.PNG)
+
+![plot](./readme_images/dynamic_make.PNG)
+
+![plot](./readme_images/bashrc.PNG)
 
 ![plot](./readme_images/8.PNG)
 
@@ -169,8 +176,7 @@ Using the modifications and scripts mentioned in version 3, all the desired resu
 ### 2.a. Challenges
 * In the OpenROAD flow, DRC checks work on **nangate45** and **sky130hd** with `make drc` command. 
 * But for asap7, There was no rule file ( `.lydrc` ) to run DRC checks with.
-* `.lydrc` file works for Klayout version 0,27.1 or higher
-but the ORFS was using Klayout 0.26.4.
+* `.lydrc` file works for Klayout version 0.27.1 or higher
 
 &nbsp;
 
@@ -187,13 +193,13 @@ $(PLATFORM).lydrc
 
 ### 2.c. Installing Klayout
 
-The `.lydrc` file can only be used with `v27.1` or above.
+The `.lydrc` file can only be used with `0.27.1` or above.
 
 Now, to install klayout:
 
 * First, to download klayout use the [link](https://www.klayout.de/build.html).
 
-* Then, install klayout. Here, version `v28.5` was downloaded and installed.
+* Then, install klayout. Here, version `0.28.5` was downloaded and installed.
 ````
 sudo apt install <realpath of the downloaded klayout_0.28.5-1_amd64.deb>
 ````
@@ -255,8 +261,7 @@ export KLAYOUT_DRC_FILE = $(PLATFORM_DIR)/drc/asap7.lydrc
 
 ### 3.c. Work done to resolve this issue
 To establish power connection to macros, vias are dropped from M5 to M4.
-* This modification is added to the end of existing powergrid generating script `
-flow/platforms/asap7/openRoad/pdn/grid_strategy-M2-M5-M7.tcl`:
+* This modification is added to the end of existing powergrid generating script `flow/platforms/asap7/openRoad/pdn/grid_strategy-M2-M5-M7.tcl`:
 ````
 #####################################
 # macro via connection
